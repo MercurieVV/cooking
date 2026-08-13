@@ -1,0 +1,477 @@
+{
+  "title": "AEG Apple Pie",
+  "output": "recipes/apple-pie-aeg-be3002420m-card.pdf",
+  "servings": "8 slices",
+  "difficulty": "Medium",
+  "cooks": "1 cook",
+  "summary": "Double-crust apple pie for the confirmed AEG BE3002420M oven.",
+  "assumptions": [
+    {
+      "icon": "plate",
+      "text": "One round pie",
+      "note": "Assumes a 20-22 cm pie dish. For slab pie, use the two-tray card instead."
+    },
+    {
+      "icon": "person",
+      "text": "One cook",
+      "note": "The timeline has one person lane; fridge and oven work unattended."
+    },
+    {
+      "icon": "oven",
+      "text": "AEG has dial functions",
+      "note": "BE3002420M has no numbered programs. Select Conventional Cooking, the two-bar symbol."
+    },
+    {
+      "icon": "temp",
+      "text": "Manual apple-pie bake",
+      "note": "Manual table supports shelf 1, 180 C, 70-90 min. Use a darker cue than time alone."
+    },
+    {
+      "icon": "apple",
+      "text": "Firm tart apples",
+      "note": "Soft sweet apples collapse faster. Reduce sugar to 80 g if apples are very sweet."
+    }
+  ],
+  "required": {
+    "time": {
+      "active": "1:00",
+      "passive": "2:05",
+      "total": "3 h 05 min"
+    },
+    "tools": [
+      {
+        "name": "AEG Competence BE3002420M",
+        "role": "Bakes one pie",
+        "image": "raw/kitchen-tools/images/aeg-be3002420m-product-representative.jpg",
+        "settings": "Conventional 180 C",
+        "program": "two-bar symbol",
+        "parts": [
+          {
+            "name": "Wire shelf",
+            "icon": "tray"
+          },
+          {
+            "name": "Function chart",
+            "image": "raw/kitchen-tools/images/aeg-be3002420m-functions-p10.png"
+          }
+        ]
+      },
+      {
+        "name": "Kenwood KWL90.244SI",
+        "role": "Rubs butter into flour",
+        "image": "raw/kitchen-tools/images/kenwood-titanium-chef-patissier-xl.jpg",
+        "settings": "Speed 1-2",
+        "parts": [
+          {
+            "name": "5L bowl",
+            "image": "raw/kitchen-tools/images/kenwood-kwl90-5l-stainless-bowl.jpg"
+          },
+          {
+            "name": "K-beater",
+            "image": "raw/kitchen-tools/images/kenwood-kwl90-stainless-k-beater.jpg"
+          },
+          {
+            "name": "Spatula",
+            "image": "raw/kitchen-tools/images/kenwood-kwl90-grey-spatula.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Adam apple slicer",
+        "role": "Cores apples",
+        "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-in-use.jpg",
+        "settings": "12 wedges",
+        "parts": [
+          {
+            "name": "12-wedge cutter",
+            "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-apple-pear.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Refrigerator",
+        "role": "Firms dough",
+        "icon": "fridge",
+        "settings": "Cold chill",
+        "parts": [
+          {
+            "name": "Covered dough",
+            "icon": "dough"
+          }
+        ]
+      }
+    ],
+    "ingredients": [
+      {
+        "amount": "350 g",
+        "item": "plain flour",
+        "notes": "dough",
+        "photo": "raw/food/images/plain-flour.jpg"
+      },
+      {
+        "amount": "225 g",
+        "item": "cold butter",
+        "notes": "cubed",
+        "photo": "raw/food/images/cold-butter.jpg"
+      },
+      {
+        "amount": "35 g",
+        "item": "white sugar",
+        "notes": "dough",
+        "photo": "raw/food/images/white-sugar.jpg"
+      },
+      {
+        "amount": "4 g",
+        "item": "fine salt",
+        "photo": "raw/food/images/fine-salt.jpg"
+      },
+      {
+        "amount": "1",
+        "item": "egg",
+        "notes": "dough",
+        "photo": "raw/food/images/chicken-egg.jpg"
+      },
+      {
+        "amount": "60-90 g",
+        "item": "sour cream",
+        "notes": "bind dough",
+        "photo": "raw/food/images/sour-cream.jpg"
+      },
+      {
+        "amount": "1.1 kg",
+        "item": "apples",
+        "notes": "before coring",
+        "photo": "raw/food/images/apples.jpg"
+      },
+      {
+        "amount": "80-110 g",
+        "item": "brown sugar",
+        "notes": "to taste",
+        "photo": "raw/food/images/brown-sugar.jpg"
+      },
+      {
+        "amount": "20 ml",
+        "item": "lemon juice",
+        "photo": "raw/food/images/lemon-juice.jpg"
+      },
+      {
+        "amount": "6 g",
+        "item": "ground cinnamon",
+        "photo": "raw/food/images/ground-cinnamon.jpg"
+      },
+      {
+        "amount": "25 g",
+        "item": "potato starch",
+        "notes": "binds juice",
+        "photo": "raw/food/images/potato-starch.jpg"
+      },
+      {
+        "amount": "20 g",
+        "item": "breadcrumbs",
+        "notes": "base",
+        "photo": "raw/food/images/bread-crumbs.jpg"
+      },
+      {
+        "amount": "1",
+        "item": "egg",
+        "notes": "wash",
+        "photo": "raw/food/images/egg.jpg"
+      },
+      {
+        "amount": "15 g",
+        "item": "coarse sugar",
+        "notes": "optional",
+        "photo": "raw/food/images/coarse-sugar.jpg"
+      }
+    ],
+    "timeline": [
+      {
+        "time": "0:00",
+        "end": "0:08",
+        "lane": "Cook",
+        "lane_type": "person",
+      "task": "Cube"
+      },
+      {
+        "time": "0:08",
+        "end": "0:20",
+        "lane": "Kenwood KWL90.244SI",
+        "lane_type": "appliance",
+        "task": "Mix dough"
+      },
+      {
+        "time": "0:20",
+        "end": "0:25",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Divide"
+      },
+      {
+        "time": "0:25",
+        "end": "0:55",
+        "lane": "Refrigerator",
+        "lane_type": "appliance",
+        "task": "Chill dough"
+      },
+      {
+        "time": "0:25",
+        "end": "0:50",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Slice apples"
+      },
+      {
+        "time": "0:45",
+        "end": "1:00",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Heat"
+      },
+      {
+        "time": "0:55",
+        "end": "1:15",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Assemble pie"
+      },
+      {
+        "time": "1:15",
+        "end": "2:35",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Bake pie"
+      },
+      {
+        "time": "2:35",
+        "end": "3:05",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Cool pie"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "n": 1,
+      "icon": "knife",
+      "title": "Cube cold butter",
+      "cook": "Cook",
+      "tool": "Worktop",
+      "needs": "Flour, butter, sugar, salt",
+      "chips": [
+        {
+          "icon": "clock",
+          "text": "8 min"
+        },
+        {
+          "icon": "chill",
+          "text": "keep cold"
+        }
+      ],
+      "do": "Cube butter, weigh dry ingredients, keep everything cold until mixing.",
+      "done": "Butter is cold cubes.",
+      "photos": [
+        {
+          "image": "raw/food/images/cold-butter.jpg",
+          "caption": "cold butter"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "icon": "mixer",
+      "title": "Mix shortcrust",
+      "cook": "Cook",
+      "tool": "Kenwood KWL90.244SI",
+      "accessory": "K-beater",
+      "needs": "Dry mix, butter, egg, sour cream",
+      "chips": [
+        {
+          "icon": "speed",
+          "text": "speed 1-2"
+        },
+        {
+          "icon": "clock",
+          "text": "10-12 min"
+        }
+      ],
+      "do": "Mix dry, add butter to sandy, add egg and cream, stop immediately at clumps.",
+      "done": "Dough clumps when squeezed."
+    },
+    {
+      "n": 3,
+      "icon": "chill",
+      "title": "Chill dough",
+      "cook": "Cook",
+      "tool": "Refrigerator",
+      "accessory": "Covered dough",
+      "needs": "Two dough disks, cover",
+      "chips": [
+        {
+          "icon": "chill",
+          "text": "30 min"
+        },
+        {
+          "icon": "weight",
+          "text": "larger base"
+        }
+      ],
+      "do": "Divide into larger base disk and smaller top disk, cover, chill.",
+      "done": "Dough rolls without smearing."
+    },
+    {
+      "n": 4,
+      "icon": "apple",
+      "title": "Slice apples",
+      "cook": "Cook",
+      "tool": "Adam apple slicer",
+      "accessory": "12-wedge cutter",
+      "needs": "Apples, sugar, lemon, cinnamon, starch",
+      "chips": [
+        {
+          "icon": "cut",
+          "text": "12 wedges"
+        },
+        {
+          "icon": "cut",
+          "text": "3-5 mm"
+        },
+        {
+          "icon": "clock",
+          "text": "20 min"
+        }
+      ],
+      "do": "Core apples with slicer, knife-slice wedges thin, toss with sugar, lemon, cinnamon, and starch.",
+      "done": "Slices are evenly coated."
+    },
+    {
+      "n": 5,
+      "icon": "oven",
+      "title": "Preheat oven",
+      "cook": "Cook",
+      "tool": "AEG Competence BE3002420M",
+      "accessory": "Wire shelf",
+      "needs": "Oven, wire shelf",
+      "chips": [
+        {
+          "icon": "oven",
+          "text": "two-bar symbol"
+        },
+        {
+          "icon": "temp",
+          "text": "180 C"
+        },
+        {
+          "icon": "clock",
+          "text": "15 min"
+        },
+        {
+          "icon": "tray",
+          "text": "shelf 1"
+        }
+      ],
+      "do": "Set Conventional Cooking, temperature 180 C, and place wire shelf on shelf position 1.",
+      "done": "Oven is fully preheated.",
+      "photos": [
+        {
+          "image": "raw/kitchen-tools/images/aeg-be3002420m-functions-p10.png",
+          "caption": "function chart"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "icon": "layers",
+      "title": "Assemble pie",
+      "cook": "Cook",
+      "tool": "Worktop",
+      "needs": "Dough, filling, breadcrumbs, egg wash",
+      "chips": [
+        {
+          "icon": "clock",
+          "text": "15-20 min"
+        },
+        {
+          "icon": "layers",
+          "text": "seal vents"
+        }
+      ],
+      "do": "Roll base, add crumbs and apples, cover with top crust, seal, vent, brush egg wash.",
+      "done": "Top is sealed and vented.",
+      "diagram": "recipes/assets/apple-pie-aeg-card-layering.svg"
+    },
+    {
+      "n": 7,
+      "icon": "oven",
+      "title": "Bake pie",
+      "cook": "Cook",
+      "tool": "AEG Competence BE3002420M",
+      "accessory": "Wire shelf",
+      "needs": "Assembled pie",
+      "chips": [
+        {
+          "icon": "oven",
+          "text": "Conventional"
+        },
+        {
+          "icon": "temp",
+          "text": "180 C"
+        },
+        {
+          "icon": "clock",
+          "text": "70-90 min"
+        },
+        {
+          "icon": "tray",
+          "text": "shelf 1"
+        }
+      ],
+      "do": "Bake on shelf 1. Shield rim with foil only if browning before juices bubble.",
+      "done": "Juices bubble through vents."
+    },
+    {
+      "n": 8,
+      "icon": "wait",
+      "title": "Cool before slicing",
+      "cook": "Cook",
+      "tool": "Worktop",
+      "needs": "Baked pie, knife, server",
+      "chips": [
+        {
+          "icon": "wait",
+          "text": "30 min"
+        },
+        {
+          "icon": "check",
+          "text": "set juices"
+        }
+      ],
+      "do": "Cool on a heatproof surface before cutting; wait 60 minutes for cleaner slices.",
+      "done": "Filling holds in slices."
+    }
+  ],
+  "sync_points": [
+    {
+      "name": "Oven-ready",
+      "when": "1:15",
+      "criteria": "Pie sealed, vented, egg-washed; oven preheated to 180 C."
+    },
+    {
+      "name": "Bake check",
+      "when": "2:25",
+      "criteria": "Continue if juices are not bubbling through vents."
+    }
+  ],
+  "visuals": [
+    {
+      "title": "Pie Build Order",
+      "image": "recipes/assets/apple-pie-aeg-card-layering.svg",
+      "caption": "Build base, filling, top crust, then bake until bubbling."
+    }
+  ],
+  "food_safety": [
+    "Wash hands and brush after raw egg.",
+    "Refrigerate leftovers after same-day serving.",
+    "Reheat slices until hot throughout."
+  ]
+}

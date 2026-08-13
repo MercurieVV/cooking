@@ -60,3 +60,18 @@
 - Disposition: No material
 
 ## [2026-08-13] lint | 0 issues found, 7 auto-fixed
+
+## [2026-08-13] ingest | AEG Competence BE3002420M
+- Disposition: Update
+- Raw: raw/kitchen-tools/2026-08-13-aeg-be3002420m-confirmation.md
+- Raw: raw/kitchen-tools/manuals/aeg-competence-be3002420m-source-extract.md
+- Raw: raw/kitchen-tools/ACQUISITION-LOG.md
+- Updated: raw/kitchen-tools/kitchen-appliance-inventory.md; wiki/kitchen-tools/kitchen-appliance-inventory.md; wiki/index.md; raw/kitchen-tools/images/README.md
+- Notes: Superseded by the correction below; the real local manual and installation PDFs were later identified and used.
+
+## [2026-08-13] correction | AEG Competence BE3002420M local manual
+- Disposition: Update
+- Raw: raw/kitchen-tools/manuals/AEG-BE3002420-manual.pdf
+- Raw: raw/kitchen-tools/manuals/AEG-BE3002420-installation.pdf
+- Updated: raw/kitchen-tools/kitchen-appliance-inventory.md; raw/kitchen-tools/manuals/aeg-competence-be3002420m-source-extract.md; raw/kitchen-tools/2026-08-13-aeg-be3002420m-confirmation.md; raw/kitchen-tools/images/README.md; wiki/kitchen-tools/kitchen-appliance-inventory.md
+- Notes: replaced earlier manual-missing status with the real local PDF manual, generated function-page images, and cited manual pages for functions, accessories, controls, and technical data.

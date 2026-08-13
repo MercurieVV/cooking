@@ -12,7 +12,7 @@
 | 2 | Electric pressure multicooker | Instant Pot | Pro Plus | Very high |
 | 3–4 | Air fryer | Tefal | ActiFry Genius XL 2in1 | Very high |
 | 4, behind ActiFry | Contact grill / griddle | uncertain | Model not readable | Low |
-| 5 | Built-in electric oven | AEG | Competence series | High series, exact model unknown |
+| 5 | Built-in electric oven | AEG | Competence BE3002420M | User-stated exact model; PNC found |
 | 6 | Microwave / smart oven | Samsung | Smart Oven — likely convection/microwave combination | High family, exact model unknown |
 | 7 | Hot-water dispenser | Caso Design | Exact model not visible; appears to be a HW-series Turbo hot-water dispenser | High brand, medium model |
 | 8–10 | Food processor parts/accessories | likely associated with one of the photographed kitchen machines | Exact appliance/model cannot be established from these photos | Low |
@@ -37,6 +37,7 @@
 - probes: amazon.de/-/en/dp/B093PNMMJX?ref=fed_asin_title
 - add via skill: https://www.amazon.de/-/en/Melissa-16220008-Electric-Peeler/dp/B0CZ9FC5RN — Melissa 16220008 electric peeler
 - add via skill: https://www.amazon.de/-/en/Professional-Stainless-Kitchen-Preparation-Versatile/dp/B0D1V55NWQ — Adam stainless steel apple slicer / apple divider
+- add via skill: AEG Competence BE3002420M
 
 ## Fetched Amazon.de product data
 
@@ -92,6 +93,48 @@ Title: Sage the Smart Grill Pro, SKU SGR840BSS4EEU1 (BGR840/SGR840 family)
 - Heating/control: Element IQ heating control; LCD interface; integrated temperature probe.
 - Smart settings: beef, lamb, pork, poultry, fish, with doneness/rest guidance.
 - Cooking formats: contact grill; opens flat into BBQ mode; adjustable plate tilt; removable plates.
+
+### AEG built-in electric oven - Competence BE3002420M / user-stated exact model
+
+Title: AEG Competence BE3002420M built-in electric oven
+- Status: User-stated exact model; public AEG/Electrolux spares pages confirm model BE3002420M with PNC 94418586600. Ownership should still be checked against the rating plate if accessible.
+- User input: `.codex/skills/add-kitchen-appliance AEG Competence BE3002420M`
+- Identity: brand AEG / AEG-Electrolux; model BE3002420M; PNC 94418586600; spare-parts identity AEG-Electrolux 944 185 866; type built-in electric oven.
+- Manual: manuals/AEG-BE3002420-manual.pdf
+- Installation manual: manuals/AEG-BE3002420-installation.pdf
+- Source extracts: manuals/aeg-competence-be3002420m-source-extract.md
+- Product photo: images/aeg-be3002420m-product-representative.jpg (representative same-family BE3003021M image, not exact-model)
+- Control-panel photo: images/aeg-be3002420m-controls-representative.jpg (representative same-family BE3013421M image, not exact-model)
+- Function-symbol photo: images/aeg-be3002420m-functions-p9.png; images/aeg-be3002420m-functions-p10.png (manual pp. 9-10)
+- Installation drawing: images/aeg-be3002420m-installation-p1.png (installation p. 1)
+- Accessory photos: NOT ACQUIRED — manual p. 8 identifies included wire shelf, baking tray, and core temperature sensor, but exact accessory photos were not found.
+- Electrical: 220-240 V, 50 Hz (manual p. 26); exact total connected load/wattage is NOT ACQUIRED. Installation requires all-pole isolation from mains with at least 3 mm contact separation (installation p. 1).
+- Capacity/dimensions: 5 shelf positions (manual p. 7); installation drawing shows appliance body 594 x 594 x 567 mm, built-in depth 550 mm minimum, cabinet width 560 mm minimum, and 600 mm cabinet height (installation p. 1). Usable capacity is NOT ACQUIRED from the manual text.
+- Operating ranges: core temperature sensor 30-99°C (manual p. 11); minute minder up to 2h30 (manual p. 10); representative same-family control image shows temperature dial 50-275°C, but the exact manual text does not print the full oven-temperature dial range.
+- Controls/connectivity: rotary oven-function selector, rotary temperature selector, electronic programmer/clock with minute minder, core-temperature sensor indicator, time display, plus button and minus button (manual pp. 7, 10); no connectivity.
+- Cleaning/safety/limits: domestic food-preparation use only; do not use as work/deposit surface; do not put objects directly on the oven floor or cover it with aluminium foil; do not put hot water directly into the appliance.
+- Notes/uncertainty: exact product/control photos, total connected load/wattage, and usable oven capacity are still needed.
+
+| # | Function / program | Selector | Temp / setting | Use for | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Light | light symbol, left dial | no heat | illuminate oven interior | manual p. 9 |
+| 2 | True Fan Cooking | true fan symbol, left dial | set oven temperature; reduce 20-40°C vs Conventional | up to 3 oven levels at once; drying food | manual p. 9; baking tables pp. 13-16; drying pp. 21-22 |
+| 3 | Pizza Setting | pizza symbol, left dial | set oven temperature; reduce 20-40°C vs Conventional | one-level baking with intensive browning and crisp base | manual p. 10; pizza table pp. 20-21 |
+| 4 | Conventional Cooking | top/bottom heat symbol, left dial | set oven temperature | baking and roasting on one level | manual p. 10; baking/roasting tables pp. 13-19 |
+| 5 | Bottom Heat | bottom heat symbol, left dial | set oven temperature | cakes with crispy/crusty bases; preserving food | manual p. 10 |
+| 6 | Defrost | defrost symbol, left dial | no heating temperature specified | defrost frozen food | manual p. 10; defrosting table p. 21 |
+| 7 | Grilling | grill symbol, left dial | maximum temperature setting for grilling | flat food in middle of grill; toast | manual p. 10; grilling notes p. 19 |
+| 8 | Fast Grilling | double/large grill symbol, left dial | maximum temperature setting for grilling | flat food in large quantities; toast | manual p. 10; fast grilling table p. 20 |
+| 9 | Turbo Grilling | fan + grill symbol, left dial | set oven temperature | larger meat/poultry joints on one level; browning gratins | manual p. 10; turbo grilling tables pp. 17-19 |
+
+| Accessory | Model/part no. | Photo | Used for |
+| --- | --- | --- | --- |
+| Wire shelf | — |  | cookware, cake tins, roasts |
+| Baking tray | — |  | cakes and biscuits |
+| Core Temperature Sensor | — |  | measuring how far food is cooked; set 30-99°C |
+| Compatible wire shelf | 140066595012 listed by Ransom Spares as 426 x 357.4 mm compatible shelf |  | replacement/extra shelf |
+| Compatible enamelled grill pan / tray | 3870288200 listed by AEG UK as grey/blue enamelled grill pan 426 x 360 x 42 mm |  | roasting, grilling, catching drips |
+| Compatible pizza stone kit | A9OZPS1 listed by AEG UK |  | crisp-base pizza/bread baking |
 
 ### Samsung Smart Oven / combi microwave — exact model unconfirmed
 

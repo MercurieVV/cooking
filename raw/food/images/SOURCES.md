@@ -18,3 +18,4 @@
 - `coarse-sugar.jpg` — query `sugar` → [Sugar](https://en.wikipedia.org/wiki/Sugar) → https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Sucre_blanc_cassonade_complet_rapadura.jpg/330px-Sucre_blanc_cassonade_complet_rapadura.jpg
 - `bread-crumbs.jpg` — query `bread crumbs` → [Breadcrumbs](https://en.wikipedia.org/wiki/Breadcrumbs) → https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Breadcrumb.jpg/330px-Breadcrumb.jpg
 - `chicken-egg.jpg` — query `chicken egg` → [Eggs as food](https://en.wikipedia.org/wiki/Eggs_as_food) → https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Huevo_frito.jpg/330px-Huevo_frito.jpg
+- `breadcrumbs.jpg` — query `breadcrumbs` → [Breadcrumbs](https://en.wikipedia.org/wiki/Breadcrumbs) → https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Breadcrumb.jpg/330px-Breadcrumb.jpg

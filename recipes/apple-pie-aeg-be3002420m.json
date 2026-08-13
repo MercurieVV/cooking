@@ -1,0 +1,209 @@
+{
+  "title": "Apple Pie - AEG BE3002420M",
+  "output": "recipes/apple-pie-aeg-be3002420m.pdf",
+  "servings": "8 generous slices",
+  "summary": "Classic double-crust apple pie adapted to the confirmed AEG Competence BE3002420M manual: Conventional Cooking, shelf position 1, 180 C, 70-90 min. The Kenwood KWL90.244SI handles the shortcrust dough, and the Adam apple slicer speeds up coring before final thin slicing.",
+  "assumptions": [
+    "One 20-22 cm pie dish or similar oven-safe dish is used.",
+    "One cook is assumed.",
+    "Firm tart-sweet apples are used; reduce filling sugar if the apples are very sweet.",
+    "The AEG oven has no numbered programs for this recipe; use the named dial function Conventional Cooking.",
+    "The manual text confirms voltage and functions, but not total wattage or a printed full oven temperature range."
+  ],
+  "total_time": "2 hr 35 min",
+  "active_time": "50-60 min",
+  "passive_time": "95 min chilling, baking, cooling",
+  "difficulty": "Medium",
+  "appliances": [
+    {
+      "name": "AEG Competence BE3002420M",
+      "role": "Main bake: one pie on the lower shelf using the manual's apple-pie guidance.",
+      "image": "raw/kitchen-tools/images/aeg-be3002420m-product-representative.jpg",
+      "settings": "Conventional Cooking, shelf position 1, 180 C, 70-90 min",
+      "accessory": "Wire shelf; pie dish"
+    },
+    {
+      "name": "AEG BE3002420M function chart",
+      "role": "Shows the real oven-function symbols so the correct dial setting can be selected.",
+      "image": "raw/kitchen-tools/images/aeg-be3002420m-functions-p10.png",
+      "settings": "Use the Conventional Cooking row: two horizontal bars",
+      "accessory": "Function selector dial"
+    },
+    {
+      "name": "Kenwood Titanium Chef Patissier XL KWL90.244SI",
+      "role": "Quickly rubs cold butter into flour and brings shortcrust dough together.",
+      "image": "raw/kitchen-tools/images/kenwood-titanium-chef-patissier-xl.jpg",
+      "settings": "Low speed for butter; speed 1-2 only until dough clumps",
+      "accessory": "5 L stainless bowl or 7 L EasyWarm bowl; stainless K-beater"
+    },
+    {
+      "name": "Adam B0D1V55NWQ apple slicer",
+      "role": "Cores apples into 12 wedges before knife-slicing them thinner for even filling.",
+      "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-in-use.jpg",
+      "settings": "Manual press tool, 12 wedges",
+      "accessory": "Side handles"
+    }
+  ],
+  "ingredients": [
+    { "amount": "350 g", "item": "plain wheat flour", "notes": "plus extra for rolling" },
+    { "amount": "225 g", "item": "cold unsalted butter", "notes": "1-2 cm cubes" },
+    { "amount": "35 g", "item": "white sugar", "notes": "for dough" },
+    { "amount": "4 g", "item": "fine salt", "notes": "about 3/4 tsp" },
+    { "amount": "1", "item": "egg", "notes": "for dough" },
+    { "amount": "60-90 g", "item": "sour cream or cold water", "notes": "add only enough to bind" },
+    { "amount": "1.1 kg", "item": "apples", "notes": "before peeling/coring" },
+    { "amount": "80-110 g", "item": "brown sugar", "notes": "to taste" },
+    { "amount": "20 ml", "item": "lemon juice", "notes": "balances sweetness" },
+    { "amount": "6 g", "item": "ground cinnamon", "notes": "about 2 tsp" },
+    { "amount": "25 g", "item": "potato starch or corn starch", "notes": "binds juices" },
+    { "amount": "20 g", "item": "breadcrumbs or semolina", "notes": "optional, under filling" },
+    { "amount": "1", "item": "egg", "notes": "beaten for egg wash" },
+    { "amount": "15 g", "item": "coarse sugar", "notes": "optional topping" }
+  ],
+  "timeline": [
+    { "time": "00:00", "end": "00:08", "lane": "Cook", "lane_type": "person", "task": "Weigh ingredients" },
+    { "time": "00:08", "end": "00:20", "lane": "Kenwood KWL90.244SI", "lane_type": "appliance", "task": "Mix shortcrust" },
+    { "time": "00:08", "end": "00:20", "lane": "Cook", "lane_type": "person", "task": "Load mixer, finish dough" },
+    { "time": "00:20", "end": "00:50", "lane": "Refrigerator", "lane_type": "appliance", "task": "Chill dough" },
+    { "time": "00:22", "end": "00:42", "lane": "Cook", "lane_type": "person", "task": "Core, slice, season apples" },
+    { "time": "00:42", "end": "00:55", "lane": "Cook", "lane_type": "person", "task": "Roll base and top" },
+    { "time": "00:45", "end": "01:00", "lane": "AEG BE3002420M", "lane_type": "appliance", "task": "Preheat Conventional 180 C" },
+    { "time": "00:55", "end": "01:05", "lane": "Cook", "lane_type": "person", "task": "Fill, seal, vent, wash" },
+    { "time": "01:05", "end": "02:25", "lane": "AEG BE3002420M", "lane_type": "appliance", "task": "Bake shelf 1" },
+    { "time": "02:25", "end": "02:55", "lane": "Cook", "lane_type": "person", "task": "Cool before slicing" }
+  ],
+  "visuals": [
+    {
+      "title": "Pie Layering",
+      "image": "recipes/assets/apple-pie-aeg-layering.svg",
+      "caption": "Layer order for a clean slice: dish, bottom crust, apples, top crust, vents."
+    },
+    {
+      "title": "AEG Dial Reference",
+      "image": "raw/kitchen-tools/images/aeg-be3002420m-functions-p10.png",
+      "caption": "Use Conventional Cooking for this single pie: the symbol with two horizontal bars."
+    }
+  ],
+  "steps": [
+    {
+      "number": 1,
+      "cook": "Cook",
+      "title": "Prepare cold dough ingredients",
+      "needs": "Flour, cold butter, dough sugar, salt, egg, sour cream or cold water",
+      "image": "raw/food/images/cold-butter.jpg",
+      "appliance": "Worktop",
+      "accessory": "Knife, scale, bowl",
+      "settings": "Keep butter cold",
+      "timing": "8 min",
+      "instruction": "Cube the butter. Weigh flour, sugar, and salt. Keep butter cold until it goes into the mixer.",
+      "done": "Butter is cold and cubed; dry ingredients are weighed."
+    },
+    {
+      "number": 2,
+      "cook": "Cook",
+      "title": "Mix shortcrust dough",
+      "needs": "Dry ingredients, cold butter, egg, sour cream or cold water",
+      "image": "raw/kitchen-tools/images/kenwood-titanium-chef-patissier-xl.jpg",
+      "appliance": "Kenwood Titanium Chef Patissier XL KWL90.244SI",
+      "accessory": "5 L stainless bowl or 7 L EasyWarm bowl; stainless K-beater",
+      "settings": "Low speed until sandy; speed 1-2 only until clumps form",
+      "timing": "10-12 min",
+      "instruction": "Mix flour, sugar, and salt. Add butter and mix until pea-sized. Add egg, then sour cream or cold water a spoonful at a time. Stop as soon as the dough clumps.",
+      "done": "Dough holds together when squeezed but is not smooth or warm."
+    },
+    {
+      "number": 3,
+      "cook": "Cook",
+      "title": "Divide and chill",
+      "needs": "Dough, wrap or covered container",
+      "image": "raw/kitchen-tools/images/kenwood-kwl90-5l-stainless-bowl.jpg",
+      "appliance": "Refrigerator",
+      "accessory": "Covered dough portions",
+      "settings": "Cold storage",
+      "timing": "30 min minimum",
+      "instruction": "Divide dough into one larger base piece and one smaller top piece. Flatten into disks, cover, and chill.",
+      "done": "Dough is firm enough to roll without smearing butter."
+    },
+    {
+      "number": 4,
+      "cook": "Cook",
+      "title": "Prepare apple filling",
+      "needs": "Apples, sugar, lemon juice, cinnamon, starch",
+      "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-in-use.jpg",
+      "appliance": "Worktop",
+      "accessory": "Adam apple slicer, knife, large bowl",
+      "settings": "Manual slicer: 12 wedges, then knife-slice to 3-5 mm",
+      "timing": "20 min",
+      "instruction": "Peel apples if desired. Core with the apple slicer, then cut wedges into thin slices. Toss with brown sugar, lemon juice, cinnamon, and starch.",
+      "done": "Apple slices are evenly coated and just starting to release juice."
+    },
+    {
+      "number": 5,
+      "cook": "Cook",
+      "title": "Preheat AEG oven",
+      "needs": "AEG oven, wire shelf",
+      "image": "raw/kitchen-tools/images/aeg-be3002420m-functions-p10.png",
+      "appliance": "AEG Competence BE3002420M",
+      "accessory": "Wire shelf on shelf position 1",
+      "settings": "Conventional Cooking, 180 C",
+      "timing": "15 min preheat",
+      "instruction": "Set the function dial to Conventional Cooking, the symbol with two horizontal bars. Set 180 C. Put the wire shelf on shelf position 1.",
+      "done": "Oven is fully preheated before the pie goes in."
+    },
+    {
+      "number": 6,
+      "cook": "Cook",
+      "title": "Assemble pie",
+      "needs": "Chilled dough, apple filling, breadcrumbs/semolina, egg wash",
+      "diagram": "recipes/assets/apple-pie-aeg-layering.svg",
+      "appliance": "Worktop",
+      "accessory": "Pie dish, rolling pin, pastry brush",
+      "settings": "Roll base slightly larger than dish; cut vents in top",
+      "timing": "15-20 min",
+      "instruction": "Roll the base and fit it into the dish. Sprinkle breadcrumbs or semolina if using. Add apples. Roll the top, cover, seal edges, cut vents, brush with beaten egg, and add coarse sugar if using.",
+      "done": "Top is sealed and vented; no large tears in the crust."
+    },
+    {
+      "number": 7,
+      "cook": "Cook",
+      "title": "Bake",
+      "needs": "Assembled pie",
+      "image": "raw/kitchen-tools/images/aeg-be3002420m-product-representative.jpg",
+      "appliance": "AEG Competence BE3002420M",
+      "accessory": "Wire shelf, shelf position 1",
+      "settings": "Conventional Cooking, 180 C",
+      "timing": "70-90 min",
+      "instruction": "Bake on shelf position 1. Check at 70 min. If the rim browns too early, shield the edge loosely with foil while the centre finishes.",
+      "done": "Crust is deep golden and apple juices bubble through the vents."
+    },
+    {
+      "number": 8,
+      "cook": "Cook",
+      "title": "Cool and slice",
+      "needs": "Baked pie, cooling rack or heatproof counter",
+      "appliance": "Counter",
+      "accessory": "Knife, pie server",
+      "settings": "Room temperature",
+      "timing": "30 min minimum; 60 min cleaner slices",
+      "instruction": "Cool before cutting so the starch can set the apple juices.",
+      "done": "Slices lift without the filling flooding out."
+    }
+  ],
+  "sync_points": [
+    {
+      "name": "Oven-ready",
+      "when": "About 1 hr after start",
+      "criteria": "Dough is chilled and rolled, filling is mixed, pie is sealed and vented, and the AEG oven is at 180 C Conventional Cooking."
+    },
+    {
+      "name": "Bake check",
+      "when": "70 min into baking",
+      "criteria": "If juices are not bubbling, continue baking in 10 min checks up to 90 min."
+    }
+  ],
+  "food_safety": [
+    "Wash hands, tools, and work surface after handling raw egg.",
+    "Cool leftovers, then refrigerate if keeping longer than the day of baking.",
+    "Reheat slices until hot throughout if serving later."
+  ]
+}

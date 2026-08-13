@@ -421,7 +421,7 @@ def render(spec_path: Path) -> Path:
                 str(css_path),
                 "--resource-path=" + ":".join(resource_paths),
                 "--metadata",
-                f"title={s(spec.get('title', 'Recipe'))}",
+                f"pagetitle={s(spec.get('title', 'Recipe'))}",
             ],
             check=True,
         )

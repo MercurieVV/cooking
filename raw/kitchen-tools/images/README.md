@@ -53,6 +53,11 @@ Downloaded 2026-08-13. Product photos pulled from retailer/manufacturer listings
 - `kenwood-cooking-chef-generic.jpg` — Kenwood Chef KVC3100-style stand mixer
 - `sage-pro-contact-grill-generic.png` — Sage BBQ & Press SGR700 (official Sage product image)
 - `aeg-competence-oven-generic.jpg` — generic AEG built-in oven image retained after owned oven was user-confirmed as AEG Competence BE3002420M; not an exact-model photo
+- `aeg-be3002420m-product-representative.jpg` — AEG Competence BE3002420M representative same-family product image from Appliances Direct BE3003021M listing; not an exact-model photo
+- `aeg-be3002420m-controls-representative.jpg` — AEG Competence BE3002420M representative same-family control-panel image from Hausdorf BE3013421M listing; not an exact-model photo
+- `aeg-be3002420m-functions-p9.png` — AEG BE3002420 manual page 9 image with start of oven-functions table
+- `aeg-be3002420m-functions-p10.png` — AEG BE3002420 manual page 10 image with remaining oven-functions table and electronic programmer
+- `aeg-be3002420m-installation-p1.png` — AEG BE3002420 installation page 1 image with installation dimensions and installer safety text
 - `samsung-smart-oven-generic.jpg` — Samsung EG combi microwave with grill/hot air
 - `caso-hw660-hot-water-dispenser-generic.jpg` — Caso HW 660 Turbo (official Caso product image)
 - `moulinex-breadmaker-generic.jpg` — generic Moulinex bread maker (not OW6118-specific; no photo of that exact model found)
