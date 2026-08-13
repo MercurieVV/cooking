@@ -47,19 +47,21 @@
     {"amount": "30 g", "item": "coarse sugar", "notes": "Optional topping"}
   ],
   "timeline": [
-    {"time": "00:00", "cook": "Cook", "task": "Cube butter, measure dough ingredients, line two oven trays with baking paper."},
-    {"time": "00:10", "cook": "Cook", "task": "Mix dough in Kenwood, divide into four portions, chill."},
-    {"time": "00:25", "cook": "Cook", "task": "Peel, core, and slice apples; toss filling."},
-    {"time": "00:55", "cook": "Cook", "task": "Start AEG oven preheat: Fan/Convection 180 C."},
-    {"time": "01:00", "cook": "Cook", "task": "Roll bottoms, fill both trays, roll tops, vent and egg-wash."},
-    {"time": "01:25", "cook": "Cook", "task": "Bake both trays. Swap/rotate halfway if browning differs."},
-    {"time": "02:05", "cook": "Cook", "task": "Cool until sliceable; dust or portion."}
+    {"time": "00:00", "end": "00:10", "lane": "Cook", "lane_type": "person", "task": "Measure ingredients, line trays"},
+    {"time": "00:10", "end": "00:22", "lane": "Cook", "lane_type": "person", "task": "Load Kenwood, divide dough"},
+    {"time": "00:10", "end": "00:22", "lane": "Kenwood KWL90.244SI", "lane_type": "appliance", "task": "Mix dough, low to speed 1-2"},
+    {"time": "00:22", "end": "00:52", "lane": "Refrigerator", "lane_type": "appliance", "task": "Chill dough"},
+    {"time": "00:25", "end": "00:55", "lane": "Cook", "lane_type": "person", "task": "Slice apples, mix filling"},
+    {"time": "00:55", "end": "01:15", "lane": "AEG oven", "lane_type": "appliance", "task": "Preheat fan/convection 180 C"},
+    {"time": "01:00", "end": "01:25", "lane": "Cook", "lane_type": "person", "task": "Roll, fill, cover, vent"},
+    {"time": "01:25", "end": "02:05", "lane": "AEG oven", "lane_type": "appliance", "task": "Bake two trays"},
+    {"time": "02:05", "end": "02:35", "lane": "Cook", "lane_type": "person", "task": "Cool, slice when set"}
   ],
   "visuals": [
     {
       "title": "Tray Layering",
       "image": "recipes/assets/apple-pie-tray-layering.svg",
-      "caption": "Build both trays the same way: base dough, crumbs, apple filling, top dough with vents."
+      "caption": "Cross-section: bottom dough, crumbs/semolina, apple filling, top dough with steam vents."
     }
   ],
   "steps": [

@@ -45,3 +45,11 @@
 - Raw: raw/kitchen-tools/kitchen-appliance-inventory.md
 - Raw: raw/kitchen-tools/manuals/adam-b0d1v55nwq-stainless-apple-slicer-source-extract.md
 - Updated: wiki/kitchen-tools/kitchen-appliance-inventory.md; raw/kitchen-tools/images/README.md
+
+## [2026-08-13] lint | 5 issues found, 0 auto-fixed
+
+## [2026-08-13] ingest | AEG Competence BE3002420M
+- Disposition: Update
+- Raw: raw/kitchen-tools/2026-08-13-aeg-be3002420m-confirmation.md
+- Raw: raw/kitchen-tools/manuals/aeg-competence-be3002420m-source-extract.md
+- Updated: raw/kitchen-tools/kitchen-appliance-inventory.md; raw/kitchen-tools/aeg-oven-details.md; wiki/kitchen-tools/kitchen-appliance-inventory.md; wiki/index.md; raw/kitchen-tools/images/README.md

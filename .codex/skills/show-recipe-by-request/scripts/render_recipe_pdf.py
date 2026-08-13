@@ -26,32 +26,122 @@ def md_table(headers: list[str], rows: list[list[str]]) -> str:
     return "\n".join(out)
 
 
+def parse_minutes(value) -> int | None:
+    text = s(value).strip().lower()
+    if not text:
+        return None
+    if ":" in text:
+        hour, minute = text.split(":", 1)
+        if hour.strip().isdigit() and minute.strip().isdigit():
+            return int(hour) * 60 + int(minute)
+    digits = "".join(ch if ch.isdigit() else " " for ch in text).split()
+    if not digits:
+        return None
+    amount = int(digits[0])
+    if "hr" in text or "hour" in text:
+        return amount * 60
+    return amount
+
+
+def fmt_minutes(minutes: int) -> str:
+    return f"{minutes // 60:02d}:{minutes % 60:02d}"
+
+
 def write_timeline_svg(items: list[dict], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    row_height = 62
-    top = 38
-    height = max(120, top + row_height * len(items) + 22)
-    width = 820
-    line_x = 132
+    normalized: list[dict] = []
+    for item in items:
+        start = parse_minutes(item.get("time") or item.get("start"))
+        if start is None:
+            continue
+        end = parse_minutes(item.get("end"))
+        if end is None:
+            duration = parse_minutes(item.get("duration"))
+            end = start + (duration or 18)
+        if end <= start:
+            end = start + 8
+        lane = s(item.get("lane") or item.get("cook") or item.get("appliance") or "Cook")
+        lane_type = s(item.get("lane_type") or ("person" if item.get("cook") else "appliance"))
+        normalized.append({**item, "start_min": start, "end_min": end, "lane": lane, "lane_type": lane_type})
+
+    if not normalized:
+        path.write_text(
+            '<svg xmlns="http://www.w3.org/2000/svg" width="820" height="90" viewBox="0 0 820 90"><text x="20" y="45">Timeline unavailable</text></svg>\n',
+            encoding="utf-8",
+        )
+        return
+
+    lanes: list[tuple[str, str]] = []
+    for lane_type in ("person", "appliance"):
+        for item in normalized:
+            lane_key = (item["lane_type"], item["lane"])
+            if lane_key[0] == lane_type and lane_key not in lanes:
+                lanes.append(lane_key)
+    for item in normalized:
+        lane_key = (item["lane_type"], item["lane"])
+        if lane_key not in lanes:
+            lanes.append(lane_key)
+
+    start_min = min(item["start_min"] for item in normalized)
+    end_min = max(item["end_min"] for item in normalized)
+    start_min = (start_min // 15) * 15
+    end_min = ((end_min + 14) // 15) * 15
+    if end_min <= start_min:
+        end_min = start_min + 30
+
+    width = 1120
+    left = 190
+    right = 40
+    top = 62
+    row_height = 68
+    axis_width = width - left - right
+    height = top + row_height * len(lanes) + 48
+
+    def x_at(minutes: int) -> float:
+        return left + ((minutes - start_min) / (end_min - start_min)) * axis_width
+
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Recipe timeline">',
         '<rect width="100%" height="100%" fill="#ffffff"/>',
-        f'<line x1="{line_x}" y1="{top}" x2="{line_x}" y2="{height - 28}" stroke="#477b84" stroke-width="4"/>',
+        '<text x="20" y="30" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1f3a44">Timeline</text>',
     ]
-    for idx, item in enumerate(items):
-        y = top + idx * row_height
-        time = escape(s(item.get("time", "")))
-        cook = escape(s(item.get("cook", "")))
-        task_lines = textwrap.wrap(s(item.get("task", "")), width=66)[:2]
+
+    tick = start_min
+    while tick <= end_min:
+        x = x_at(tick)
         parts += [
-            f'<text x="104" y="{y + 8}" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#1f3a44">{time}</text>',
-            f'<circle cx="{line_x}" cy="{y + 2}" r="8" fill="#477b84" stroke="#dfeaec" stroke-width="3"/>',
-            f'<rect x="154" y="{y - 20}" width="612" height="48" rx="6" fill="#f7fafb" stroke="#b8c8cc"/>',
-            f'<text x="170" y="{y - 2}" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#455a64">{cook}</text>',
+            f'<line x1="{x:.1f}" y1="42" x2="{x:.1f}" y2="{height - 28}" stroke="#dfeaec" stroke-width="1"/>',
+            f'<text x="{x:.1f}" y="55" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#455a64">{fmt_minutes(tick)}</text>',
+        ]
+        tick += 30
+
+    for row_idx, (lane_type, lane) in enumerate(lanes):
+        y = top + row_idx * row_height
+        fill = "#f7fafb" if row_idx % 2 == 0 else "#ffffff"
+        label = escape(lane)
+        badge = "Person" if lane_type == "person" else "Appliance"
+        parts += [
+            f'<rect x="0" y="{y - 22}" width="{width}" height="{row_height}" fill="{fill}"/>',
+            f'<text x="18" y="{y - 2}" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#455a64">{badge}</text>',
+            f'<text x="18" y="{y + 17}" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1f3a44">{label}</text>',
+            f'<line x1="{left}" y1="{y + 31}" x2="{width - right}" y2="{y + 31}" stroke="#d5e1e4" stroke-width="1"/>',
+        ]
+
+    for item in normalized:
+        lane_idx = lanes.index((item["lane_type"], item["lane"]))
+        y = top + lane_idx * row_height
+        x = x_at(item["start_min"])
+        w = max(58, x_at(item["end_min"]) - x)
+        color = "#477b84" if item["lane_type"] == "person" else "#8a6d3b"
+        task_lines = textwrap.wrap(s(item.get("task", "")), width=max(14, int(w / 7)))[:3]
+        time_range = escape(f"{fmt_minutes(item['start_min'])}-{fmt_minutes(item['end_min'])}")
+        parts += [
+            f'<rect x="{x:.1f}" y="{y - 17}" width="{w:.1f}" height="50" rx="6" fill="#ffffff" stroke="{color}" stroke-width="2"/>',
+            f'<text x="{x + 8:.1f}" y="{y - 1}" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="{color}">{time_range}</text>',
         ]
         for line_idx, line in enumerate(task_lines):
             parts.append(
-                f'<text x="170" y="{y + 17 + line_idx * 17}" font-family="Arial, sans-serif" font-size="15" fill="#17202a">{escape(line)}</text>'
+                f'<text x="{x + 8:.1f}" y="{y + 13 + line_idx * 12}" font-family="Arial, sans-serif" font-size="11" fill="#17202a">{escape(line)}</text>'
             )
     parts.append("</svg>")
     path.write_text("\n".join(parts) + "\n", encoding="utf-8")

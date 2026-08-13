@@ -93,14 +93,6 @@ Title: Sage the Smart Grill Pro, SKU SGR840BSS4EEU1 (BGR840/SGR840 family)
 - Smart settings: beef, lamb, pork, poultry, fish, with doneness/rest guidance.
 - Cooking formats: contact grill; opens flat into BBQ mode; adjustable plate tilt; removable plates.
 
-### AEG Competence built-in electric oven — exact model unconfirmed
-
-- Status: Photo-confirmed family; exact model number not visible. Do not apply representative-manual programmes as exact until the rating plate/manual is found.
-- Local identification detail: aeg-oven-details.md
-- Local source extract: manuals/aeg-competence-oven-representative-source-extract.md
-- Photo/local identification parameters: mid/late-2000s AEG Competence generation; stainless-steel front; two rotary controls; red digital timer/programmer in the center; cooking-guide markings inside the door.
-- Feature parameters visible/inferred from local detail: max temperature marking 275°C; fan/convection; grill; top/bottom heat; other conventional oven modes.
-
 ### Samsung Smart Oven / combi microwave — exact model unconfirmed
 
 - Status: Photo-confirmed Samsung Smart Oven family; exact model number not visible. NQ50H5533KS is a representative Samsung combi microwave/Smart Oven source, not confirmed as the owned model.

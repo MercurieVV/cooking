@@ -1,0 +1,4 @@
+interface:
+  display_name: "Show Recipe by Request v2"
+  short_description: "3-section icon recipe cards (assumptions / required / steps)"
+  default_prompt: "Use $show-recipe-by-request-v2 to generate an appliance-aware recipe card PDF for chicken soup."

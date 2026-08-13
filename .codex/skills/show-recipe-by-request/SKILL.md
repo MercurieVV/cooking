@@ -47,7 +47,7 @@ The PDF should include:
 - Assumptions and serving count.
 - Appliance plan with pictures where local images exist.
 - Ingredients.
-- Timeline displayed as a classic timeline diagram, not a plain table and not raw HTML.
+- Timeline displayed as a horizontal classic timeline diagram, not a plain table and not raw HTML.
 - Vector sketches/diagrams when a structure, layering, tray layout, cut pattern, assembly order, or timing relationship is clearer visually than in words.
 - Step-by-step method where every step shows: needed tools/ingredients, appliance photo when relevant, settings/accessory, timing, action, and readiness cue.
 - Sync points for multi-cook recipes.
@@ -57,8 +57,9 @@ The PDF should include:
 
 - Keep both Markdown and PDF compact: prefer tables, short bullets, and single-purpose step paragraphs.
 - Use visual styling to clarify hierarchy, timing, appliance/settings, and sync points; do not use color as decoration.
-- Use the timeline field as a real timeline diagram. Keep each node short: time, cook, task. In generated Markdown/PDF, embed the timeline as an SVG/image so the user never sees HTML code.
+- Use the timeline field as a horizontal swimlane diagram. Separate people work and appliance work into rows, using `lane` and `lane_type` when needed. Keep each block short: time range, actor/appliance, task. In generated Markdown/PDF, embed the timeline as an SVG/image so the user never sees HTML code.
 - Generate simple local SVG files for visual explanations when words would be clumsy. Use vector sketches for cross-sections, appliance loading, tray positioning, layering, piping shapes, cuts, and multi-cook dependency maps.
+- Make every generated diagram immediately understandable: include a clear title, direct labels/arrows, and the exact cooking decision it supports. If the diagram's purpose is not obvious, simplify it or omit it.
 - Use the best available local photo for each appliance/tool used. If a separate accessory photo does not exist, use the parent appliance photo and name the exact accessory in the step.
 - Make step blocks visually scannable: parent line is the step title; child lines are `Need`, `Tool`, `Set`, `Do`, `Done`.
 - Do not invent exact model numbers, program IDs, temperatures, or timings from the user's appliance inventory. Mark uncertain data plainly.

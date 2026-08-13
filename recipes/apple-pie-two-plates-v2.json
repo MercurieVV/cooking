@@ -1,0 +1,286 @@
+{
+  "title": "Two-Tray Apple Pie",
+  "output": "recipes/apple-pie-two-plates-v2.pdf",
+  "servings": "24 pieces",
+  "summary": "Two tray apple slab pies using your AEG oven, Kenwood mixer, and apple slicer.",
+  "difficulty": "Medium",
+  "cooks": "1 cook",
+  "assumptions": [
+    { "icon": "tray", "text": "Two oven trays" },
+    { "icon": "person", "text": "One cook" },
+    { "icon": "tray", "text": "Trays about 30x40 cm" },
+    { "icon": "oven", "text": "Fan program unconfirmed" },
+    { "icon": "apple", "text": "Firm baking apples" },
+    { "icon": "clock", "text": "Serve after cooling" }
+  ],
+  "required": {
+    "time": {
+      "active": "1:05",
+      "passive": "1:10",
+      "total": "2 h 15 min"
+    },
+    "tools": [
+      {
+        "name": "AEG Competence oven",
+        "role": "Bakes both trays",
+        "image": "raw/kitchen-tools/images/aeg-competence-oven-generic.jpg",
+        "settings": "Fan 180 C",
+        "set_icon": "temp",
+        "accessory": "2 lined trays"
+      },
+      {
+        "name": "Kenwood KWL90.244SI",
+        "role": "Mixes shortcrust dough",
+        "image": "raw/kitchen-tools/images/kenwood-titanium-chef-patissier-xl.jpg",
+        "settings": "speed 1-2",
+        "set_icon": "speed",
+        "accessory": "K-beater"
+      },
+      {
+        "name": "Adam apple slicer",
+        "role": "Cores apple wedges",
+        "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-in-use.jpg",
+        "settings": "12 wedges",
+        "set_icon": "cut",
+        "accessory": "side handles"
+      },
+      {
+        "name": "Refrigerator",
+        "role": "Chills dough",
+        "settings": "30 min",
+        "set_icon": "chill",
+        "accessory": "covered dough"
+      }
+    ],
+    "ingredients": [
+      { "amount": "900 g", "item": "plain flour", "notes": "dough" },
+      { "amount": "450 g", "item": "cold butter", "notes": "cubed" },
+      { "amount": "180 g", "item": "white sugar", "notes": "dough" },
+      { "amount": "16 g", "item": "baking powder", "notes": "dough lift" },
+      { "amount": "8 g", "item": "fine salt", "notes": "dough" },
+      { "amount": "4", "item": "eggs", "notes": "dough" },
+      { "amount": "200 g", "item": "sour cream", "notes": "binds dough" },
+      { "amount": "2.4 kg", "item": "apples", "notes": "before coring" },
+      { "amount": "160 g", "item": "brown sugar", "notes": "filling" },
+      { "amount": "30 ml", "item": "lemon juice", "notes": "balances sweetness" },
+      { "amount": "12 g", "item": "cinnamon", "notes": "filling" },
+      { "amount": "50 g", "item": "potato starch", "notes": "binds juices" },
+      { "amount": "80 g", "item": "breadcrumbs", "notes": "absorbs juice" },
+      { "amount": "1", "item": "egg", "notes": "egg wash" },
+      { "amount": "30 g", "item": "coarse sugar", "notes": "optional top" }
+    ],
+    "timeline": [
+      {
+        "time": "0:00",
+        "end": "0:10",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Line trays"
+      },
+      {
+        "time": "0:10",
+        "end": "0:22",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Load mixer"
+      },
+      {
+        "time": "0:10",
+        "end": "0:22",
+        "lane": "Kenwood KWL90.244SI",
+        "lane_type": "appliance",
+        "task": "Mix dough"
+      },
+      {
+        "time": "0:22",
+        "end": "0:52",
+        "lane": "Refrigerator",
+        "lane_type": "appliance",
+        "task": "Chill dough"
+      },
+      {
+        "time": "0:25",
+        "end": "0:55",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Slice apples"
+      },
+      {
+        "time": "0:55",
+        "end": "1:15",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Preheat oven"
+      },
+      {
+        "time": "1:00",
+        "end": "1:25",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Assemble trays"
+      },
+      {
+        "time": "1:25",
+        "end": "2:05",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Bake trays"
+      },
+      {
+        "time": "2:05",
+        "end": "2:35",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Cool slices"
+      }
+    ]
+  },
+  "sync_points": [
+    {
+      "name": "Oven-ready",
+      "when": "1:15",
+      "criteria": "Trays filled; oven 180 C"
+    },
+    {
+      "name": "Halfway check",
+      "when": "1:47",
+      "criteria": "Swap if top browns"
+    }
+  ],
+  "visuals": [
+    {
+      "title": "Tray Layering",
+      "image": "recipes/assets/apple-pie-tray-layering.svg",
+      "caption": "Base, crumbs, apples, top, vents."
+    }
+  ],
+  "steps": [
+    {
+      "n": 1,
+      "icon": "tray",
+      "title": "Line oven trays",
+      "cook": "Cook",
+      "tool": "Worktop",
+      "accessory": "baking paper",
+      "needs": "Trays, paper, butter",
+      "chips": [
+        { "icon": "tray", "text": "2 trays" },
+        { "icon": "clock", "text": "10 min" }
+      ],
+      "do": "Line trays, cube butter, weigh dry dough ingredients, keep butter cold.",
+      "done": "Trays lined; dough ingredients weighed."
+    },
+    {
+      "n": 2,
+      "icon": "mixer",
+      "title": "Mix shortcrust dough",
+      "cook": "Cook",
+      "tool": "Kenwood KWL90.244SI",
+      "accessory": "K-beater",
+      "needs": "Flour, butter, eggs",
+      "chips": [
+        { "icon": "speed", "text": "speed 1-2" },
+        { "icon": "clock", "text": "12 min" }
+      ],
+      "do": "Mix dry, add butter to sandy, add eggs and cream, stop at clumps.",
+      "done": "Dough clumps when squeezed."
+    },
+    {
+      "n": 3,
+      "icon": "chill",
+      "title": "Chill divided dough",
+      "cook": "Cook",
+      "tool": "Refrigerator",
+      "accessory": "covered dough",
+      "needs": "Dough, cover",
+      "chips": [
+        { "icon": "chill", "text": "cold" },
+        { "icon": "clock", "text": "30 min" }
+      ],
+      "do": "Divide into four rectangles, cover, and chill until rollable.",
+      "done": "Butter stays firm while rolling."
+    },
+    {
+      "n": 4,
+      "icon": "apple",
+      "title": "Prepare apple filling",
+      "cook": "Cook",
+      "tool": "Adam apple slicer",
+      "accessory": "large bowl",
+      "needs": "Apples, sugar, starch",
+      "chips": [
+        { "icon": "cut", "text": "12 wedges" },
+        { "icon": "knife", "text": "3-5 mm" },
+        { "icon": "clock", "text": "30 min" }
+      ],
+      "do": "Core apples, slice wedges thinner, toss with sugar, lemon, cinnamon, and starch.",
+      "done": "Apples coated; light juice forms."
+    },
+    {
+      "n": 5,
+      "icon": "oven",
+      "title": "Preheat AEG oven",
+      "cook": "Cook",
+      "tool": "AEG Competence oven",
+      "accessory": "two rack levels",
+      "needs": "AEG oven, racks",
+      "chips": [
+        { "icon": "temp", "text": "Fan 180 C" },
+        { "icon": "clock", "text": "20 min" }
+      ],
+      "do": "Set fan heat and place racks upper-middle and lower-middle.",
+      "done": "Oven holds 180 C."
+    },
+    {
+      "n": 6,
+      "icon": "layers",
+      "title": "Assemble two trays",
+      "cook": "Cook",
+      "tool": "Worktop",
+      "accessory": "rolling pin",
+      "needs": "Dough, apples, crumbs",
+      "chips": [
+        { "icon": "tray", "text": "2 trays" },
+        { "icon": "clock", "text": "25 min" }
+      ],
+      "do": "Roll bases, add crumbs, spread apples, cover with tops, seal, vent, egg-wash.",
+      "done": "Both pies sealed and vented.",
+      "diagram": "recipes/assets/apple-pie-tray-layering.svg"
+    },
+    {
+      "n": 7,
+      "icon": "oven",
+      "title": "Bake both trays",
+      "cook": "Cook",
+      "tool": "AEG Competence oven",
+      "accessory": "two rack levels",
+      "needs": "Filled trays",
+      "chips": [
+        { "icon": "temp", "text": "Fan 180 C" },
+        { "icon": "clock", "text": "40 min" },
+        { "icon": "sync", "text": "swap 22 min" }
+      ],
+      "do": "Bake together; swap rack levels and rotate if browning differs.",
+      "done": "Golden edges; juices bubble."
+    },
+    {
+      "n": 8,
+      "icon": "knife",
+      "title": "Cool and slice",
+      "cook": "Cook",
+      "tool": "Counter",
+      "accessory": "knife",
+      "needs": "Baked pies",
+      "chips": [
+        { "icon": "wait", "text": "30 min" },
+        { "icon": "servings", "text": "24 pieces" }
+      ],
+      "do": "Cool until filling sets, then cut each tray into twelve pieces.",
+      "done": "Pieces lift without flooding."
+    }
+  ],
+  "food_safety": [
+    "Wash hands after raw egg",
+    "Refrigerate leftovers after cooling"
+  ]
+}

@@ -60,7 +60,7 @@ Two-tray apple slab pie for your AEG Competence oven. Dough is mixed in your Ken
 
 ### Tray Layering
 ![Tray Layering](recipes/assets/apple-pie-tray-layering.svg)
-**Note:** Build both trays the same way: base dough, crumbs, apple filling, top dough with vents.
+**Note:** Cross-section: bottom dough, crumbs/semolina, apple filling, top dough with steam vents.
 
 
 ## Method

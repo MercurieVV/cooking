@@ -1,0 +1,432 @@
+{
+  "title": "Apple Slab Pie, Two Trays",
+  "output": "recipes/apple-pie-two-oven-trays-v2.pdf",
+  "servings": "20-24 pieces",
+  "difficulty": "Medium",
+  "cooks": "1 cook",
+  "summary": "Shortcrust slab pie, both trays baked together on fan heat.",
+  "assumptions": [
+    {
+      "icon": "tray",
+      "text": "Two flat oven trays, about 30 x 40 cm",
+      "note": "\"Two plates for my stove\" read as oven trays. Smaller trays: keep dough back or build thicker."
+    },
+    {
+      "icon": "person",
+      "text": "One cook, no helper",
+      "note": "Timeline has a single person lane; appliances carry the parallel work."
+    },
+    {
+      "icon": "oven",
+      "text": "AEG Competence has no numbered programs",
+      "note": "Owned oven is a mid/late-2000s rotary-dial model, exact type unknown (B3xxx/B4xxx/B5xxx). Set the function dial to the fan/convection symbol, not a program number."
+    },
+    {
+      "icon": "temp",
+      "text": "Fan 180 C on two shelf levels",
+      "note": "Fan heat is the only mode that bakes both trays evenly at once. Fallback: 190 C top/bottom heat, one tray at a time."
+    },
+    {
+      "icon": "apple",
+      "text": "Firm baking apples, weighed before peeling",
+      "note": "Soft eating apples collapse; if that is all you have, cut slices 5 mm and add 10 g extra starch."
+    },
+    {
+      "icon": "sugar",
+      "text": "Sweetness tuned to sour apples",
+      "note": "With sweet apples drop filling sugar to about 120 g."
+    }
+  ],
+  "required": {
+    "time": {
+      "active": "1:00",
+      "passive": "1:10",
+      "total": "2 h 10 min"
+    },
+    "tools": [
+      {
+        "name": "AEG Competence built-in oven",
+        "role": "Bakes both trays at once, two levels",
+        "image": "raw/kitchen-tools/images/aeg-competence-oven-generic.jpg",
+        "settings": "Fan 180 C, upper + lower third",
+        "program": "Fan symbol on the left dial",
+        "parts": [
+          {
+            "name": "2 trays + paper",
+            "icon": "tray"
+          }
+        ]
+      },
+      {
+        "name": "Kenwood Patissier XL KWL90.244SI",
+        "role": "Rubs cold butter into flour",
+        "image": "raw/kitchen-tools/images/kenwood-titanium-chef-patissier-xl.jpg",
+        "settings": "Speed 1-2, stop at clumps",
+        "parts": [
+          {
+            "name": "5L bowl",
+            "image": "raw/kitchen-tools/images/kenwood-kwl90-5l-stainless-bowl.jpg"
+          },
+          {
+            "name": "K-beater",
+            "image": "raw/kitchen-tools/images/kenwood-kwl90-stainless-k-beater.jpg"
+          },
+          {
+            "name": "Spatula",
+            "image": "raw/kitchen-tools/images/kenwood-kwl90-grey-spatula.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Adam stainless apple slicer",
+        "role": "Cores and wedges apples in one press",
+        "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-in-use.jpg",
+        "settings": "Press, then cut wedges to 3-5 mm",
+        "parts": [
+          {
+            "name": "In use",
+            "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-apple-pear.jpg"
+          }
+        ]
+      }
+    ],
+    "ingredients": [
+      {
+        "amount": "900 g",
+        "item": "plain flour",
+        "notes": "dough",
+        "photo": "raw/food/images/plain-flour.jpg"
+      },
+      {
+        "amount": "450 g",
+        "item": "cold butter",
+        "notes": "1-2 cm cubes",
+        "photo": "raw/food/images/cold-butter.jpg"
+      },
+      {
+        "amount": "180 g",
+        "item": "white sugar",
+        "notes": "dough",
+        "photo": "raw/food/images/white-sugar.jpg"
+      },
+      {
+        "amount": "16 g",
+        "item": "baking powder",
+        "photo": "raw/food/images/baking-powder.jpg"
+      },
+      {
+        "amount": "8 g",
+        "item": "fine salt",
+        "photo": "raw/food/images/fine-salt.jpg"
+      },
+      {
+        "amount": "4",
+        "item": "eggs",
+        "notes": "dough",
+        "photo": "raw/food/images/chicken-egg.jpg"
+      },
+      {
+        "amount": "200 g",
+        "item": "sour cream",
+        "notes": "add to bind",
+        "photo": "raw/food/images/sour-cream.jpg"
+      },
+      {
+        "amount": "2.4 kg",
+        "item": "apples",
+        "notes": "before peeling",
+        "photo": "raw/food/images/apples.jpg"
+      },
+      {
+        "amount": "160 g",
+        "item": "brown sugar",
+        "notes": "filling",
+        "photo": "raw/food/images/brown-sugar.jpg"
+      },
+      {
+        "amount": "30 ml",
+        "item": "lemon juice",
+        "photo": "raw/food/images/lemon-juice.jpg"
+      },
+      {
+        "amount": "12 g",
+        "item": "ground cinnamon",
+        "photo": "raw/food/images/ground-cinnamon.jpg"
+      },
+      {
+        "amount": "50 g",
+        "item": "potato starch",
+        "notes": "binds juices",
+        "photo": "raw/food/images/potato-starch.jpg"
+      },
+      {
+        "amount": "80 g",
+        "item": "breadcrumbs",
+        "notes": "under filling",
+        "photo": "raw/food/images/bread-crumbs.jpg"
+      },
+      {
+        "amount": "1",
+        "item": "egg",
+        "notes": "wash",
+        "photo": "raw/food/images/egg.jpg"
+      },
+      {
+        "amount": "30 g",
+        "item": "coarse sugar",
+        "notes": "optional",
+        "photo": "raw/food/images/coarse-sugar.jpg"
+      }
+    ],
+    "timeline": [
+      {
+        "time": "0:00",
+        "end": "0:10",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Line trays, cube butter"
+      },
+      {
+        "time": "0:10",
+        "end": "0:22",
+        "lane": "Kenwood Patissier XL",
+        "lane_type": "appliance",
+        "task": "Mix dough"
+      },
+      {
+        "time": "0:22",
+        "end": "0:25",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Divide, wrap dough"
+      },
+      {
+        "time": "0:25",
+        "end": "0:55",
+        "lane": "Fridge",
+        "lane_type": "appliance",
+        "task": "Chill dough"
+      },
+      {
+        "time": "0:25",
+        "end": "0:55",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Slice apples, mix filling"
+      },
+      {
+        "time": "0:40",
+        "end": "0:55",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Preheat 180 C"
+      },
+      {
+        "time": "0:55",
+        "end": "1:20",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Roll, fill, vent, wash"
+      },
+      {
+        "time": "1:20",
+        "end": "2:00",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Bake both trays"
+      },
+      {
+        "time": "2:00",
+        "end": "2:30",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Cool, slice"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "n": 1,
+      "icon": "tray",
+      "title": "Prep trays and butter",
+      "tool": "Worktop",
+      "needs": "Trays, paper, cold butter, dry mix",
+      "chips": [
+        {
+          "icon": "clock",
+          "text": "10 min"
+        },
+        {
+          "icon": "chill",
+          "text": "keep butter cold"
+        }
+      ],
+      "do": "Line both trays. Cube butter. Weigh flour, sugar, baking powder, salt.",
+      "done": "Trays lined, all dry items weighed."
+    },
+    {
+      "n": 2,
+      "icon": "mixer",
+      "title": "Mix shortcrust dough",
+      "tool": "Kenwood Patissier XL KWL90.244SI",
+      "accessory": "K-beater",
+      "needs": "Flour, butter, sugar, eggs, sour cream",
+      "chips": [
+        {
+          "icon": "speed",
+          "text": "speed 1-2"
+        },
+        {
+          "icon": "clock",
+          "text": "10-12 min"
+        }
+      ],
+      "do": "Dry first, butter to sandy, then eggs and cream. Stop at first clumps.",
+      "done": "Holds when squeezed, still crumbly."
+    },
+    {
+      "n": 3,
+      "icon": "chill",
+      "title": "Divide and chill",
+      "tool": "Fridge",
+      "needs": "Dough, wrap",
+      "chips": [
+        {
+          "icon": "layers",
+          "text": "4 pieces"
+        },
+        {
+          "icon": "clock",
+          "text": "30 min min"
+        }
+      ],
+      "do": "Two larger bases, two smaller lids. Flatten to rectangles, cover, chill.",
+      "done": "Firm, rolls without smearing."
+    },
+    {
+      "n": 4,
+      "icon": "apple",
+      "title": "Make apple filling",
+      "tool": "Adam stainless apple slicer",
+      "needs": "Apples, sugar, lemon, cinnamon, starch",
+      "chips": [
+        {
+          "icon": "cut",
+          "text": "3-5 mm"
+        },
+        {
+          "icon": "clock",
+          "text": "25 min"
+        }
+      ],
+      "do": "Peel and core. Slice. Toss with sugar, lemon, cinnamon, starch.",
+      "done": "Evenly coated, first juices showing."
+    },
+    {
+      "n": 5,
+      "icon": "oven",
+      "title": "Preheat oven",
+      "tool": "AEG Competence built-in oven",
+      "accessory": "2 racks, upper + lower third",
+      "chips": [
+        {
+          "icon": "temp",
+          "text": "fan 180 C"
+        },
+        {
+          "icon": "clock",
+          "text": "15 min"
+        },
+        {
+          "icon": "oven",
+          "text": "fan symbol dial"
+        }
+      ],
+      "do": "Fan heat for two-level baking. Fallback: 190 C top/bottom, one tray.",
+      "done": "Oven holds set temperature."
+    },
+    {
+      "n": 6,
+      "icon": "layers",
+      "title": "Assemble both trays",
+      "tool": "Worktop",
+      "needs": "Dough, filling, breadcrumbs, egg wash",
+      "chips": [
+        {
+          "icon": "clock",
+          "text": "20-25 min"
+        },
+        {
+          "icon": "steam",
+          "text": "cut vents"
+        }
+      ],
+      "do": "Roll bases in. Crumbs, apples, lid, vents, egg wash, coarse sugar.",
+      "done": "Sealed, vented, washed.",
+      "diagram": "recipes/assets/apple-pie-tray-layering-v2.svg"
+    },
+    {
+      "n": 7,
+      "icon": "oven",
+      "title": "Bake both trays",
+      "tool": "AEG Competence built-in oven",
+      "chips": [
+        {
+          "icon": "temp",
+          "text": "fan 180 C"
+        },
+        {
+          "icon": "clock",
+          "text": "35-45 min"
+        },
+        {
+          "icon": "sync",
+          "text": "swap at 22 min"
+        }
+      ],
+      "do": "Bake on both levels. Swap top/bottom and rotate at 22 min if uneven.",
+      "done": "Golden edges, juices bubbling through vents."
+    },
+    {
+      "n": 8,
+      "icon": "cut",
+      "title": "Cool and slice",
+      "tool": "Rack",
+      "chips": [
+        {
+          "icon": "clock",
+          "text": "30 min min"
+        },
+        {
+          "icon": "cut",
+          "text": "10-12 per tray"
+        }
+      ],
+      "do": "Cool on the tray before cutting.",
+      "done": "Pieces lift clean, filling stays put."
+    }
+  ],
+  "sync_points": [
+    {
+      "name": "Oven-ready",
+      "when": "0:55",
+      "criteria": "Dough chilled, filling mixed, oven at 180 C"
+    },
+    {
+      "name": "Bake check",
+      "when": "1:42",
+      "criteria": "Swap trays if browning differs"
+    }
+  ],
+  "visuals": [
+    {
+      "title": "Tray cross-section",
+      "image": "recipes/assets/apple-pie-tray-layering-v2.svg",
+      "caption": "Build order 1-5, identical on both trays."
+    }
+  ],
+  "food_safety": [
+    "Wash hands and boards after raw egg",
+    "Refrigerate leftovers same day"
+  ]
+}
