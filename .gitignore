@@ -1,0 +1,70 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Scala ###
+.bsp/!/.idea/
+/.idea/
+/.bsp/scala-cli.json
+/.scala-build/.bloop/cooking_a480c23423/bloop-internal-classes/main-IlFyRoR4RPGvlxAD3aZjNQ==/META-INF/semanticdb/main.scala.semanticdb
+/.scala-build/.bloop/cooking_a480c23423/bloop-internal-classes/main-IlFyRoR4RPGvlxAD3aZjNQ==/META-INF/semanticdb/project.scala.semanticdb
+/.scala-build/.bloop/cooking_a480c23423/bloop-internal-classes/main-IlFyRoR4RPGvlxAD3aZjNQ==/main$package$.class
+/.scala-build/.bloop/cooking_a480c23423/bloop-internal-classes/main-IlFyRoR4RPGvlxAD3aZjNQ==/main$package.class
+/.scala-build/.bloop/cooking_a480c23423/bloop-internal-classes/main-IlFyRoR4RPGvlxAD3aZjNQ==/main$package.tasty
+/.scala-build/.bloop/cooking_a480c23423/bloop-internal-classes/main-IlFyRoR4RPGvlxAD3aZjNQ==/main.class
+/.scala-build/.bloop/cooking_a480c23423/bloop-internal-classes/main-IlFyRoR4RPGvlxAD3aZjNQ==/main.tasty
+/.scala-build/.bloop/cooking_a480c23423/cooking_a480c23423-analysis.bin
+/.scala-build/.bloop/cooking_a480c23423-test.json
+/.scala-build/cooking_a480c23423/classes/main/META-INF/semanticdb/main.scala.semanticdb
+/.scala-build/cooking_a480c23423/classes/main/META-INF/semanticdb/project.scala.semanticdb
+/.scala-build/cooking_a480c23423/classes/main/main$package$.class
+/.scala-build/cooking_a480c23423/classes/main/main$package.class
+/.scala-build/cooking_a480c23423/classes/main/main$package.tasty
+/.scala-build/cooking_a480c23423/classes/main/main.class
+/.scala-build/cooking_a480c23423/classes/main/main.tasty
+/.scala-build/.bloop/cooking_a480c23423.json
+/.scala-build/ide-envs.json
+/.scala-build/ide-inputs.json
+/.scala-build/ide-launcher-options.json
+/.scala-build/ide-options-v2.json
