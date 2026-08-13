@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-label="Apple pie tray layering and vent layout">
+  <rect width="760" height="330" fill="#ffffff"/>
+  <text x="36" y="42" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1f3a44">Two-Tray Apple Pie Structure</text>
+
+  <g transform="translate(50 82)">
+    <rect x="0" y="0" width="300" height="180" rx="8" fill="#edf4f5" stroke="#477b84" stroke-width="4"/>
+    <rect x="22" y="22" width="256" height="136" rx="4" fill="#f8e1a6" stroke="#b88926" stroke-width="3"/>
+    <rect x="38" y="54" width="224" height="22" fill="#d9b46a"/>
+    <rect x="38" y="82" width="224" height="58" fill="#d97942"/>
+    <rect x="52" y="96" width="42" height="16" rx="8" fill="#f1c24d"/>
+    <rect x="118" y="92" width="46" height="18" rx="9" fill="#f1c24d"/>
+    <rect x="188" y="104" width="50" height="18" rx="9" fill="#f1c24d"/>
+    <path d="M65 42h170M65 122h170" stroke="#8b5e24" stroke-width="5" stroke-linecap="round"/>
+    <text x="0" y="218" font-family="Arial, sans-serif" font-size="18" fill="#263238">1. Base dough  2. crumbs  3. apples  4. vented top</text>
+  </g>
+
+  <g transform="translate(430 82)">
+    <rect x="0" y="0" width="260" height="180" rx="8" fill="#edf4f5" stroke="#477b84" stroke-width="4"/>
+    <rect x="24" y="24" width="212" height="132" rx="4" fill="#f8e1a6" stroke="#b88926" stroke-width="3"/>
+    <path d="M72 68h116M72 90h116M72 112h116" stroke="#8b5e24" stroke-width="8" stroke-linecap="round"/>
+    <path d="M48 48l164 92M212 48L48 140" stroke="#d97942" stroke-width="3" stroke-linecap="round"/>
+    <text x="8" y="218" font-family="Arial, sans-serif" font-size="18" fill="#263238">Vent top well; cut after cooling.</text>
+  </g>
+</svg>

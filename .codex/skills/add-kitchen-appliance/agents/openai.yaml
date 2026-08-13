@@ -1,0 +1,6 @@
+interface:
+  display_name: "Add Kitchen Appliance"
+  short_description: "Research and inventory kitchen tools"
+  default_prompt: "Use $add-kitchen-appliance to add this appliance and its tools to my kitchen inventory."
+policy:
+  allow_implicit_invocation: true

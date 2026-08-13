@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="494" viewBox="0 0 820 494" role="img" aria-label="Recipe timeline">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<line x1="132" y1="38" x2="132" y2="466" stroke="#477b84" stroke-width="4"/>
+<text x="104" y="46" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#1f3a44">00:00</text>
+<circle cx="132" cy="40" r="8" fill="#477b84" stroke="#dfeaec" stroke-width="3"/>
+<rect x="154" y="18" width="612" height="48" rx="6" fill="#f7fafb" stroke="#b8c8cc"/>
+<text x="170" y="36" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#455a64">Cook</text>
+<text x="170" y="55" font-family="Arial, sans-serif" font-size="15" fill="#17202a">Cube butter, measure dough ingredients, line two oven trays with</text>
+<text x="170" y="72" font-family="Arial, sans-serif" font-size="15" fill="#17202a">baking paper.</text>
+<text x="104" y="108" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#1f3a44">00:10</text>
+<circle cx="132" cy="102" r="8" fill="#477b84" stroke="#dfeaec" stroke-width="3"/>
+<rect x="154" y="80" width="612" height="48" rx="6" fill="#f7fafb" stroke="#b8c8cc"/>
+<text x="170" y="98" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#455a64">Cook</text>
+<text x="170" y="117" font-family="Arial, sans-serif" font-size="15" fill="#17202a">Mix dough in Kenwood, divide into four portions, chill.</text>
+<text x="104" y="170" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#1f3a44">00:25</text>
+<circle cx="132" cy="164" r="8" fill="#477b84" stroke="#dfeaec" stroke-width="3"/>
+<rect x="154" y="142" width="612" height="48" rx="6" fill="#f7fafb" stroke="#b8c8cc"/>
+<text x="170" y="160" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#455a64">Cook</text>
+<text x="170" y="179" font-family="Arial, sans-serif" font-size="15" fill="#17202a">Peel, core, and slice apples; toss filling.</text>
+<text x="104" y="232" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#1f3a44">00:55</text>
+<circle cx="132" cy="226" r="8" fill="#477b84" stroke="#dfeaec" stroke-width="3"/>
+<rect x="154" y="204" width="612" height="48" rx="6" fill="#f7fafb" stroke="#b8c8cc"/>
+<text x="170" y="222" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#455a64">Cook</text>
+<text x="170" y="241" font-family="Arial, sans-serif" font-size="15" fill="#17202a">Start AEG oven preheat: Fan/Convection 180 C.</text>
+<text x="104" y="294" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#1f3a44">01:00</text>
+<circle cx="132" cy="288" r="8" fill="#477b84" stroke="#dfeaec" stroke-width="3"/>
+<rect x="154" y="266" width="612" height="48" rx="6" fill="#f7fafb" stroke="#b8c8cc"/>
+<text x="170" y="284" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#455a64">Cook</text>
+<text x="170" y="303" font-family="Arial, sans-serif" font-size="15" fill="#17202a">Roll bottoms, fill both trays, roll tops, vent and egg-wash.</text>
+<text x="104" y="356" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#1f3a44">01:25</text>
+<circle cx="132" cy="350" r="8" fill="#477b84" stroke="#dfeaec" stroke-width="3"/>
+<rect x="154" y="328" width="612" height="48" rx="6" fill="#f7fafb" stroke="#b8c8cc"/>
+<text x="170" y="346" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#455a64">Cook</text>
+<text x="170" y="365" font-family="Arial, sans-serif" font-size="15" fill="#17202a">Bake both trays. Swap/rotate halfway if browning differs.</text>
+<text x="104" y="418" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#1f3a44">02:05</text>
+<circle cx="132" cy="412" r="8" fill="#477b84" stroke="#dfeaec" stroke-width="3"/>
+<rect x="154" y="390" width="612" height="48" rx="6" fill="#f7fafb" stroke="#b8c8cc"/>
+<text x="170" y="408" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#455a64">Cook</text>
+<text x="170" y="427" font-family="Arial, sans-serif" font-size="15" fill="#17202a">Cool until sliceable; dust or portion.</text>
+</svg>

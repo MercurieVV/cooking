@@ -29,6 +29,7 @@ Create a polished PDF recipe from a user request. The output must be a usable co
 3. Apply appliances:
    - Prefer owned appliances when they improve quality, reliability, or parallelism.
    - Include accessory names, e.g. Kenwood pasta press, meat grinder attachment, ThermoResist bowl, TempPro probes.
+   - Treat inventory-listed appliances/accessories as available. Do not write vague phrases like `if available` for tools confirmed in `wiki/` or `raw/`.
    - Include program names/numbers/IDs, temperature, pressure level, speed, duration, preheat, probe targets, release method, and rest time when relevant.
    - Include an alternative when an owned appliance's exact model or program is unconfirmed.
 4. If multiple cooks are requested, split the work by cook skill and station. Create sync points where dependent work joins, with exact readiness criteria.
@@ -38,7 +39,7 @@ Create a polished PDF recipe from a user request. The output must be a usable co
 
 Use `scripts/render_recipe_pdf.py` when possible. Provide it a JSON spec matching `references/recipe-schema.md`; it generates a Markdown sidecar and renders the PDF with `pandoc --pdf-engine=weasyprint` so appliance photos render from local paths. If Pandoc or WeasyPrint is unavailable, it still emits a valid text PDF and includes local image paths.
 
-Write recipe text maximally structured, short, and clear. Include only what is needed to cook the dish safely and reliably. Formatting must carry the structure: concise headings, aligned tables, restrained colors, clear step blocks, and the most readable practical font stack. Avoid long prose, decorative sections, or repeated explanations.
+Write recipe text maximally structured, short, and clear. Include only what is needed to cook the dish safely and reliably. Formatting must carry the structure: concise headings, aligned tables, restrained colors, clear parent/child text blocks, and the most readable practical font stack. Avoid long prose, decorative sections, or repeated explanations.
 
 The PDF should include:
 
@@ -46,8 +47,9 @@ The PDF should include:
 - Assumptions and serving count.
 - Appliance plan with pictures where local images exist.
 - Ingredients.
-- Timeline.
-- Step-by-step method with appliance, settings/accessory, timing, readiness cues, and cook assignment.
+- Timeline displayed as a classic timeline diagram, not a plain table and not raw HTML.
+- Vector sketches/diagrams when a structure, layering, tray layout, cut pattern, assembly order, or timing relationship is clearer visually than in words.
+- Step-by-step method where every step shows: needed tools/ingredients, appliance photo when relevant, settings/accessory, timing, action, and readiness cue.
 - Sync points for multi-cook recipes.
 - Food-safety notes where relevant.
 
@@ -55,6 +57,10 @@ The PDF should include:
 
 - Keep both Markdown and PDF compact: prefer tables, short bullets, and single-purpose step paragraphs.
 - Use visual styling to clarify hierarchy, timing, appliance/settings, and sync points; do not use color as decoration.
+- Use the timeline field as a real timeline diagram. Keep each node short: time, cook, task. In generated Markdown/PDF, embed the timeline as an SVG/image so the user never sees HTML code.
+- Generate simple local SVG files for visual explanations when words would be clumsy. Use vector sketches for cross-sections, appliance loading, tray positioning, layering, piping shapes, cuts, and multi-cook dependency maps.
+- Use the best available local photo for each appliance/tool used. If a separate accessory photo does not exist, use the parent appliance photo and name the exact accessory in the step.
+- Make step blocks visually scannable: parent line is the step title; child lines are `Need`, `Tool`, `Set`, `Do`, `Done`.
 - Do not invent exact model numbers, program IDs, temperatures, or timings from the user's appliance inventory. Mark uncertain data plainly.
 - Keep the recipe operational: each step should say who does it, where, with what tool, for how long, and what "done" looks like.
 - Prefer metric units. Add Fahrenheit only when helpful.

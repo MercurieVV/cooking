@@ -8,6 +8,7 @@ import shutil
 import subprocess
 import sys
 import textwrap
+from html import escape
 from pathlib import Path
 
 
@@ -23,6 +24,37 @@ def md_table(headers: list[str], rows: list[list[str]]) -> str:
     out = ["| " + " | ".join(headers) + " |", "| " + " | ".join(["---"] * len(headers)) + " |"]
     out.extend("| " + " | ".join(cell(col) for col in row) + " |" for row in rows)
     return "\n".join(out)
+
+
+def write_timeline_svg(items: list[dict], path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    row_height = 62
+    top = 38
+    height = max(120, top + row_height * len(items) + 22)
+    width = 820
+    line_x = 132
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="Recipe timeline">',
+        '<rect width="100%" height="100%" fill="#ffffff"/>',
+        f'<line x1="{line_x}" y1="{top}" x2="{line_x}" y2="{height - 28}" stroke="#477b84" stroke-width="4"/>',
+    ]
+    for idx, item in enumerate(items):
+        y = top + idx * row_height
+        time = escape(s(item.get("time", "")))
+        cook = escape(s(item.get("cook", "")))
+        task_lines = textwrap.wrap(s(item.get("task", "")), width=66)[:2]
+        parts += [
+            f'<text x="104" y="{y + 8}" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="end" fill="#1f3a44">{time}</text>',
+            f'<circle cx="{line_x}" cy="{y + 2}" r="8" fill="#477b84" stroke="#dfeaec" stroke-width="3"/>',
+            f'<rect x="154" y="{y - 20}" width="612" height="48" rx="6" fill="#f7fafb" stroke="#b8c8cc"/>',
+            f'<text x="170" y="{y - 2}" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#455a64">{cook}</text>',
+        ]
+        for line_idx, line in enumerate(task_lines):
+            parts.append(
+                f'<text x="170" y="{y + 17 + line_idx * 17}" font-family="Arial, sans-serif" font-size="15" fill="#17202a">{escape(line)}</text>'
+            )
+    parts.append("</svg>")
+    path.write_text("\n".join(parts) + "\n", encoding="utf-8")
 
 
 def recipe_markdown(spec: dict) -> str:
@@ -66,22 +98,35 @@ def recipe_markdown(spec: dict) -> str:
 
     if spec.get("timeline"):
         lines += ["", "## Timeline", ""]
-        timeline_rows = [[t.get("time", ""), t.get("cook", ""), t.get("task", "")] for t in spec["timeline"]]
-        lines.append(md_table(["Time", "Cook", "Task"], timeline_rows))
+        lines.append(f"![Timeline]({s(spec.get('timeline_image'))})")
+
+    if spec.get("visuals"):
+        lines += ["", "## Visuals", ""]
+        for visual in spec["visuals"]:
+            lines.append(f"### {s(visual.get('title', 'Diagram'))}")
+            if visual.get("image"):
+                lines.append(f"![{s(visual.get('title', 'Diagram'))}]({s(visual.get('image'))})")
+            if visual.get("caption"):
+                lines.append(f"**Note:** {s(visual.get('caption'))}")
+            lines.append("")
 
     lines += ["", "## Method", ""]
     for idx, step in enumerate(spec.get("steps", []), start=1):
         number = step.get("number", idx)
         lines.append(f"### {number}. {s(step.get('title', 'Step'))}")
+        if step.get("image"):
+            lines.append(f"![{s(step.get('title', 'Step'))}]({s(step.get('image'))})")
+            lines.append("")
+        if step.get("diagram"):
+            lines.append(f"![{s(step.get('title', 'Step'))} diagram]({s(step.get('diagram'))})")
+            lines.append("")
         lines.append(f"**Cook:** {s(step.get('cook', 'Cook'))}  ")
-        lines.append(f"**Appliance:** {s(step.get('appliance'))}  ")
-        lines.append(f"**Accessory:** {s(step.get('accessory'))}  ")
-        lines.append(f"**Settings/program:** {s(step.get('settings'))}  ")
-        lines.append(f"**Timing:** {s(step.get('timing'))}  ")
-        lines.append("")
-        lines.append(s(step.get("instruction")))
-        lines.append("")
-        lines.append(f"**Done when:** {s(step.get('done'))}")
+        if step.get("needs"):
+            lines.append(f"**Need:** {s(step.get('needs'))}  ")
+        lines.append(f"**Tool:** {s(step.get('appliance'))}; {s(step.get('accessory'))}  ")
+        lines.append(f"**Set:** {s(step.get('settings'))}; {s(step.get('timing'))}  ")
+        lines.append(f"**Do:** {s(step.get('instruction'))}  ")
+        lines.append(f"**Done:** {s(step.get('done'))}")
         lines.append("")
 
     if spec.get("sync_points"):
@@ -137,14 +182,15 @@ h2 {
 }
 
 h3 {
-  border-bottom: 1px solid #d5e1e4;
+  background: #f7fafb;
+  border-left: 3px solid #9bb7bf;
   font-size: 11.5pt;
   margin-top: 5mm;
-  padding-bottom: 1mm;
+  padding: 1.5mm 2mm;
 }
 
 p {
-  margin: 2.2mm 0;
+  margin: 1.6mm 0 1.6mm 4mm;
 }
 
 ul {
@@ -258,6 +304,13 @@ def render(spec_path: Path) -> Path:
     spec = json.loads(spec_path.read_text(encoding="utf-8"))
     output = Path(spec.get("output") or spec_path.with_suffix(".pdf"))
     output.parent.mkdir(parents=True, exist_ok=True)
+    if spec.get("timeline") and not spec.get("timeline_image"):
+        timeline_path = output.parent / "assets" / f"{output.stem}-timeline.svg"
+        write_timeline_svg(spec["timeline"], timeline_path)
+        try:
+            spec["timeline_image"] = str(timeline_path.relative_to(Path.cwd()))
+        except ValueError:
+            spec["timeline_image"] = str(timeline_path)
 
     markdown = recipe_markdown(spec)
     md_path = output.with_suffix(".md")

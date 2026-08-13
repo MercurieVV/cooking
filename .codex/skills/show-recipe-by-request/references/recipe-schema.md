@@ -16,7 +16,8 @@ Recommended optional fields:
 - `assumptions`: array of strings.
 - `total_time`, `active_time`, `passive_time`, `difficulty`.
 - `appliances`: array of appliance objects.
-- `timeline`: array of `{ "time": "...", "task": "...", "cook": "..." }`.
+- `timeline`: array of `{ "time": "...", "task": "...", "cook": "..." }`; the renderer turns this into an SVG timeline image.
+- `visuals`: array of vector/image objects for sketches or diagrams that replace wordy explanations.
 - `sync_points`: array of `{ "name": "...", "when": "...", "criteria": "..." }`.
 - `food_safety`: array of strings.
 
@@ -32,6 +33,16 @@ Appliance object:
 }
 ```
 
+Visual object:
+
+```json
+{
+  "title": "Tray layout",
+  "image": "recipes/assets/apple-pie-tray-layout.svg",
+  "caption": "Two lined trays: base dough, crumb layer, apple filling, vented top."
+}
+```
+
 Step object:
 
 ```json
@@ -39,6 +50,9 @@ Step object:
   "number": 1,
   "cook": "Cook A",
   "title": "Pressure-cook stock",
+  "needs": "Chicken, water, aromatics, salt",
+  "image": "raw/kitchen-tools/images/instant-pot-pro-plus.jpg",
+  "diagram": "recipes/assets/stock-pot-fill-line.svg",
   "appliance": "Instant Pot 5.7L Pro Plus",
   "accessory": "Inner pot",
   "settings": "Pressure Cook, High, 12 min; natural release 10 min",
