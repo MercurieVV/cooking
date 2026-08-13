@@ -1,0 +1,165 @@
+{
+  "title": "Apple Pie for Two Oven Trays",
+  "output": "recipes/apple-pie-two-oven-trays.pdf",
+  "servings": "20-24 pieces, from two standard oven trays",
+  "summary": "A two-tray apple slab pie scaled for your AEG Competence built-in oven. The plan uses the Kenwood Titanium Chef Patissier XL or Kenwood Cooking Chef for dough mixing, then bakes both trays at once on fan/convection. Exact AEG model and program IDs are not confirmed, so settings are given as manual oven modes.",
+  "assumptions": [
+    "Interpreted \"two plates for my stove\" as two flat oven trays/sheets.",
+    "Oven trays are roughly 30 x 40 cm each; if smaller, keep extra dough/filling aside or make the pie slightly thicker.",
+    "One cook is assumed. If several cooks are available, Cook A can make dough while Cook B peels and slices apples.",
+    "AEG Competence exact model and program numbers are unconfirmed; use the fan/convection symbol for two-level baking."
+  ],
+  "total_time": "2 hr 10 min",
+  "active_time": "55-65 min",
+  "passive_time": "65-75 min chilling and baking",
+  "difficulty": "Medium",
+  "appliances": [
+    {
+      "name": "AEG Competence built-in electric oven",
+      "role": "Bake both apple pie trays at the same time on two shelf levels.",
+      "image": "raw/kitchen-tools/images/aeg-competence-oven-generic.jpg",
+      "settings": "Program ID not confirmed. Use Fan/Convection, 180 C, two levels, 35-45 min. Fallback: Top/bottom heat, 190 C, one tray at a time.",
+      "accessory": "Two oven trays/sheets lined with baking paper"
+    },
+    {
+      "name": "Kenwood Titanium Chef Patissier XL KWL90.244SI or Kenwood Cooking Chef",
+      "role": "Rub butter into flour and bring the shortcrust dough together quickly without warming it by hand.",
+      "image": "raw/kitchen-tools/images/kenwood-titanium-chef-patissier-xl.jpg",
+      "settings": "Use low speed for dry mixing, then speed 1-2 only until dough clumps. Exact accessory set not confirmed.",
+      "accessory": "Main bowl plus K-beater/paddle if available; otherwise use fingertips or pastry cutter by hand"
+    }
+  ],
+  "ingredients": [
+    {"amount": "900 g", "item": "plain wheat flour", "notes": "For shortcrust dough"},
+    {"amount": "450 g", "item": "cold unsalted butter", "notes": "Cut into 1-2 cm cubes"},
+    {"amount": "180 g", "item": "white sugar", "notes": "For dough"},
+    {"amount": "16 g", "item": "baking powder", "notes": "About 4 tsp"},
+    {"amount": "8 g", "item": "fine salt", "notes": "About 1 1/2 tsp"},
+    {"amount": "4", "item": "eggs", "notes": "For dough"},
+    {"amount": "200 g", "item": "sour cream or thick yogurt", "notes": "Add just enough for dough to come together"},
+    {"amount": "2.4 kg", "item": "apples", "notes": "Firm baking apples; weight before peeling/coring"},
+    {"amount": "160 g", "item": "brown or white sugar", "notes": "For filling; adjust to apple sweetness"},
+    {"amount": "30 ml", "item": "lemon juice", "notes": "Prevents browning and balances sweetness"},
+    {"amount": "12 g", "item": "ground cinnamon", "notes": "About 4 tsp"},
+    {"amount": "50 g", "item": "potato starch or corn starch", "notes": "Binds apple juices"},
+    {"amount": "80 g", "item": "breadcrumbs or semolina", "notes": "Sprinkle under filling to absorb juice"},
+    {"amount": "1", "item": "egg", "notes": "Beat for egg wash"},
+    {"amount": "30 g", "item": "coarse sugar", "notes": "Optional topping"}
+  ],
+  "timeline": [
+    {"time": "00:00", "cook": "Cook", "task": "Cube butter, measure dough ingredients, line two oven trays with baking paper."},
+    {"time": "00:10", "cook": "Cook", "task": "Mix dough in Kenwood, divide into four portions, chill."},
+    {"time": "00:25", "cook": "Cook", "task": "Peel, core, and slice apples; toss filling."},
+    {"time": "00:55", "cook": "Cook", "task": "Start AEG oven preheat: Fan/Convection 180 C."},
+    {"time": "01:00", "cook": "Cook", "task": "Roll bottoms, fill both trays, roll tops, vent and egg-wash."},
+    {"time": "01:25", "cook": "Cook", "task": "Bake both trays. Swap/rotate halfway if browning differs."},
+    {"time": "02:05", "cook": "Cook", "task": "Cool until sliceable; dust or portion."}
+  ],
+  "steps": [
+    {
+      "number": 1,
+      "cook": "Cook",
+      "title": "Prepare trays and cold ingredients",
+      "appliance": "Worktop",
+      "accessory": "Two oven trays, baking paper, rolling pin",
+      "settings": "No heat",
+      "timing": "10 min",
+      "instruction": "Line two oven trays with baking paper. Cube the cold butter and keep it cold while weighing the flour, dough sugar, baking powder, and salt.",
+      "done": "Both trays are lined and all dough ingredients are measured."
+    },
+    {
+      "number": 2,
+      "cook": "Cook",
+      "title": "Mix the shortcrust dough",
+      "appliance": "Kenwood Titanium Chef Patissier XL KWL90.244SI or Kenwood Cooking Chef",
+      "accessory": "Main bowl plus K-beater/paddle if available; otherwise mix by hand",
+      "settings": "Low speed until butter is pea-sized; speed 1-2 after eggs and sour cream, only until clumps form",
+      "timing": "10-12 min",
+      "instruction": "Mix flour, 180 g sugar, baking powder, and salt. Add cold butter and mix until sandy with pea-sized pieces. Add 4 eggs and 200 g sour cream/yogurt. Stop as soon as the dough clumps; do not knead smooth.",
+      "done": "Dough holds together when squeezed but still looks short and slightly crumbly."
+    },
+    {
+      "number": 3,
+      "cook": "Cook",
+      "title": "Divide and chill dough",
+      "appliance": "Refrigerator",
+      "accessory": "Wrap or covered container",
+      "settings": "Cold storage",
+      "timing": "30 min minimum",
+      "instruction": "Divide dough into four portions: two slightly larger bottom pieces and two smaller top pieces. Flatten each into a rectangle, cover, and chill.",
+      "done": "Dough is firm enough to roll without smearing butter."
+    },
+    {
+      "number": 4,
+      "cook": "Cook",
+      "title": "Prepare apple filling",
+      "appliance": "Worktop",
+      "accessory": "Large bowl, knife or slicer",
+      "settings": "No heat",
+      "timing": "25-30 min",
+      "instruction": "Peel and core 2.4 kg apples. Slice 3-5 mm thick. Toss with 160 g sugar, lemon juice, cinnamon, and starch.",
+      "done": "Apples are evenly coated and starting to release a little juice."
+    },
+    {
+      "number": 5,
+      "cook": "Cook",
+      "title": "Preheat the AEG oven",
+      "appliance": "AEG Competence built-in electric oven",
+      "accessory": "Two racks positioned in upper-middle and lower-middle levels",
+      "settings": "Program ID not confirmed; use Fan/Convection, 180 C. Fallback: Top/bottom heat, 190 C, one tray at a time.",
+      "timing": "15-20 min preheat",
+      "instruction": "Turn the oven to fan/convection at 180 C for two-level baking. If your oven has no fan setting or bakes unevenly, plan to bake one tray at a time using top/bottom heat at 190 C.",
+      "done": "Oven is fully preheated before trays go in."
+    },
+    {
+      "number": 6,
+      "cook": "Cook",
+      "title": "Assemble two trays",
+      "appliance": "Worktop",
+      "accessory": "Two lined oven trays, rolling pin",
+      "settings": "No heat",
+      "timing": "20-25 min",
+      "instruction": "Roll the two larger dough portions to fit the tray bases. Lay them into the trays and patch tears. Sprinkle each base with half the breadcrumbs or semolina. Divide apples between trays, leaving a narrow border. Roll the two top pieces, place over the apples, seal edges, cut steam vents, brush with beaten egg, and sprinkle coarse sugar if using.",
+      "done": "Both pies are sealed, vented, and ready to bake."
+    },
+    {
+      "number": 7,
+      "cook": "Cook",
+      "title": "Bake both trays",
+      "appliance": "AEG Competence built-in electric oven",
+      "accessory": "Two oven trays on two rack levels",
+      "settings": "Fan/Convection 180 C, 35-45 min. Swap upper/lower trays and rotate front/back after 22 min if browning differs.",
+      "timing": "35-45 min",
+      "instruction": "Load both trays quickly to preserve oven heat. Bake until the tops are deep golden and apple juices bubble through the vents. If using top/bottom heat instead, bake one tray at a time on the middle shelf at 190 C for 35-45 min.",
+      "done": "Pastry is golden underneath at the edges and filling bubbles visibly through vents."
+    },
+    {
+      "number": 8,
+      "cook": "Cook",
+      "title": "Cool and slice",
+      "appliance": "Cooling rack or heatproof counter",
+      "accessory": "Knife, spatula",
+      "settings": "Room temperature",
+      "timing": "30 min minimum",
+      "instruction": "Cool the trays before slicing so the starch can set the apple juices. Slice each tray into 10-12 pieces.",
+      "done": "Pieces lift cleanly and the filling does not run."
+    }
+  ],
+  "sync_points": [
+    {
+      "name": "Oven-ready assembly",
+      "when": "After dough is chilled and apple filling is mixed",
+      "criteria": "Both trays are rolled, filled, covered, vented, egg-washed, and the AEG oven has reached 180 C fan/convection."
+    },
+    {
+      "name": "Halfway bake check",
+      "when": "About 22 min into baking",
+      "criteria": "If the upper tray browns faster, swap tray positions and rotate each tray front to back."
+    }
+  ],
+  "food_safety": [
+    "Use clean hands and boards after handling raw egg.",
+    "Cool pies at room temperature, then refrigerate leftovers if keeping longer than the same day.",
+    "Reheat slices until hot throughout if serving later."
+  ]
+}

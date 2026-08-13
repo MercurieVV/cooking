@@ -1,0 +1,4 @@
+interface:
+  display_name: "Show Recipe by Request"
+  short_description: "Generate appliance-aware recipe PDFs"
+  default_prompt: "Use $show-recipe-by-request to generate an appliance-aware recipe PDF for chicken soup."
