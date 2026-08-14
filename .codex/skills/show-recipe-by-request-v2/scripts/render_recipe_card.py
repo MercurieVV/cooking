@@ -1986,6 +1986,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
     justify-content: center;
     box-shadow: 0 4px 16px rgba(0,0,0,0.04);
     flex-shrink: 0;
+    margin-top: 14px;
     margin-bottom: 12px;
   }
   
@@ -2010,9 +2011,15 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   
   .spa-scroll-y-step {
     flex: 1;
+    min-height: 60px;
     overflow-y: auto;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
+    /* Fades the last couple of lines instead of hard-cutting mid-word when
+       the do/done text doesn't fit above the fixed-height picture - a clean
+       cut with no gap read as the picture overlapping the text. */
+    mask-image: linear-gradient(to bottom, black calc(100% - 18px), transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 18px), transparent 100%);
   }
   .spa-scroll-y-step::-webkit-scrollbar {
     display: none;
@@ -2219,10 +2226,11 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    margin-top: 14px;
     margin-bottom: 12px;
     flex-shrink: 0;
   }
-  
+
   .spa-diag-inputs {
     display: flex;
     flex-direction: column;
