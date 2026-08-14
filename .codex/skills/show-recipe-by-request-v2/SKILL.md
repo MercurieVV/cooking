@@ -67,13 +67,28 @@ Opening the compiled HTML in a browser launches a full-screen, responsive Single
    `raw/kitchen-tools/2026-08-13-kenwood-kwl90-244si-full-set.md` maps every
    bundled tool (5L bowl, K-beater, whisk, dough hook, spatula, splashguard,
    food-processor discs) to an image path. Use those paths in `parts`.
-2. **Ingredients**: cache them once, reuse forever:
+2. **Ingredients**: cache them once, reuse forever. Try rimi.lv (Latvian
+   grocery e-shop) first — it shows the exact local product the user would
+   actually buy, which is more useful than a generic illustration:
+   1. `python3 .codex/skills/show-recipe-by-request-v2/scripts/fetch_rimi_photo.py --list <latvian-term>`
+      — rimi.lv's search is fuzzy/typo-tolerant, not translated, so an
+      English query returns nonsense (`butter` matched "Butter Chicken
+      sauce" and "Bitter" drinks, not `sviests`). Translate the ingredient
+      to its plain Latvian grocery-shelf name yourself before searching.
+   2. Eyeball the listed candidates — pick the plain product (`Sviests
+      Rimi 82% 200g`), not a ready-meal, sauce, or unrelated product that
+      happens to share a word.
+   3. `fetch_rimi_photo.py --pick <latvian-term> <index> --slug <ingredient-slug>`
+      downloads the chosen photo into `raw/food/images/<slug>.jpg` and logs
+      the query, product name/code and page URL to
+      `raw/food/images/SOURCES.md`.
+   Only fall back to Wikipedia/Wikimedia when rimi.lv has no reasonable
+   match (e.g. spices/flavors not commonly sold as a single retail item):
    `python3 .codex/skills/show-recipe-by-request-v2/scripts/fetch_food_photos.py --spec <spec>.json --write`
    downloads Wikipedia/Wikimedia thumbnails into `raw/food/images/`, appends
    provenance to `raw/food/images/SOURCES.md`, and writes `photo` paths back
-   into the spec. Already-cached files are skipped. Anything it misses
-   (disambiguation pages, rate limits): rerun with a better name, e.g.
-   `fetch_food_photos.py "chicken egg" "bread crumbs"`.
+   into the spec (already-cached files are skipped; misses need a better
+   name, e.g. `fetch_food_photos.py "chicken egg" "bread crumbs"`).
 3. Never hotlink a remote URL from the spec — the PDF inlines local files only.
 
 ## Section 1 — Assumptions is prose-allowed
