@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="1100" height="620">
+  <rect width="1100" height="620" fill="#ffffff"/>
+  <text x="550" y="56" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="42" font-weight="700" fill="#15323a">Two-Tray Slab Pie Layers</text>
+  <text x="550" y="96" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#526a70">Repeat this order on both lined oven trays.</text>
+
+  <rect x="130" y="450" width="840" height="52" rx="8" fill="#dce9ec" stroke="#477b84" stroke-width="5"/>
+  <rect x="165" y="398" width="770" height="50" rx="6" fill="#f3c978" stroke="#9a7228" stroke-width="4"/>
+  <rect x="180" y="356" width="740" height="38" rx="6" fill="#d9b46a" stroke="#8c6829" stroke-width="4"/>
+  <rect x="190" y="262" width="720" height="90" rx="8" fill="#d97942" stroke="#a74922" stroke-width="4"/>
+  <g fill="#f1c24d" stroke="#9a7228" stroke-width="3">
+    <ellipse cx="260" cy="304" rx="44" ry="18"/>
+    <ellipse cx="380" cy="292" rx="52" ry="20"/>
+    <ellipse cx="520" cy="310" rx="56" ry="22"/>
+    <ellipse cx="660" cy="292" rx="50" ry="19"/>
+    <ellipse cx="790" cy="310" rx="46" ry="18"/>
+  </g>
+  <rect x="175" y="208" width="750" height="46" rx="6" fill="#f3c978" stroke="#9a7228" stroke-width="4"/>
+  <g stroke="#704e23" stroke-width="7" stroke-linecap="round">
+    <path d="M310 230h70"/>
+    <path d="M500 230h70"/>
+    <path d="M690 230h70"/>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#15323a">
+    <circle cx="88" cy="475" r="31" fill="#2f6f7a"/>
+    <text x="88" y="485" text-anchor="middle" font-weight="700" fill="#ffffff">1</text>
+    <text x="130" y="552">Lined oven tray</text>
+
+    <circle cx="88" cy="422" r="31" fill="#2f6f7a"/>
+    <text x="88" y="432" text-anchor="middle" font-weight="700" fill="#ffffff">2</text>
+    <text x="210" y="430">Bottom dough</text>
+
+    <circle cx="88" cy="374" r="31" fill="#2f6f7a"/>
+    <text x="88" y="384" text-anchor="middle" font-weight="700" fill="#ffffff">3</text>
+    <text x="220" y="383">Breadcrumbs</text>
+
+    <circle cx="88" cy="304" r="31" fill="#2f6f7a"/>
+    <text x="88" y="314" text-anchor="middle" font-weight="700" fill="#ffffff">4</text>
+    <text x="220" y="313">Apple filling spread flat</text>
+
+    <circle cx="88" cy="230" r="31" fill="#2f6f7a"/>
+    <text x="88" y="240" text-anchor="middle" font-weight="700" fill="#ffffff">5</text>
+    <text x="220" y="178">Top dough with steam vents</text>
+  </g>
+
+  <g stroke="#2f6f7a" stroke-width="4" fill="none">
+    <path d="M118 475 H130"/>
+    <path d="M118 422 H165"/>
+    <path d="M118 374 H180"/>
+    <path d="M118 304 H190"/>
+    <path d="M118 230 H175"/>
+  </g>
+
+  <rect x="710" y="522" width="292" height="62" rx="8" fill="#f6fafb" stroke="#c2d3d7" stroke-width="3"/>
+  <text x="856" y="560" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#15323a">Bake until juices bubble</text>
+</svg>

@@ -1,6 +1,6 @@
 ---
 name: show-recipe-by-request-v2
-description: Generate a requested recipe as a 3-section photo card PDF (Assumptions, Required incl. timeline, Steps), adapted to the user's owned kitchen appliances, programs, settings, accessories and parts, using real photos for concrete things and icons only for abstract ones. Use when the user asks to show, prepare, plan or generate a recipe/recepee/meal/cooking procedure and wants a precise, scannable, appliance-specific plan or PDF output.
+description: Generate a requested recipe as a 3-section photo card PDF and a VR-optimized interactive static HTML SPA (Assumptions, Required incl. timeline, Steps), adapted to the user's owned kitchen appliances, programs, settings, accessories and parts, using real photos for concrete things and icons only for abstract ones. Use when the user asks to show, prepare, plan or generate a recipe/recepee/meal/cooking procedure and wants a precise, scannable, appliance-specific plan, PDF, or interactive VR webpage output.
 ---
 
 # Show Recipe By Request v2
@@ -9,7 +9,8 @@ description: Generate a requested recipe as a 3-section photo card PDF (Assumpti
 
 One glanceable cooking plan. A cook reads it standing at the counter with flour
 on their hands: they must find the next action in under two seconds, and must be
-able to recognise every object by its picture.
+able to recognise every object by its picture. Or they use it in a VR headset (Quest 3)
+with hand tracking where they can swipe page-by-page.
 
 Precision comes from **structure and pictures, not prose**.
 
@@ -25,6 +26,20 @@ Exactly three numbered sections, always in this order:
 
 Checkpoints render under the timeline. Diagrams and food safety come last.
 Nothing else is a top-level section.
+
+## Interactive VR SPA (Webpage)
+
+Opening the compiled HTML in a browser launches a full-screen, responsive Single Page Application (SPA) designed specifically for cooking in VR (e.g. Meta Quest 3):
+
+- **Fixed Timeline Header**: A top navigation bar showing all stages (Overview, Setup, Timeline, Step 1..N, Done). The active page is highlighted and centered. Click or pinch a node to jump.
+- **Horizontal Scroll Snapping**: Pages snap horizontally (`scroll-snap-type: x mandatory`). Swipe or use arrow keys to flip pages smoothly.
+- **VR-Friendly Arrows**: Huge, high-contrast semi-transparent buttons (`80px x 140px`) float on the screen edges for effortless hand-tracking pinch clicks.
+- **3-Column Step Layout**:
+  1. *Left column*: Ingredients needed specifically for the current step.
+  2. *Center column*: Step title, settings chips, instruction, done cue, diagrams/photos.
+  3. *Right column*: **What's Left** (a vertical list of subsequent steps, highlighting the next one).
+- **Print stylesheet parity**: In print mode (`@media print`), the SPA controls are hidden and the document prints linearly to WeasyPrint exactly like the PDF card design.
+
 
 ## Pictures beat words
 
@@ -86,14 +101,14 @@ unidentified. Never invent a program ID, model number, temperature or timing.
 
 ## Entity rules
 
-- Sections 2 and 3: one line per entity, no paragraphs. Budgets are in
-  `references/recipe-card-schema.md`.
-- Parameters are chips, one value each: `fan 180 C`, `speed 1-2`, `12 min`,
-  `Program 3`, `probe 74 C`. Never a sentence in a chip.
+- **Simplified appliance names**: Use short, user-friendly names (e.g., "Kenwood mixer" instead of "Kenwood Titanium Chef Patissier XL KWL90.244SI", "AEG oven" instead of "AEG Competence BE3002420M", "Caso water dispenser" instead of "Caso Design HW 660 Turbo").
+- **No manual/function chart images in parts**: Do not list a manual page or function/speed chart as a part of a tool. Instead, name the function in the `program` field and parameters in `settings`.
+- Sections 2 and 3: one line per entity, no paragraphs. Budgets are in `references/recipe-card-schema.md`.
+- Parameters are chips, one value each: `fan 180 C`, `speed 1-2`, `12 min`, `Program 3`, `probe 74 C`. Never a sentence in a chip.
 - Step title = imperative verb first: `Mix shortcrust dough`.
-- Every step ends with `done`: an **observable** cue (`juices bubble through
-  vents`), never a duration restated.
+- Every step ends with `done`: an **observable** cue (`juices bubble through vents`), never a duration restated.
 - Ingredients render as one vertical list: photo, name, amount, note.
+- **Step ingredients**: For each step, explicitly list step-specific ingredients under `"ingredients": [{"item": "plain flour", "amount": "900 g"}]` so that they render in a clean, visual step-specific table with photos, names, and amounts. Do not use the legacy `"needs"` string.
 
 ## Workflow
 
@@ -141,6 +156,5 @@ unidentified. Never invent a program ID, model number, temperature or timing.
 
 ## Scope
 
-Writes recipe artifacts (`recipes/*.json|html|pdf`, `recipes/assets/*.svg`) and
-the photo cache (`raw/food/images/` + its `SOURCES.md`, append-only). Does not
-edit `wiki/` or existing `raw/` evidence files.
+Writes recipe artifacts inside a dedicated recipe-specific folder (`recipes/<recipe-name>/index.html` for the SPA, `recipes/<recipe-name>/<recipe-name>.pdf` for the PDF, and `recipes/<recipe-name>/assets/timeline.svg` for the timeline) and the photo cache (`raw/food/images/` + its `SOURCES.md`, append-only). Does not edit `wiki/` or existing `raw/` evidence files.
+

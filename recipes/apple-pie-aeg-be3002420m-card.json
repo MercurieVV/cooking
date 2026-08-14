@@ -49,10 +49,6 @@
           {
             "name": "Wire shelf",
             "icon": "tray"
-          },
-          {
-            "name": "Function chart",
-            "image": "raw/kitchen-tools/images/aeg-be3002420m-functions-p10.png"
           }
         ]
       },
@@ -91,7 +87,7 @@
       {
         "name": "Refrigerator",
         "role": "Firms dough",
-        "icon": "fridge",
+        "image": "raw/kitchen-tools/images/refrigerator-generic.jpg",
         "settings": "Cold chill",
         "parts": [
           {
@@ -284,7 +280,14 @@
       "cook": "Cook",
       "tool": "Kenwood KWL90.244SI",
       "accessory": "K-beater",
-      "needs": "Dry mix, butter, egg, sour cream",
+      "ingredients": [
+        { "item": "plain flour", "amount": "350 g" },
+        { "item": "cold butter", "amount": "225 g" },
+        { "item": "white sugar", "amount": "35 g" },
+        { "item": "fine salt", "amount": "4 g" },
+        { "item": "egg", "amount": "1" },
+        { "item": "sour cream", "amount": "60-90 g" }
+      ],
       "chips": [
         {
           "icon": "speed",
@@ -326,7 +329,13 @@
       "cook": "Cook",
       "tool": "Adam apple slicer",
       "accessory": "12-wedge cutter",
-      "needs": "Apples, sugar, lemon, cinnamon, starch",
+      "ingredients": [
+        { "item": "apples", "amount": "1.1 kg" },
+        { "item": "brown sugar", "amount": "80-110 g" },
+        { "item": "lemon juice", "amount": "15 ml" },
+        { "item": "ground cinnamon", "amount": "5-8 g" },
+        { "item": "potato starch", "amount": "25 g" }
+      ],
       "chips": [
         {
           "icon": "cut",
@@ -371,13 +380,7 @@
         }
       ],
       "do": "Set Conventional Cooking, temperature 180 C, and place wire shelf on shelf position 1.",
-      "done": "Oven is fully preheated.",
-      "photos": [
-        {
-          "image": "raw/kitchen-tools/images/aeg-be3002420m-functions-p10.png",
-          "caption": "function chart"
-        }
-      ]
+      "done": "Oven is fully preheated."
     },
     {
       "n": 6,
@@ -385,7 +388,11 @@
       "title": "Assemble pie",
       "cook": "Cook",
       "tool": "Worktop",
-      "needs": "Dough, filling, breadcrumbs, egg wash",
+      "ingredients": [
+        { "item": "breadcrumbs", "amount": "40 g" },
+        { "item": "egg", "amount": "1" },
+        { "item": "coarse sugar", "amount": "15 g" }
+      ],
       "chips": [
         {
           "icon": "clock",

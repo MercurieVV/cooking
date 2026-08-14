@@ -62,6 +62,13 @@ Downloaded 2026-08-13. Product photos pulled from retailer/manufacturer listings
 - `caso-hw660-hot-water-dispenser-generic.jpg` — Caso HW 660 Turbo (official Caso product image)
 - `moulinex-breadmaker-generic.jpg` — generic Moulinex bread maker (not OW6118-specific; no photo of that exact model found)
 - `morphy-richards-hand-blender-generic.jpg` — Morphy Richards HBCP hand blender
+- `refrigerator-generic.jpg` — generic double-door refrigerator (representative)
+- `saengq-32953571549-product.webp` — saengQ AliExpress 32953571549 vacuum sealer (exact-model); source: AliExpress item 32953571549 product image
+- `saengq-32953571549-controls.webp` — saengQ AliExpress 32953571549 vacuum sealer accessory-size image (exact listing image); source: AliExpress item 32953571549 listing image, not a control-panel close-up
+- `saengq-32953571549-vacuum-container.webp` — saengQ AliExpress 32953571549 vacuum sealer (exact-model); source: AliExpress item 32953571549 listing image, vacuum container accessory
+- `saengq-32953571549-wine-corks.webp` — saengQ AliExpress 32953571549 vacuum sealer (exact-model); source: AliExpress item 32953571549 listing image, wine-cork accessory
+- `saengq-32953571549-feature-5.webp` — saengQ AliExpress 32953571549 vacuum sealer (exact-model); source: AliExpress item 32953571549 listing feature image
+- `saengq-32953571549-feature-6.webp` — saengQ AliExpress 32953571549 vacuum sealer (exact-model); source: AliExpress item 32953571549 listing feature image
 - `princess-sandwich-maker-generic.jpg` — Princess 127003 DeLuxe sandwich maker
 
 Update these to exact-model photos if/when the owned model number is confirmed.

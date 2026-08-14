@@ -19,3 +19,4 @@
 - `bread-crumbs.jpg` — query `bread crumbs` → [Breadcrumbs](https://en.wikipedia.org/wiki/Breadcrumbs) → https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Breadcrumb.jpg/330px-Breadcrumb.jpg
 - `chicken-egg.jpg` — query `chicken egg` → [Eggs as food](https://en.wikipedia.org/wiki/Eggs_as_food) → https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Huevo_frito.jpg/330px-Huevo_frito.jpg
 - `breadcrumbs.jpg` — query `breadcrumbs` → [Breadcrumbs](https://en.wikipedia.org/wiki/Breadcrumbs) → https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Breadcrumb.jpg/330px-Breadcrumb.jpg
+- `cinnamon.jpg` — query `cinnamon` → [Cinnamon](https://en.wikipedia.org/wiki/Cinnamon) → https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cinnamomum_verum_spices.jpg/330px-Cinnamomum_verum_spices.jpg

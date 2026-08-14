@@ -119,26 +119,28 @@ are accepted but produce a headline with no reasoning — avoid.
   "n": 2,
   "icon": "mixer",
   "title": "Mix shortcrust dough",
-  "cook": "Cook A",
-  "tool": "Kenwood Patissier XL KWL90.244SI",
+  "cook": "Cook",
+  "tool": "Kenwood mixer",
   "accessory": "K-beater",
-  "needs": "Flour, butter, eggs, sour cream",
+  "ingredients": [
+    { "item": "plain flour", "amount": "900 g" },
+    { "item": "cold butter", "amount": "450 g" },
+    { "item": "eggs", "amount": "4" }
+  ],
   "chips": [ { "icon": "speed", "text": "speed 1-2" },
              { "icon": "clock", "text": "10-12 min" } ],
   "do": "Mix dry, add butter to sandy, add eggs and cream, stop at clumps.",
   "done": "Dough clumps when squeezed, still short.",
-  "photos": [ { "image": "raw/kitchen-tools/manuals/...page.png",
-                "caption": "Speed chart" } ],
   "diagram": "recipes/assets/tray-layering.svg"
 }
 ```
 
-- `tool` matching a `required.tools[].name` inherits that appliance photo;
+- `tool` matching a `required.tools[].name` (e.g. "Kenwood mixer") inherits that appliance photo;
   `accessory` matching one of its `parts[].name` inherits the part photo. Spell
   both exactly as in section 2 — that is what wires the pictures up.
-- `photos` adds anything else worth showing: a manual page, a program dial, a
-  control panel, a finished-texture reference.
-- `diagram` for geometry (layering, cuts, tray positions, loading order).
+- `ingredients` specifies a list of step-specific ingredients to show as a table with photos, names, and amounts.
+- `photos` adds anything else worth showing (e.g. finished-texture reference). Do not include function charts or manuals.
+- `diagram` for geometry (layering, cuts, tray positions, loading order). Renders as a large, readable diagram.
 - Multi-cook: set `cook` on every step and add `sync_points`.
 
 ## Checkpoints and safety

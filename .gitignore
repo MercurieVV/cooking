@@ -68,3 +68,7 @@ build/
 /.scala-build/ide-inputs.json
 /.scala-build/ide-launcher-options.json
 /.scala-build/ide-options-v2.json
+
+# Scala CLI and build state
+.scala-build/
+.bsp/

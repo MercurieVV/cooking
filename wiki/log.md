@@ -75,3 +75,11 @@
 - Raw: raw/kitchen-tools/manuals/AEG-BE3002420-installation.pdf
 - Updated: raw/kitchen-tools/kitchen-appliance-inventory.md; raw/kitchen-tools/manuals/aeg-competence-be3002420m-source-extract.md; raw/kitchen-tools/2026-08-13-aeg-be3002420m-confirmation.md; raw/kitchen-tools/images/README.md; wiki/kitchen-tools/kitchen-appliance-inventory.md
 - Notes: replaced earlier manual-missing status with the real local PDF manual, generated function-page images, and cited manual pages for functions, accessories, controls, and technical data.
+
+## [2026-08-14] ingest | saengQ AliExpress 32953571549 vacuum sealer
+- Disposition: Update
+- Raw: raw/kitchen-tools/kitchen-appliance-inventory.md
+- Raw: raw/kitchen-tools/manuals/saengq-32953571549-vacuum-sealer-source-extract.md
+- Raw: raw/kitchen-tools/ACQUISITION-LOG.md
+- Updated: wiki/kitchen-tools/kitchen-appliance-inventory.md; raw/kitchen-tools/images/README.md
+- Notes: added AliExpress product ID/title, verified WebP listing images, accessory tables for hose/container lids/wine stopper, and logged missing PDF manual/control-panel photo.

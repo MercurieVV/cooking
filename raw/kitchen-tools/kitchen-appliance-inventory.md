@@ -1,6 +1,6 @@
 # Kitchen Appliance Inventory (photos + Amazon.de links + user statements)
 
-> Source: User-provided photo identification table; user-provided Amazon.de product links and statements; Amazon.de product pages
+> Source: User-provided photo identification table; user-provided Amazon.de/AliExpress product links and statements; marketplace and product pages
 > Collected: 2026-08-12
 > Published: Unknown
 
@@ -38,8 +38,9 @@
 - add via skill: https://www.amazon.de/-/en/Melissa-16220008-Electric-Peeler/dp/B0CZ9FC5RN — Melissa 16220008 electric peeler
 - add via skill: https://www.amazon.de/-/en/Professional-Stainless-Kitchen-Preparation-Versatile/dp/B0D1V55NWQ — Adam stainless steel apple slicer / apple divider
 - add via skill: AEG Competence BE3002420M
+- add via skill: https://www.aliexpress.com/item/32953571549.html — saengQ electric food vacuum sealer with wine corks/vacuum-container accessories
 
-## Fetched Amazon.de product data
+## Fetched product data
 
 ### Kenwood Cooking Chef family stand mixer / kitchen machine — exact model unconfirmed
 
@@ -265,8 +266,38 @@ Title: Adam professional stainless steel apple divider, kitchen tool for fruit p
 - Included tools/accessories: apple divider only; Amazon mirror mentions optional Adam fruit freshness solution as a bundle/add-on, not confirmed as included.
 - Notes/uncertainty: no user manual, safety PDF, schematic, exploded diagram, EAN, steel grade, weight or verified dimensions found. AdamFresh images show the matching Adam apple-divider product family and packaging.
 
-### Vacuum sealer / "Vacuumator" — to buy
+### saengQ electric food vacuum sealer - AliExpress item 32953571549
 
-- Status: Not purchased yet.
-- User requirement: vacuum sealer with sealing and cans/containers.
-- No owned device manual/specs downloaded because there is no selected model yet.
+Title: saengQ Electric Food Vacuum Sealer Machine Accessories Wine corks Vacuum Container Large Capacity Food Storage Vacuum Sealer
+- Status: User-provided AliExpress item ID 32953571549; exact listing title/images acquired. Purchase/ownership and exact plug variant should still be confirmed by the user.
+- User input: https://www.aliexpress.com/item/32953571549.html
+- Identity: brand saengQ; AliExpress product ID 32953571549; same-family QH-01 model found on Alexnld but not exposed by the current AliExpress HTML; type electric food vacuum sealer / vacuum packaging machine with hose-accessory support.
+- Manual: NOT ACQUIRED — 2 sources tried, see ACQUISITION-LOG.md 2026-08-14.
+- Source extracts: manuals/saengq-32953571549-vacuum-sealer-source-extract.md
+- Product photo: images/saengq-32953571549-product.webp (exact AliExpress listing image)
+- Control-panel photo: NOT ACQUIRED — listing images show open sealer/hose setup but no clean button-panel close-up.
+- Function-symbol photo: NOT APPLICABLE — no numbered programs or function symbols found; same-family source describes one-key automatic sealing.
+- Accessory photos: images/saengq-32953571549-vacuum-container.webp; images/saengq-32953571549-wine-corks.webp; images/saengq-32953571549-feature-5.webp; images/saengq-32953571549-feature-6.webp
+- Electrical: same-family QH-01 retailer source lists 80 W, 220 V / 50 Hz and 110 V / 60 Hz. Treat as representative until the rating label or manual for AliExpress item 32953571549 is confirmed.
+- Capacity/dimensions: same-family QH-01 retailer source lists 345 x 55 x 50 mm body, 0.48 kg weight, and 28 cm bag width limit. AliExpress accessory image lists vacuum-lid sizes 14.5 cm, 21.5 cm and 27.4 cm, for bowls 7.5-11.5 cm, 9.5-18 cm and 15-24 cm respectively, with weights 65 g, 135 g and 245 g.
+- Operating ranges: same-family QH-01 retailer source lists 100+ continuous vacuum-sealing cycles; exact duty cycle/cooldown time NOT ACQUIRED.
+- Controls/connectivity: same-family QH-01 source describes microcomputer operation and fully automatic one-key sealing; no connectivity or app found. Exact button labels/layout NOT ACQUIRED.
+- Cleaning/safety/limits: same-family QH-01 source says sealed sponge is removable/washable and uses an ABS shell; AliExpress feature image labels lid exhaust outlet, silicone sealing area and side grip. Detailed food-contact material certificates, dishwasher limits and electrical safety warnings NOT ACQUIRED.
+- Notes/uncertainty: current AliExpress HTML exposed title and image list but no full specs table; QH-01 specs are representative same-family evidence. Confirm actual label/manual, plug variant, bag count and accessory set when the item arrives.
+
+| # | Function / program | Selector | Temp / setting | Use for | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | One-key vacuum sealing | Button/control layout NOT ACQUIRED | same-family QH-01: automatic one-key sealing; bag width up to 28 cm | vacuum and seal food bags | manuals/saengq-32953571549-vacuum-sealer-source-extract.md |
+| 2 | Vacuum-container evacuation | hose port / suction hose | use matching lid size: 14.5, 21.5 or 27.4 cm | draw air from lidded bowls/containers | AliExpress listing images; manuals/saengq-32953571549-vacuum-sealer-source-extract.md |
+| 3 | Wine-bottle evacuation | hose plus wine-bottle stopper | stopper inserted in bottle neck, hose attached | remove air from wine bottle | AliExpress listing image feature-5; manuals/saengq-32953571549-vacuum-sealer-source-extract.md |
+
+| Accessory | Model/part no. | Photo | Used for |
+| --- | --- | --- | --- |
+| Sealer body | QH-01 only in same-family source; exact AliExpress model field NOT ACQUIRED | images/saengq-32953571549-product.webp | bag vacuum sealing; vacuum source for hose |
+| Suction hose | — | images/saengq-32953571549-vacuum-container.webp | connecting sealer to lids or wine stopper |
+| Small vacuum lid | — | images/saengq-32953571549-wine-corks.webp | 14.5 cm lid for 7.5-11.5 cm bowls |
+| Medium vacuum lid | — | images/saengq-32953571549-wine-corks.webp | 21.5 cm lid for 9.5-18 cm bowls |
+| Large vacuum lid | — | images/saengq-32953571549-wine-corks.webp | 27.4 cm lid for 15-24 cm bowls |
+| Wine-bottle vacuum stopper | — | images/saengq-32953571549-feature-5.webp | vacuum sealing an opened wine bottle |
+| Vacuum bags | count NOT ACQUIRED for current AliExpress HTML |  | food vacuum bags |
+| User manual | PDF NOT ACQUIRED |  | operation and safety instructions |
