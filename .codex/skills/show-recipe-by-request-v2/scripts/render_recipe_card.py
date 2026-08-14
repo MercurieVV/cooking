@@ -368,7 +368,12 @@ def thumb(path_text: str, alt: str = "", cls: str = "th", caption: str = "") -> 
     if not uri:
         return ""
     cap = f'<figcaption>{e(caption)}</figcaption>' if caption else ""
-    return f'<figure class="{cls}"><img src="{uri}" style="width:100%; height:100%; max-width:100%; max-height:100%; object-fit:contain;" alt="{e(alt)}">{cap}</figure>'
+    # No inline width/height:100% here: print-card `.th` figures are content-sized
+    # (no fixed height), so a percentage height resolves to auto and the image
+    # falls back to its full intrinsic size, blowing up the PDF to one image per
+    # page. Every caller's CSS class (`.ings .th img`, `.shot img`,
+    # `figure.spa-cell-img img`, ...) already sets an explicit height.
+    return f'<figure class="{cls}"><img src="{uri}" style="max-width:100%; object-fit:contain;" alt="{e(alt)}">{cap}</figure>'
 
 
 def photo_or_icon(path_text: str, *hints, explicit=None, alt: str = "", cls: str = "th",
