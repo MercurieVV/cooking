@@ -610,11 +610,15 @@ def build_spa_slides(spec: dict, timeline_img: str) -> str:
             pname = s(part.get("name"))
             pimg = s(part.get("image"))
             pimg_html = photo_or_icon(pimg, pname, explicit=part.get("icon"), alt=pname, cls="spa-cell-img")
+            # Caption says "Part", not the parent tool's name again - with 2+
+            # parts that repeated the appliance name back-to-back on the same
+            # grid (e.g. "AEG oven" / "AEG oven" / "AEG oven"), reading as
+            # duplicate appliances.
             tools_list.append(
                 f'<div class="spa-needs-cell">'
                 f'  {pimg_html}'
                 f'  <span class="spa-cell-title">{e(pname)}</span>'
-                f'  <span class="spa-cell-amount">{e(name)}</span>'
+                f'  <span class="spa-cell-amount">Part</span>'
                 f'</div>'
             )
             
