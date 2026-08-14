@@ -1,0 +1,518 @@
+{
+  "title": "Simple Apple Pie, Two Trays",
+  "output": "recipes/simple-apple-pie.pdf",
+  "servings": "20-24 pieces",
+  "difficulty": "Easy",
+  "cooks": "1 cook",
+  "summary": "Open shortcrust slab pie: pressed base, crumbs, apples. No lid, both trays baked together.",
+  "assumptions": [
+    {
+      "icon": "tray",
+      "text": "Two flat oven trays, about 30 x 40 cm",
+      "note": "\"2 owen plates\" read as the AEG oven's own baking trays. Smaller trays: keep dough back rather than building thicker."
+    },
+    {
+      "icon": "layers",
+      "text": "Open pie, no top crust",
+      "note": "\"Not much layers\" read as base plus filling only. Want a lid: keep back a third of the dough and add 10 minutes bake."
+    },
+    {
+      "icon": "dough",
+      "text": "Dough pressed in, not rolled",
+      "note": "Pressing skips rolling, chilling and flouring. If you prefer rolling, chill the dough 30 minutes first."
+    },
+    {
+      "icon": "oven",
+      "text": "AEG oven has dial functions, no program numbers",
+      "note": "BE3002420M is a rotary-dial model. Select the True Fan Cooking symbol on the function dial, not a program number."
+    },
+    {
+      "icon": "temp",
+      "text": "Fan 180 C on two shelf levels",
+      "note": "Fan heat is the only mode that bakes both trays evenly at once. Fallback: 190 C conventional, one tray at a time."
+    },
+    {
+      "icon": "apple",
+      "text": "Firm sour apples, weighed before peeling",
+      "note": "Granny Smith or Antonovka hold their shape. Sweet soft apples: cut 5 mm and drop filling sugar to 110 g."
+    },
+    {
+      "icon": "spice",
+      "text": "Vanilla as vanilla sugar",
+      "note": "Rimi stocks vanilla sugar, not plain extract. Swap 16 g vanilla sugar for 2 tsp extract if you have it."
+    }
+  ],
+  "required": {
+    "time": {
+      "active": "0:58",
+      "passive": "1:07",
+      "total": "2 h 05 min"
+    },
+    "tools": [
+      {
+        "name": "AEG oven",
+        "role": "Bakes both trays at once, two levels",
+        "image": "raw/kitchen-tools/images/aeg-be3002420m-product-representative.jpg",
+        "settings": "Fan 180 C, upper + lower third",
+        "program": "True Fan Cooking symbol",
+        "parts": [
+          {
+            "name": "2 baking trays + paper",
+            "icon": "tray"
+          }
+        ]
+      },
+      {
+        "name": "Kenwood mixer",
+        "role": "Weighs dry mix, rubs in cold butter",
+        "image": "raw/kitchen-tools/images/kenwood-titanium-chef-patissier-xl.jpg",
+        "settings": "Speed 1-2, stop at clumps",
+        "parts": [
+          {
+            "name": "5L bowl",
+            "image": "raw/kitchen-tools/images/kenwood-kwl90-5l-stainless-bowl.jpg"
+          },
+          {
+            "name": "K-beater",
+            "image": "raw/kitchen-tools/images/kenwood-kwl90-stainless-k-beater.jpg"
+          },
+          {
+            "name": "Integrated scale",
+            "icon": "scale"
+          },
+          {
+            "name": "Spatula",
+            "image": "raw/kitchen-tools/images/kenwood-kwl90-grey-spatula.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Apple slicer",
+        "role": "Cores and wedges apples in one press",
+        "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-in-use.jpg",
+        "settings": "Press, then cut wedges to 4-5 mm",
+        "parts": [
+          {
+            "name": "12-wedge press",
+            "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-apple-pear.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Kitchen scale",
+        "role": "Weighs apples and filling off the mixer",
+        "image": "raw/kitchen-tools/images/kitchen-scale-generic.jpg",
+        "settings": "Grams, tare between items",
+        "parts": [
+          {
+            "name": "Mixing bowl",
+            "icon": "bowl"
+          }
+        ]
+      }
+    ],
+    "ingredients": [
+      {
+        "amount": "700 g",
+        "item": "plain flour",
+        "notes": "dough",
+        "photo": "raw/food/images/plain-flour-rimi.jpg"
+      },
+      {
+        "amount": "350 g",
+        "item": "cold butter",
+        "notes": "1-2 cm cubes",
+        "photo": "raw/food/images/butter-rimi.jpg"
+      },
+      {
+        "amount": "140 g",
+        "item": "white sugar",
+        "notes": "dough",
+        "photo": "raw/food/images/white-sugar-rimi.jpg"
+      },
+      {
+        "amount": "12 g",
+        "item": "baking powder",
+        "notes": "dough",
+        "photo": "raw/food/images/baking-powder-rimi.jpg"
+      },
+      {
+        "amount": "6 g",
+        "item": "fine salt",
+        "notes": "dough",
+        "photo": "raw/food/images/fine-salt-rimi.jpg"
+      },
+      {
+        "amount": "2",
+        "item": "eggs",
+        "notes": "bind the dough",
+        "photo": "raw/food/images/eggs-rimi.jpg"
+      },
+      {
+        "amount": "2.4 kg",
+        "item": "apples",
+        "notes": "weighed before peeling",
+        "photo": "raw/food/images/apples-rimi.jpg"
+      },
+      {
+        "amount": "150 g",
+        "item": "brown sugar",
+        "notes": "filling",
+        "photo": "raw/food/images/brown-sugar-rimi.jpg"
+      },
+      {
+        "amount": "10 g",
+        "item": "ground cinnamon",
+        "notes": "filling",
+        "photo": "raw/food/images/ground-cinnamon-rimi.jpg"
+      },
+      {
+        "amount": "3 g",
+        "item": "ground nutmeg",
+        "notes": "filling",
+        "photo": "raw/food/images/ground-nutmeg-rimi.jpg"
+      },
+      {
+        "amount": "16 g",
+        "item": "vanilla sugar",
+        "notes": "or 2 tsp extract",
+        "photo": "raw/food/images/vanilla-sugar-rimi.jpg"
+      },
+      {
+        "amount": "30 ml",
+        "item": "lemon juice",
+        "notes": "about 1 lemon",
+        "photo": "raw/food/images/lemon-rimi.jpg"
+      },
+      {
+        "amount": "40 g",
+        "item": "potato starch",
+        "notes": "binds juices",
+        "photo": "raw/food/images/potato-starch-rimi.jpg"
+      },
+      {
+        "amount": "60 g",
+        "item": "breadcrumbs",
+        "notes": "under the apples",
+        "photo": "raw/food/images/breadcrumbs-rimi.jpg"
+      }
+    ],
+    "timeline": [
+      {
+        "time": "0:00",
+        "end": "0:08",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Weigh dry, cube butter"
+      },
+      {
+        "time": "0:08",
+        "end": "0:18",
+        "lane": "Kenwood mixer",
+        "lane_type": "appliance",
+        "task": "Mix shortcrust dough"
+      },
+      {
+        "time": "0:18",
+        "end": "0:30",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Press bases, add crumbs"
+      },
+      {
+        "time": "0:30",
+        "end": "0:45",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Preheat fan 180 C"
+      },
+      {
+        "time": "0:30",
+        "end": "0:50",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Peel and slice apples"
+      },
+      {
+        "time": "0:50",
+        "end": "0:58",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Toss filling, spread it"
+      },
+      {
+        "time": "0:58",
+        "end": "1:40",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Bake both trays"
+      },
+      {
+        "time": "1:40",
+        "end": "2:05",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Cool, then slice"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "n": 1,
+      "icon": "scale",
+      "title": "Weigh dry mix, cube butter",
+      "tool": "Kenwood mixer",
+      "accessory": "Integrated scale",
+      "ingredients": [
+        {
+          "item": "plain flour",
+          "amount": "700 g"
+        },
+        {
+          "item": "white sugar",
+          "amount": "140 g"
+        },
+        {
+          "item": "baking powder",
+          "amount": "12 g"
+        },
+        {
+          "item": "fine salt",
+          "amount": "6 g"
+        },
+        {
+          "item": "cold butter",
+          "amount": "350 g"
+        }
+      ],
+      "chips": [
+        {
+          "icon": "clock",
+          "text": "8 min"
+        },
+        {
+          "icon": "chill",
+          "text": "butter fridge-cold"
+        }
+      ],
+      "do": "Weigh flour, sugar, baking powder and salt straight into the 5L bowl on the mixer's integrated scale, taring between each. Cube the butter last so it stays cold.",
+      "done": "Dry mix in the bowl, butter cubed and still firm."
+    },
+    {
+      "n": 2,
+      "icon": "mixer",
+      "title": "Mix shortcrust dough",
+      "tool": "Kenwood mixer",
+      "accessory": "K-beater",
+      "ingredients": [
+        {
+          "item": "cold butter",
+          "amount": "350 g"
+        },
+        {
+          "item": "eggs",
+          "amount": "2"
+        }
+      ],
+      "chips": [
+        {
+          "icon": "speed",
+          "text": "speed 1-2"
+        },
+        {
+          "icon": "clock",
+          "text": "8-10 min"
+        }
+      ],
+      "do": "Beat the cold butter into the dry mix until it looks like damp sand with no butter lumps, then add the eggs and stop the moment the dough gathers into clumps. Over-mixing makes it tough.",
+      "done": "Holds together when squeezed, still crumbly."
+    },
+    {
+      "n": 3,
+      "icon": "tray",
+      "title": "Press bases into both trays",
+      "tool": "Worktop",
+      "ingredients": [
+        {
+          "item": "breadcrumbs",
+          "amount": "60 g"
+        }
+      ],
+      "chips": [
+        {
+          "icon": "clock",
+          "text": "12 min"
+        },
+        {
+          "icon": "layers",
+          "text": "8 mm thick"
+        }
+      ],
+      "do": "Line both trays with paper and press half the dough into each, about 8 mm thick with a 15 mm rim up the sides. Scatter the breadcrumbs over the base — they soak up the apple juice.",
+      "done": "Even base, raised rim all round, crumbs spread thin.",
+      "diagram": "recipes/simple-apple-pie/assets/tray-layers.svg"
+    },
+    {
+      "n": 4,
+      "icon": "apple",
+      "title": "Peel and slice apples",
+      "tool": "Apple slicer",
+      "accessory": "12-wedge press",
+      "ingredients": [
+        {
+          "item": "apples",
+          "amount": "2.4 kg"
+        }
+      ],
+      "chips": [
+        {
+          "icon": "cut",
+          "text": "4-5 mm"
+        },
+        {
+          "icon": "clock",
+          "text": "20 min"
+        }
+      ],
+      "do": "Peel the apples, press each one through the slicer to core and wedge it in one go, then cut the wedges across into 4-5 mm slices. Thicker slices stay raw in the middle.",
+      "done": "About 2 kg of even slices, no core pieces left."
+    },
+    {
+      "n": 5,
+      "icon": "bowl",
+      "title": "Toss the filling",
+      "tool": "Kitchen scale",
+      "accessory": "Mixing bowl",
+      "ingredients": [
+        {
+          "item": "brown sugar",
+          "amount": "150 g"
+        },
+        {
+          "item": "ground cinnamon",
+          "amount": "10 g"
+        },
+        {
+          "item": "ground nutmeg",
+          "amount": "3 g"
+        },
+        {
+          "item": "vanilla sugar",
+          "amount": "16 g"
+        },
+        {
+          "item": "lemon juice",
+          "amount": "30 ml"
+        },
+        {
+          "item": "potato starch",
+          "amount": "40 g"
+        }
+      ],
+      "chips": [
+        {
+          "icon": "clock",
+          "text": "5 min"
+        },
+        {
+          "icon": "wait",
+          "text": "use straight away"
+        }
+      ],
+      "do": "Weigh brown sugar, cinnamon, nutmeg, vanilla sugar and potato starch onto the sliced apples, add the lemon juice and toss until every slice is coated. Fill the trays now, before the apples water out.",
+      "done": "Slices evenly coated, first juices showing."
+    },
+    {
+      "n": 6,
+      "icon": "oven",
+      "title": "Preheat the oven",
+      "tool": "AEG oven",
+      "accessory": "2 baking trays + paper",
+      "chips": [
+        {
+          "icon": "temp",
+          "text": "fan 180 C"
+        },
+        {
+          "icon": "clock",
+          "text": "15 min"
+        },
+        {
+          "icon": "layers",
+          "text": "shelf 2 and 4"
+        }
+      ],
+      "do": "Turn the function dial to the True Fan Cooking symbol and set 180 C, with racks in the lower and upper third. Fallback if fan is unavailable: 190 C conventional, one tray at a time.",
+      "done": "Oven light off, temperature holding at 180 C."
+    },
+    {
+      "n": 7,
+      "icon": "layers",
+      "title": "Spread apples and bake",
+      "tool": "AEG oven",
+      "ingredients": [
+        {
+          "item": "apples",
+          "amount": "2.4 kg"
+        }
+      ],
+      "chips": [
+        {
+          "icon": "temp",
+          "text": "fan 180 C"
+        },
+        {
+          "icon": "clock",
+          "text": "40-45 min"
+        },
+        {
+          "icon": "sync",
+          "text": "swap at 22 min"
+        }
+      ],
+      "do": "Spread the tossed apples over both bases in one flat overlapping layer, right to the rim, and bake on both levels. Swap top and bottom trays at 22 minutes if one is browning faster.",
+      "done": "Edges golden, apple juices bubbling and thickened."
+    },
+    {
+      "n": 8,
+      "icon": "cut",
+      "title": "Cool, then slice",
+      "tool": "Rack",
+      "chips": [
+        {
+          "icon": "clock",
+          "text": "25 min min"
+        },
+        {
+          "icon": "cut",
+          "text": "10-12 per tray"
+        }
+      ],
+      "do": "Leave the pie on its tray until the base has firmed up, then cut into squares. Cutting hot drags the filling out of the slices.",
+      "done": "Pieces lift clean, filling stays put."
+    }
+  ],
+  "sync_points": [
+    {
+      "name": "Oven-ready",
+      "when": "0:58",
+      "criteria": "Bases pressed and crumbed, filling tossed, oven at 180 C"
+    },
+    {
+      "name": "Bake check",
+      "when": "1:20",
+      "criteria": "Swap trays top/bottom if browning differs"
+    }
+  ],
+  "visuals": [
+    {
+      "title": "Tray cross-section",
+      "image": "recipes/simple-apple-pie/assets/tray-layers.svg",
+      "caption": "Build order 1-4, identical on both trays."
+    }
+  ],
+  "food_safety": [
+    "Wash hands and bowls after raw egg",
+    "Cool fully, then refrigerate leftovers same day"
+  ]
+}
