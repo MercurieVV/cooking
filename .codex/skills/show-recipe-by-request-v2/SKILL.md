@@ -142,7 +142,9 @@ unidentified. Never invent a program ID, model number, temperature or timing.
    appliance that runs unattended. Lanes are what prove the plan is parallel.
 5. Multi-cook: `cook` on every step plus `sync_points` with exact readiness
    criteria.
-6. Cache ingredient photos (above), then render from the project root:
+6. Cache ingredient photos (above) — **for every recipe, try rimi.lv first
+   for every ingredient before falling back to Wikipedia**, not just when
+   convenient. Then render from the project root:
    `python3 .codex/skills/show-recipe-by-request-v2/scripts/render_recipe_card.py <spec>.json`
 7. Report the PDF path and any assumption the user may want to overrule.
 
@@ -165,6 +167,7 @@ unidentified. Never invent a program ID, model number, temperature or timing.
 - [ ] Every assumption has a headline **and** a why/override note.
 - [ ] Every appliance shows a photo; its used parts show photos too.
 - [ ] Every ingredient shows a photo (icon only where no photo exists).
+- [ ] Every ingredient photo was tried on rimi.lv first (`fetch_rimi_photo.py --list/--pick`), Wikipedia only as fallback — for every recipe, not just some.
 - [ ] Every step that uses an appliance/part shows it.
 - [ ] Icons used only for abstract things (time, heat, speed, done, action).
 - [ ] Every step has settings chips and an observable `done` cue.
