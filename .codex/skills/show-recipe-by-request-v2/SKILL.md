@@ -102,13 +102,17 @@ unidentified. Never invent a program ID, model number, temperature or timing.
 ## Entity rules
 
 - **Simplified appliance names**: Use short, user-friendly names (e.g., "Kenwood mixer" instead of "Kenwood Titanium Chef Patissier XL KWL90.244SI", "AEG oven" instead of "AEG Competence BE3002420M", "Caso water dispenser" instead of "Caso Design HW 660 Turbo").
-- **No manual/function chart images in parts**: Do not list a manual page or function/speed chart as a part of a tool. Instead, name the function in the `program` field and parameters in `settings`.
+- **No manual/function chart images in parts**: Never list a manual page or function/speed chart as a tool `part`, and never point a step's `accessory` at one either (e.g. a "Function symbols" page scan). Name the function in the `program` field and the dial symbol/setting in `settings` or the step's `do` text instead — a photo of a printed chart is not a usable picture.
+- **Use an appliance's built-in features before adding a separate tool.** Check `raw/kitchen-tools/<appliance>*.md` for things like an integrated scale, timer, or probe. If the assigned mixer/appliance already weighs ingredients, weigh directly into its bowl on that scale and say so in `do` — do not send the cook to a generic "Worktop" or a separate scale for something the appliance already does.
 - Sections 2 and 3: one line per entity, no paragraphs. Budgets are in `references/recipe-card-schema.md`.
 - Parameters are chips, one value each: `fan 180 C`, `speed 1-2`, `12 min`, `Program 3`, `probe 74 C`. Never a sentence in a chip.
-- Step title = imperative verb first: `Mix shortcrust dough`.
+- Step title = imperative verb first: `Mix shortcrust dough`. **The title must cover everything the step's `do` text does** — if `do` bundles unrelated actions (e.g. lining trays *and* weighing dry ingredients), either split into separate steps or broaden the title so nothing is done off-title.
+- **Step `do` text is 1-2 full sentences, not a fragment.** Say what to do and the one detail that prevents a mistake (why it matters, what "sandy" or "thinner" means concretely) — terser than that reads as a checklist item, not an instruction a cook can follow standing at the counter.
 - Every step ends with `done`: an **observable** cue (`juices bubble through vents`), never a duration restated.
 - Ingredients render as one vertical list: photo, name, amount, note.
 - **Step ingredients**: For each step, explicitly list step-specific ingredients under `"ingredients": [{"item": "plain flour", "amount": "900 g"}]` so that they render in a clean, visual step-specific table with photos, names, and amounts. Do not use the legacy `"needs"` string.
+- **Ingredients and `do` text must agree.** Every item named in a step's `do` sentence (that is actually being added/measured in that step, not a component already folded in earlier) must appear in that step's `ingredients`, and every listed ingredient must be mentioned in `do`. Before finalizing a step, read `ingredients` and `do` side by side and reconcile any mismatch.
+- The renderer already shows a step's `tool`/`accessory` as a photo card with its name (Tools column in the SPA, photo gallery in the PDF) — do not also try to force the tool name into a step's `chips`/icon fields, or it repeats the same appliance twice on one card.
 
 ## Workflow
 
@@ -153,6 +157,10 @@ unidentified. Never invent a program ID, model number, temperature or timing.
 - [ ] Timeline and diagram text readable at 100 % print scale.
 - [ ] Uncertain facts appear in Assumptions, never silently inside a step.
 - [ ] Metric units; Fahrenheit only when it helps.
+- [ ] No tool `part`/step `accessory` points at a manual page or function chart.
+- [ ] No step's title is narrower than what its `do` text actually covers.
+- [ ] Each step's `ingredients` list and `do` text name the same items, both directions.
+- [ ] An appliance's built-in features (integrated scale, timer, probe) are used instead of a separate generic tool for the same job.
 
 ## Scope
 

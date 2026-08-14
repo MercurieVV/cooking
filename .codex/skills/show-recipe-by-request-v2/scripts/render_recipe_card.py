@@ -781,10 +781,9 @@ def build_spa_slides(spec: dict, timeline_img: str) -> str:
         )
 
         # 3. Chips HTML
-        chips_list = [
-            chip(s(st.get("tool")), s(st.get("tool")), explicit=st.get("tool_icon")),
-            chip(s(st.get("accessory")), "accessory", explicit="whisk"),
-        ]
+        # Tool/accessory already appear as photo cards in the Tools column
+        # above - repeating them here just doubled up the same icon/name.
+        chips_list = []
         for c in st["chips"]:
             text_val = s(c.get("text") if isinstance(c, dict) else c)
             icon_val = c.get("icon") if isinstance(c, dict) else None
@@ -1128,7 +1127,7 @@ def build_html(spec: dict, timeline_img: str) -> str:
         chips = "".join(
             filter(None, [
                 chip(s(tool.get("settings")) or s(tool.get("set")), name),
-                chip(s(tool.get("program")), "program", explicit="oven"),
+                chip(s(tool.get("program")), name),
             ])
         )
         parts = "".join(
@@ -1138,7 +1137,7 @@ def build_html(spec: dict, timeline_img: str) -> str:
             for part in (tool.get("parts") or [])
         )
         if not parts and s(tool.get("accessory")):
-            parts = f'<div class="chips">{chip(s(tool.get("accessory")), "accessory", explicit="whisk")}</div>'
+            parts = f'<div class="chips">{chip(s(tool.get("accessory")), s(tool.get("accessory")))}</div>'
         else:
             parts = f'<div class="parts">{parts}</div>' if parts else ""
         role = s(tool.get("role"))
@@ -1211,14 +1210,15 @@ def build_html(spec: dict, timeline_img: str) -> str:
     cards = ""
     for st in spec["steps"]:
         icon = icon_for(st["title"], st["tool"], st["do"], explicit=st.get("icon"), cls="ico-l")
+        # Tool/accessory are already shown via their photo (gallery below) and
+        # the Tools column in the SPA layout - repeating them as chips here
+        # just doubled up the same appliance icon/name on the card.
         chips = "".join(
             filter(None, [
-                chip(s(st.get("tool")), s(st.get("tool")), explicit=st.get("tool_icon")),
-                chip(s(st.get("accessory")), "accessory", explicit="whisk"),
-                *[chip(s(c.get("text") if isinstance(c, dict) else c),
-                       s(c.get("text") if isinstance(c, dict) else c),
-                       explicit=(c.get("icon") if isinstance(c, dict) else None))
-                  for c in st["chips"]],
+                chip(s(c.get("text") if isinstance(c, dict) else c),
+                     s(c.get("text") if isinstance(c, dict) else c),
+                     explicit=(c.get("icon") if isinstance(c, dict) else None))
+                for c in st["chips"]
             ])
         )
 
