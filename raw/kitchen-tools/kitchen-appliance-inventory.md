@@ -301,3 +301,67 @@ Title: saengQ Electric Food Vacuum Sealer Machine Accessories Wine corks Vacuum 
 | Wine-bottle vacuum stopper | — | images/saengq-32953571549-feature-5.webp | vacuum sealing an opened wine bottle |
 | Vacuum bags | count NOT ACQUIRED for current AliExpress HTML |  | food vacuum bags |
 | User manual | PDF NOT ACQUIRED |  | operation and safety instructions |
+
+### SIMPLETASTE Electric Salt and Pepper Mill Set of 2 — Amazon.de ASIN B0DJVHJCQR
+
+Title: SIMPLETASTE Electric Salt and Pepper Mill Set of 2 | USB rechargeable, ceramic grinder, battery salt and pepper shaker, spice mill
+- Status: Exact — user-supplied Amazon.de link matches manufacturer manual, product images and specs.
+- User input: https://www.amazon.de/-/en/SIMPLETASTE-Electric-Salt-Pepper-Mill/dp/B0DJVHJCQR
+- Identity: brand SIMPLETASTE (manufactured by 1byone Products Inc., Ontario, CA, USA); ASIN B0DJVHJCQR; model 1-CF10NA05 / 1-CF10EU05 (KYMQ-45AT02); variant "ABS & Wiederaufladbar" (USB-C rechargeable, 70 ml, black); type electric ceramic salt and pepper mill set of 2.
+- Manual: manuals/simpletaste-b0djvhjcqr-user-manual.pdf
+- Source extracts: n/a — manual and safety PDF acquired directly.
+- Product photo: images/simpletaste-b0djvhjcqr-product.jpg (exact)
+- Control-panel photo: images/simpletaste-b0djvhjcqr-detail-2-buttons.jpg (exact — top On/Off button and charging port)
+- Function-symbol photo: images/simpletaste-b0djvhjcqr-functions-p4.png (manual p. 4, "How to Use" — coarse/fine adjustment dial)
+- Accessory photos: images/simpletaste-b0djvhjcqr-detail-3-usbc.jpg (USB-C cable/port); images/simpletaste-b0djvhjcqr-detail-4-fill.jpg (fill opening / dust cover); images/simpletaste-b0djvhjcqr-detail-5-led.jpg (LED light in use); images/simpletaste-b0djvhjcqr-detail-6-grinder.jpg (ceramic grinder mechanism); images/simpletaste-b0djvhjcqr-fill-p3.png (manual p. 3, charging and filling diagrams)
+- Electrical: rated 3.7 V / 25 W; input 5 V / 10 W via USB-C; charging time ≤2.0 hours; battery 300 mAh Li rechargeable (manual p. 6 "Specifications").
+- Capacity/dimensions: 70 ml transparent container per grinder; product dimensions 5.2 cm W x 17.7 cm H; item weight 214 g (Amazon listing "Item details").
+- Operating ranges: continuously adjustable coarse-to-fine ceramic burr, no numbered grind levels — turn adjustment screw clockwise for fine, counterclockwise for coarse (manual p. 4).
+- Controls/connectivity: top rotary adjustment screw for coarseness; single On/Off button held to grind, released to stop; LED light illuminates while grinding; charging indicator LED (white while charging, off when full); no app/connectivity (manual p. 3-4).
+- Cleaning/safety/limits: do not immerse the grinder body or rinse the main unit with water; container and storage base may be rinsed with clean water, not dishwasher-safe; use for peppercorns and coarse salt only; indoor use only; do not force-tighten or twist the grinder; do not disassemble (manual p. 1, "Cautions").
+- Notes/uncertainty: set includes 2x grinder (one for salt, one for pepper — same hardware, no per-grinder distinction in manual); rating-plate confirmation of exact model string not yet performed by user against the physical unit.
+
+| # | Function / program | Selector | Temp / setting | Use for | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Grind (hold to run) | On/Off button, side of grinder | continuous, stops on release | grinding pepper or salt onto food | manual p. 4 |
+| 2 | Coarseness adjustment | rotary adjustment screw, top (Coarse...Fine markings) | infinitely adjustable, no numbered steps | fine grind for even seasoning, coarse for texture/coarse salt | manual p. 4 |
+
+| Accessory | Model/part no. | Photo | Used for |
+| --- | --- | --- | --- |
+| Grinder body (salt) | 1-CF10NA05 / 1-CF10EU05 (KYMQ-45AT02) | images/simpletaste-b0djvhjcqr-product.jpg | grinding coarse salt |
+| Grinder body (pepper) | 1-CF10NA05 / 1-CF10EU05 (KYMQ-45AT02) | images/simpletaste-b0djvhjcqr-product.jpg | grinding peppercorns |
+| Dust cover (x2) | — | images/simpletaste-b0djvhjcqr-detail-4-fill.jpg | covering the grinding head between uses |
+| USB Type-C charging cable | — | images/simpletaste-b0djvhjcqr-detail-3-usbc.jpg | recharging both grinders (adapter not included) |
+| Cleaning brush | — | — | clearing stuck particles from the ceramic burr |
+
+### AEG built-in induction hob, 4 zones — representative model IBX64200CB, exact owned model unconfirmed
+
+Title: AEG 3000 Induction Hob 60cm IBX64200CB
+- Status: Representative only — user confirmed brand AEG/Electrolux and 4 rings (cooking zones); no model number, ASIN or rating-plate photo supplied. IBX64200CB is a current AEG UK catalogue 60cm 4-zone induction hob used as the closest same-family/same-brand representative source, matching the AEG house style already confirmed for the owned AEG Competence BE3002420M oven elsewhere in this file. Do not treat specs below as the owned unit's exact numbers until the rating plate is checked.
+- User input: user statement "its not portable. its aeg/elcrolug. 4 rings." (correcting an earlier portable-cooktop misidentification).
+- Identity: brand AEG (Electrolux group); model IBX64200CB; PNC 949 492 762 00; type Typ 64 B4A 00 AA; built-in 60 cm 4-zone induction hob.
+- Manual: manuals/aeg-ibx64200cb-user-manual.pdf
+- Source extracts: n/a — manual acquired directly from AEG.co.uk.
+- Product photo: images/aeg-ibx64200cb-product-representative.png (representative)
+- Control-panel photo: images/aeg-ibx64200cb-controls-representative.png (representative); images/aeg-ibx64200cb-flat-top-representative.png (representative, full top-down view)
+- Function-symbol photo: images/aeg-ibx64200cb-functions-p9.png (manual p. 9 — cooking surface layout and control panel sensor-field layout)
+- Accessory photos: none — hob has no separate accessories/parts beyond the appliance itself (manual lists no included tools).
+- Electrical: 220-240 V, 50/60 Hz; 3.0 kW total rated power (manual p. 15, "Rating plate").
+- Capacity/dimensions: 60 cm built-in hob; 4 induction cooking zones — left front 210 mm, left rear 145 mm, right front 145 mm, right rear 180 mm (manual p. 9 diagram, p. 16 table).
+- Operating ranges: heat setting 0-9 plus Booster (P); each zone's max power and booster duration listed in the functions table (manual p. 16, "Cooking zones specification").
+- Controls/connectivity: capacitive touch-sensor control panel — On/Off, Lock/Child Safety Device, zone-select sensor, heat-setting display, and up/down (^/v) sensors to set heat level; no app/connectivity (manual p. 9, "Control panel layout").
+- Cleaning/safety/limits: glass-ceramic surface, clean with a damp cloth and neutral detergent or a hob scraper at an acute angle; no steam cleaners, no knives/sharp metal tools; pacemaker users must keep minimum 30 cm from an operating induction zone; residual-heat indicator (H) shows after use (manual p. 5-6, p. 13-14).
+- Notes/uncertainty: exact owned model, serial number and PNC not yet confirmed against the physical rating plate (bottom of hob). Zone diameters/power figures above are IBX64200CB's own published specs (manual p. 16) and are representative for "a 4-zone AEG induction hob," not proven identical to the owned unit's zone layout.
+
+| # | Function / program | Selector | Temp / setting | Use for | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Left front zone (210 mm, 2200 W nominal) | zone-select sensor + ^/v heat sensors | heat setting 0-9 | large pans, cookware 125-210 mm | manual p. 16 |
+| 2 | Left rear zone (145 mm, 1400 W nominal) | zone-select sensor + ^/v heat sensors | heat setting 0-9 | small pans, cookware 125-145 mm | manual p. 16 |
+| 3 | Right front zone (145 mm, 1400 W nominal) | zone-select sensor + ^/v heat sensors | heat setting 0-9 | small pans, cookware 125-145 mm | manual p. 16 |
+| 4 | Right rear zone (180 mm, 1700 W nominal) | zone-select sensor + ^/v heat sensors | heat setting 0-9 | medium pans, cookware 150-180 mm | manual p. 16 |
+| 5 | Booster | set zone, touch ^ until "P" shows | max power for up to 4 min, then reverts to heat setting 9 | fast-boiling water, searing | manual p. 11, p. 16 |
+| 6 | Lock / Child Safety Device | lock sensor, held 4 sec | locks control panel or whole hob | preventing accidental changes / childproofing | manual p. 11 |
+
+| Accessory | Model/part no. | Photo | Used for |
+| --- | --- | --- | --- |
+| none included | — | — | manual confirms no bundled accessories for this hob |

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" width="1100" height="560" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="560" fill="#ffffff"/>
+  <text x="40" y="56" font-size="38" font-weight="700" fill="#1a1a1a">Tray cross-section — only 3 layers, no lid</text>
+  <text x="40" y="98" font-size="26" fill="#555555">Same build on both trays. Total height about 35 mm.</text>
+
+  <!-- layer 4: sugar dusting -->
+  <g>
+    <circle cx="200" cy="150" r="5" fill="#c9a227"/><circle cx="260" cy="143" r="5" fill="#c9a227"/>
+    <circle cx="330" cy="152" r="5" fill="#c9a227"/><circle cx="400" cy="144" r="5" fill="#c9a227"/>
+    <circle cx="470" cy="151" r="5" fill="#c9a227"/><circle cx="540" cy="145" r="5" fill="#c9a227"/>
+    <circle cx="610" cy="152" r="5" fill="#c9a227"/><circle cx="680" cy="144" r="5" fill="#c9a227"/>
+  </g>
+  <text x="720" y="158" font-size="26" fill="#1a1a1a">4  Sugar dusting (optional)</text>
+
+  <!-- layer 3: apples -->
+  <rect x="160" y="170" width="540" height="90" rx="10" fill="#f6d9a0" stroke="#b8860b" stroke-width="3"/>
+  <path d="M175 215 h510 M175 240 h510" stroke="#b8860b" stroke-width="2.5" fill="none" opacity="0.6"/>
+  <text x="176" y="203" font-size="24" fill="#7a5a10">apple slices 4-5 mm, one overlapping layer</text>
+  <text x="720" y="222" font-size="26" fill="#1a1a1a">3  Apples, 25 mm — spread flat</text>
+
+  <!-- layer 2: breadcrumbs -->
+  <rect x="160" y="266" width="540" height="26" rx="6" fill="#e2c39a" stroke="#9a6b3f" stroke-width="3"/>
+  <text x="720" y="288" font-size="26" fill="#1a1a1a">2  Breadcrumbs, 3 mm — soaks the juice</text>
+
+  <!-- layer 1: base -->
+  <rect x="160" y="298" width="540" height="46" rx="6" fill="#f0e0c0" stroke="#a07d3c" stroke-width="3"/>
+  <text x="720" y="330" font-size="26" fill="#1a1a1a">1  Pressed shortcrust, 8 mm</text>
+
+  <!-- tray + paper -->
+  <path d="M120 350 h620" stroke="#7a7a7a" stroke-width="4" stroke-dasharray="10 8" fill="none"/>
+  <path d="M120 380 h620 M120 380 v-40 M740 380 v-40" stroke="#4a4a4a" stroke-width="6" fill="none"/>
+  <text x="720" y="372" font-size="26" fill="#1a1a1a">Baking paper on tray</text>
+
+  <!-- edge detail -->
+  <text x="40" y="440" font-size="30" font-weight="700" fill="#1a1a1a">Edge</text>
+  <text x="40" y="478" font-size="26" fill="#333333">Press the dough 15 mm up the tray sides to make a rim that holds the juice in.</text>
+  <text x="40" y="516" font-size="26" fill="#333333">No top crust, so no vents to cut — the apples brown in the open air.</text>
+</svg>

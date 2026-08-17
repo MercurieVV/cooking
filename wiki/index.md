@@ -6,4 +6,5 @@ Kitchen appliances owned, identified from photos.
 
 | Article | Summary | Updated |
 |---------|---------|---------|
-| [Kitchen Appliance Inventory](kitchen-tools/kitchen-appliance-inventory.md) | 11 appliances, including AEG BE3002420M, Kenwood accessories, 1 item to buy | 2026-08-13 |
+| [Kitchen Appliance Inventory](kitchen-tools/kitchen-appliance-inventory.md) | 15 appliances, including AEG BE3002420M, Kenwood accessories, SIMPLETASTE electric salt/pepper mill, AEG induction hob | 2026-08-17 |
+

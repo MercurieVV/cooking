@@ -71,4 +71,18 @@ Downloaded 2026-08-13. Product photos pulled from retailer/manufacturer listings
 - `saengq-32953571549-feature-6.webp` — saengQ AliExpress 32953571549 vacuum sealer (exact-model); source: AliExpress item 32953571549 listing feature image
 - `princess-sandwich-maker-generic.jpg` — Princess 127003 DeLuxe sandwich maker
 
+- `aeg-ibx64200cb-product-representative.png` — AEG IBX64200CB 4-zone induction hob representative lifestyle image, pan in use; source: AEG.co.uk official product page
+- `aeg-ibx64200cb-flat-top-representative.png` — AEG IBX64200CB 4-zone induction hob representative flat top-down image showing all 4 zones and control panel; source: AEG.co.uk official product page
+- `aeg-ibx64200cb-controls-representative.png` — AEG IBX64200CB representative touch-control panel close-up crop; source: AEG.co.uk official product page
+- `aeg-ibx64200cb-functions-p9.png` — AEG IBX64200CB manual page 9 image, cooking surface layout (zone diameters) and control panel sensor-field layout
+
 Update these to exact-model photos if/when the owned model number is confirmed.
+- `simpletaste-b0djvhjcqr-product.jpg` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR (exact-model); source: Amazon.de listing main image
+- `simpletaste-b0djvhjcqr-detail-1.jpg` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR (exact-model); source: Amazon.de listing alt image
+- `simpletaste-b0djvhjcqr-detail-2-buttons.jpg` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR (exact-model); source: Amazon.de listing alt image, top/button detail
+- `simpletaste-b0djvhjcqr-detail-3-usbc.jpg` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR (exact-model); source: Amazon.de listing alt image, USB-C charging detail
+- `simpletaste-b0djvhjcqr-detail-4-fill.jpg` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR (exact-model); source: Amazon.de listing alt image, fill opening detail
+- `simpletaste-b0djvhjcqr-detail-5-led.jpg` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR (exact-model); source: Amazon.de listing alt image, LED light in use
+- `simpletaste-b0djvhjcqr-detail-6-grinder.jpg` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR (exact-model); source: Amazon.de listing alt image, ceramic grinder mechanism/adjustment
+- `simpletaste-b0djvhjcqr-functions-p4.png` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR manual page 4 image, coarse/fine adjustment dial ("How to Use")
+- `simpletaste-b0djvhjcqr-fill-p3.png` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR manual page 3 image, charging and filling diagrams

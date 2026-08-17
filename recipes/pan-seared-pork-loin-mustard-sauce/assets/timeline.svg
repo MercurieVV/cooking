@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 184" width="880" height="184" font-family="Helvetica, Arial, sans-serif">
+<rect width="880" height="184" fill="#ffffff"/>
+<line x1="196.0" y1="44" x2="196.0" y2="176" stroke="#e3ebed" stroke-width="1"/>
+<text x="196.0" y="36" font-size="17" text-anchor="middle" fill="#54666a">0:00</text>
+<line x1="417.3" y1="44" x2="417.3" y2="176" stroke="#e3ebed" stroke-width="1"/>
+<text x="417.3" y="36" font-size="17" text-anchor="middle" fill="#54666a">0:15</text>
+<line x1="638.7" y1="44" x2="638.7" y2="176" stroke="#e3ebed" stroke-width="1"/>
+<text x="638.7" y="36" font-size="17" text-anchor="middle" fill="#54666a">0:30</text>
+<line x1="860.0" y1="44" x2="860.0" y2="176" stroke="#e3ebed" stroke-width="1"/>
+<text x="860.0" y="36" font-size="17" text-anchor="middle" fill="#54666a">0:45</text>
+<rect x="0" y="58.0" width="880" height="112" fill="#fafcfc"/>
+<g transform="translate(14 72.0) scale(1.2)" fill="none" stroke="#2f6f7a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7.5" r="3.5"/><path d="M4.5 21c1-4.2 4-6.2 7.5-6.2S18.5 16.8 19.5 21"/></g>
+<text x="48" y="92.0" font-size="18" font-weight="700" fill="#1d3238">Cook</text>
+<rect x="196.0" y="65.0" width="73.8" height="42" rx="7" fill="#2f6f7a" fill-opacity="0.12" stroke="#2f6f7a" stroke-width="1.6"/>
+<text x="276.8" y="82.0" font-size="13" font-weight="700" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">0:00-0:05</text>
+<text x="276.8" y="82.0" font-size="13" font-weight="700" fill="#2f6f7a">0:00-0:05</text>
+<text x="276.8" y="98.0" font-size="14" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">Weigh, slice pork</text>
+<text x="276.8" y="98.0" font-size="14" fill="#17202a">Weigh, slice pork</text>
+<rect x="314.0" y="65.0" width="73.8" height="42" rx="7" fill="#2f6f7a" fill-opacity="0.12" stroke="#2f6f7a" stroke-width="1.6"/>
+<text x="394.8" y="82.0" font-size="13" font-weight="700" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">0:08-0:13</text>
+<text x="394.8" y="82.0" font-size="13" font-weight="700" fill="#2f6f7a">0:08-0:13</text>
+<text x="394.8" y="98.0" font-size="14" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">Slice onion, garlic</text>
+<text x="394.8" y="98.0" font-size="14" fill="#17202a">Slice onion, garlic</text>
+<rect x="476.4" y="65.0" width="73.8" height="42" rx="7" fill="#2f6f7a" fill-opacity="0.12" stroke="#2f6f7a" stroke-width="1.6"/>
+<text x="557.1" y="82.0" font-size="13" font-weight="700" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">0:19-0:24</text>
+<text x="557.1" y="82.0" font-size="13" font-weight="700" fill="#2f6f7a">0:19-0:24</text>
+<text x="557.1" y="98.0" font-size="14" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">Cook onion, garlic</text>
+<text x="557.1" y="98.0" font-size="14" fill="#17202a">Cook onion, garlic</text>
+<rect x="564.9" y="65.0" width="73.8" height="42" rx="7" fill="#2f6f7a" fill-opacity="0.12" stroke="#2f6f7a" stroke-width="1.6"/>
+<text x="645.7" y="82.0" font-size="13" font-weight="700" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">0:25-0:30</text>
+<text x="645.7" y="82.0" font-size="13" font-weight="700" fill="#2f6f7a">0:25-0:30</text>
+<text x="645.7" y="98.0" font-size="14" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">Simmer pork in sauce</text>
+<text x="645.7" y="98.0" font-size="14" fill="#17202a">Simmer pork in sauce</text>
+<rect x="269.8" y="121.0" width="73.8" height="42" rx="7" fill="#2f6f7a" fill-opacity="0.12" stroke="#2f6f7a" stroke-width="1.6"/>
+<text x="350.6" y="138.0" font-size="13" font-weight="700" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">0:05-0:10</text>
+<text x="350.6" y="138.0" font-size="13" font-weight="700" fill="#2f6f7a">0:05-0:10</text>
+<text x="350.6" y="154.0" font-size="14" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">Season pork</text>
+<text x="350.6" y="154.0" font-size="14" fill="#17202a">Season pork</text>
+<rect x="358.3" y="121.0" width="118.0" height="42" rx="7" fill="#2f6f7a" fill-opacity="0.12" stroke="#2f6f7a" stroke-width="1.6"/>
+<text x="483.4" y="138.0" font-size="13" font-weight="700" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">0:11-0:19</text>
+<text x="483.4" y="138.0" font-size="13" font-weight="700" fill="#2f6f7a">0:11-0:19</text>
+<text x="483.4" y="154.0" font-size="14" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">Sear pork in batches</text>
+<text x="483.4" y="154.0" font-size="14" fill="#17202a">Sear pork in batches</text>
+<rect x="535.4" y="121.0" width="73.8" height="42" rx="7" fill="#2f6f7a" fill-opacity="0.12" stroke="#2f6f7a" stroke-width="1.6"/>
+<text x="616.2" y="138.0" font-size="13" font-weight="700" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">0:23-0:28</text>
+<text x="616.2" y="138.0" font-size="13" font-weight="700" fill="#2f6f7a">0:23-0:28</text>
+<text x="616.2" y="154.0" font-size="14" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">Build mustard sauce</text>
+<text x="616.2" y="154.0" font-size="14" fill="#17202a">Build mustard sauce</text>
+<rect x="623.9" y="121.0" width="73.8" height="42" rx="7" fill="#2f6f7a" fill-opacity="0.12" stroke="#2f6f7a" stroke-width="1.6"/>
+<text x="704.7" y="138.0" font-size="13" font-weight="700" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">0:29-0:34</text>
+<text x="704.7" y="138.0" font-size="13" font-weight="700" fill="#2f6f7a">0:29-0:34</text>
+<text x="704.7" y="154.0" font-size="14" fill="#ffffff" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9">Taste, adjust, serve</text>
+<text x="704.7" y="154.0" font-size="14" fill="#17202a">Taste, adjust, serve</text>
+</svg>

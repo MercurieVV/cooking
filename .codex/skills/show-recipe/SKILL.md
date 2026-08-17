@@ -1,9 +1,9 @@
 ---
-name: show-recipe-by-request-v2
+name: show-recipe
 description: Generate a requested recipe as a 3-section photo card PDF and a VR-optimized interactive static HTML SPA (Assumptions, Required incl. timeline, Steps), adapted to the user's owned kitchen appliances, programs, settings, accessories and parts, using real photos for concrete things and icons only for abstract ones. Use when the user asks to show, prepare, plan or generate a recipe/recepee/meal/cooking procedure and wants a precise, scannable, appliance-specific plan, PDF, or interactive VR webpage output.
 ---
 
-# Show Recipe By Request v2
+# Show Recipe
 
 ## Goal
 
@@ -70,7 +70,7 @@ Opening the compiled HTML in a browser launches a full-screen, responsive Single
 2. **Ingredients**: cache them once, reuse forever. Try rimi.lv (Latvian
    grocery e-shop) first — it shows the exact local product the user would
    actually buy, which is more useful than a generic illustration:
-   1. `python3 .codex/skills/show-recipe-by-request-v2/scripts/fetch_rimi_photo.py --list <latvian-term>`
+   1. `python3 .codex/skills/show-recipe/scripts/fetch_rimi_photo.py --list <latvian-term>`
       — rimi.lv's search is fuzzy/typo-tolerant, not translated, so an
       English query returns nonsense (`butter` matched "Butter Chicken
       sauce" and "Bitter" drinks, not `sviests`). Translate the ingredient
@@ -84,7 +84,7 @@ Opening the compiled HTML in a browser launches a full-screen, responsive Single
       `raw/food/images/SOURCES.md`.
    Only fall back to Wikipedia/Wikimedia when rimi.lv has no reasonable
    match (e.g. spices/flavors not commonly sold as a single retail item):
-   `python3 .codex/skills/show-recipe-by-request-v2/scripts/fetch_food_photos.py --spec <spec>.json --write`
+   `python3 .codex/skills/show-recipe/scripts/fetch_food_photos.py --spec <spec>.json --write`
    downloads Wikipedia/Wikimedia thumbnails into `raw/food/images/`, appends
    provenance to `raw/food/images/SOURCES.md`, and writes `photo` paths back
    into the spec (already-cached files are skipped; misses need a better
@@ -103,16 +103,42 @@ programs, and any ingredient judgement (apple type, sweetness, tray size).
 
 ## Programs: look for the real one
 
-Before writing "program unconfirmed", dig:
+Before writing "program unconfirmed", dig — same method as the karpathy-llm-wiki
+skill's Query flow, not a single hardcoded file:
 
-- `wiki/kitchen-tools/kitchen-appliance-inventory.md`
-- `raw/kitchen-tools/<appliance>*.md` and `raw/kitchen-tools/manuals/`
+1. Read `wiki/index.md` to see every topic/article that exists, then full-text
+   search `wiki/` for the appliance/technique's key terms and synonyms (brand,
+   model, function name). Don't assume `wiki/kitchen-tools/kitchen-appliance-inventory.md`
+   is the only relevant article — the wiki grows other topics over time.
+2. Read the matching articles and follow their `Raw:` links into
+   `raw/kitchen-tools/<appliance>*.md` and `raw/kitchen-tools/manuals/` for the
+   exact program/setting values.
 
 Then say precisely what is known. Some appliances have numbered programs
 (Instant Pot, bread maker); some are rotary-symbol machines with **no program
 numbers at all** — for those, name the dial symbol to select ("fan/convection
 symbol on the left dial") and record in Assumptions that the model is
 unidentified. Never invent a program ID, model number, temperature or timing.
+Prefer wiki/raw content over general training knowledge of the appliance.
+
+## Fit the recipe to the owned appliances, don't just default
+
+When a step could be done with more than one owned appliance or method (e.g.
+knead by hand vs. Kenwood mixer with dough hook; oven vs. air fryer; stovetop
+vs. induction hob vs. Instant Pot sauté), don't silently pick the first one
+that comes to mind. For each such decision:
+
+- Check what's actually owned (via the wiki/raw search above) and compare on
+  the dimensions that matter for *this* recipe: capacity vs. batch size,
+  precision/repeatability (e.g. integrated scale, probe, timed program) vs.
+  manual judgement, unattended-cooking time freed up (frees a lane in the
+  timeline), and cleanup.
+- Pick the appliance/method that best fits, and say which one and why as a
+  one-line Assumption headline + note (e.g. "Knead in Kenwood mixer — dough
+  hook frees hands for the filling; hand-knead noted as override").
+- If two appliances are close to equally good, prefer the one that runs
+  unattended (it becomes its own timeline lane) over one that needs the cook's
+  full attention.
 
 ## Entity rules
 
@@ -131,13 +157,16 @@ unidentified. Never invent a program ID, model number, temperature or timing.
 
 ## Workflow
 
-1. Read the local knowledge base: `wiki/kitchen-tools/kitchen-appliance-inventory.md`,
-   then `raw/kitchen-tools/` for models, parts, programs, photos. No inventory →
+1. Query the wiki like the karpathy-llm-wiki skill does: read `wiki/index.md`
+   for candidate articles, then full-text search `wiki/` with the dish's and
+   appliances' key terms and synonyms; read what matches, then follow into
+   `raw/kitchen-tools/` for models, parts, programs, photos. No inventory →
    ask for the appliance list, or proceed and log the guess as an assumption.
 2. Resolve only blocking unknowns (servings, dish, diet, deadline, cooks).
    Everything else: sane default, recorded in section 1.
 3. Assign appliances. Treat anything in `wiki/` or `raw/` as owned — never write
-   `if available` for confirmed tools.
+   `if available` for confirmed tools. Where a step has more than one owned
+   option, pick the best fit per "Fit the recipe to the owned appliances" above.
 4. Build the timeline before the steps: one lane per person, one lane per
    appliance that runs unattended. Lanes are what prove the plan is parallel.
 5. Multi-cook: `cook` on every step plus `sync_points` with exact readiness
@@ -145,7 +174,7 @@ unidentified. Never invent a program ID, model number, temperature or timing.
 6. Cache ingredient photos (above) — **for every recipe, try rimi.lv first
    for every ingredient before falling back to Wikipedia**, not just when
    convenient. Then render from the project root:
-   `python3 .codex/skills/show-recipe-by-request-v2/scripts/render_recipe_card.py <spec>.json`
+   `python3 .codex/skills/show-recipe/scripts/render_recipe_card.py <spec>.json`
 7. Report the PDF path and any assumption the user may want to overrule.
 
 ## Renderer notes

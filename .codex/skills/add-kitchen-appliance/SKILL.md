@@ -7,7 +7,7 @@ description: Use when adding or updating a kitchen appliance, attachment, access
 
 Turn partial appliance info into **files on disk and tables of facts**: manual,
 photos, functions/programs, parameters, accessories — traceable to sources and
-directly usable by `show-recipe-by-request-v2`.
+directly usable by `show-recipe`.
 
 ## Definition of done
 
@@ -72,7 +72,7 @@ them **representative** until the user confirms the rating plate.
 
 ## Feeds the recipe skill
 
-`show-recipe-by-request-v2` reads this data. Write it so that skill can pick it
+`show-recipe` reads this data. Write it so that skill can pick it
 up without re-researching:
 
 - accessory rows give it `parts[].image` paths for step photos,
