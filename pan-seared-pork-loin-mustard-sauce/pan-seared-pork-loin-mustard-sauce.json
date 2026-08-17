@@ -1,0 +1,198 @@
+{
+  "title": "Pan-Seared Pork Loin, Mustard Sauce",
+  "output": "recipes/pan-seared-pork-loin-mustard-sauce.pdf",
+  "servings": "6",
+  "summary": "Seared pork loin medallions finished in a quick creamy Dijon-mustard pan sauce.",
+  "difficulty": "Easy",
+  "cooks": "1 cook",
+  "assumptions": [
+    { "icon": "servings",
+      "text": "Scaled recipe 1.5x for 6",
+      "note": "Source recipe reads as 4 servings (700 g pork); amounts below are x1.5. Scale back down if 4 is actually correct." },
+    { "icon": "oil",
+      "text": "Vegetable oil = rapeseed oil",
+      "note": "Rimi's plain 'vegetable oil' shelf item is rapeseed (rapšu eļļa). Swap for sunflower oil if you prefer." },
+    { "icon": "spice",
+      "text": "Mustard = Dijon, paprika = smoked",
+      "note": "Recipe names both as the preferred option ('Dijon or regular', 'smoked paprika works great'). Use plain mustard/sweet paprika if you'd rather." },
+    { "icon": "pan",
+      "text": "Frying pan is generic, not tracked",
+      "note": "No specific frying pan is logged in the kitchen inventory; use any large frying pan/skillet that fits pork in a single uncrowded layer." },
+    { "icon": "check",
+      "text": "Only the pork dish is planned in detail",
+      "note": "Salad, mash, rice, and bread are serving suggestions from the source recipe, not planned here — ask if you want one of them worked out too." },
+    { "icon": "temp",
+      "text": "AEG hob heat settings, model unconfirmed",
+      "note": "Owned hob is AEG/Electrolux, 4 zones, heat 0-9 + Booster; exact model logged as representative (IBX64200CB). Adjust settings to your hob's actual response." }
+  ],
+  "required": {
+    "time": { "active": "0:30", "passive": "0:00", "total": "0:30" },
+    "tools": [
+      {
+        "name": "Standalone kitchen scale",
+        "role": "Weighs pork and onion",
+        "image": "raw/kitchen-tools/images/kitchen-scale-generic.jpg",
+        "settings": "g mode",
+        "program": "n/a",
+        "parts": []
+      },
+      {
+        "name": "AEG induction hob",
+        "role": "Sears pork, builds mustard sauce",
+        "image": "raw/kitchen-tools/images/aeg-ibx64200cb-product-representative.png",
+        "settings": "Heat 0-9 + Booster",
+        "program": "n/a",
+        "parts": [
+          { "name": "Frying pan", "icon": "pan" }
+        ]
+      }
+    ],
+    "ingredients": [
+      { "amount": "1050 g", "item": "pork loin", "notes": "boneless",
+        "photo": "raw/food/images/pork-loin.jpg" },
+      { "amount": "2 (300 g)", "item": "onion", "notes": "sliced",
+        "photo": "raw/food/images/onion.jpg" },
+      { "amount": "3 cloves", "item": "garlic", "notes": "minced",
+        "photo": "raw/food/images/garlic.jpg" },
+      { "amount": "350 ml", "item": "heavy cream", "notes": "35%",
+        "photo": "raw/food/images/heavy-cream.jpg" },
+      { "amount": "1.5 tsp", "item": "Dijon mustard", "notes": "",
+        "photo": "raw/food/images/dijon-mustard.jpg" },
+      { "amount": "1.5 tbsp", "item": "vegetable oil", "notes": "for searing",
+        "photo": "raw/food/images/vegetable-oil.jpg" },
+      { "amount": "to taste", "item": "salt", "notes": "",
+        "photo": "raw/food/images/fine-salt-rimi.jpg" },
+      { "amount": "to taste", "item": "black pepper", "notes": "ground",
+        "photo": "raw/food/images/black-pepper.jpg" },
+      { "amount": "1.5 tsp", "item": "smoked paprika", "notes": "",
+        "photo": "raw/food/images/smoked-paprika.jpg" },
+      { "amount": "pinch", "item": "thyme", "notes": "optional",
+        "photo": "raw/food/images/thyme.jpg" }
+    ],
+    "timeline": [
+      { "time": "0:00", "end": "0:05", "lane": "Cook", "lane_type": "person", "task": "Weigh, slice pork" },
+      { "time": "0:05", "end": "0:08", "lane": "Cook", "lane_type": "person", "task": "Season pork" },
+      { "time": "0:08", "end": "0:11", "lane": "Cook", "lane_type": "person", "task": "Slice onion, garlic" },
+      { "time": "0:11", "end": "0:19", "lane": "Cook", "lane_type": "person", "task": "Sear pork in batches" },
+      { "time": "0:19", "end": "0:23", "lane": "Cook", "lane_type": "person", "task": "Cook onion, garlic" },
+      { "time": "0:23", "end": "0:25", "lane": "Cook", "lane_type": "person", "task": "Build mustard sauce" },
+      { "time": "0:25", "end": "0:29", "lane": "Cook", "lane_type": "person", "task": "Simmer pork in sauce" },
+      { "time": "0:29", "end": "0:30", "lane": "Cook", "lane_type": "person", "task": "Taste, adjust, serve" }
+    ]
+  },
+  "steps": [
+    {
+      "n": 1,
+      "icon": "scale",
+      "title": "Weigh and slice pork",
+      "cook": "Cook",
+      "tool": "Standalone kitchen scale",
+      "ingredients": [ { "item": "pork loin", "amount": "1050 g" } ],
+      "chips": [ { "icon": "weight", "text": "1050 g" }, { "icon": "cut", "text": "1-1.5 cm" } ],
+      "do": "Weigh the pork loin on the kitchen scale, then slice it across the grain into pieces about 1-1.5 cm thick. Cutting across the grain, not with it, keeps each piece tender.",
+      "done": "Pieces are evenly ~1 cm thick"
+    },
+    {
+      "n": 2,
+      "icon": "spice",
+      "title": "Season pork",
+      "cook": "Cook",
+      "ingredients": [
+        { "item": "salt", "amount": "to taste" },
+        { "item": "black pepper", "amount": "to taste" },
+        { "item": "smoked paprika", "amount": "1.5 tsp" }
+      ],
+      "chips": [ { "icon": "spice", "text": "both sides" } ],
+      "do": "Rub the sliced pork on both sides with salt, ground black pepper, and smoked paprika. Coat evenly so every piece browns and tastes the same.",
+      "done": "Spices visible and even on every slice"
+    },
+    {
+      "n": 3,
+      "icon": "knife",
+      "title": "Slice onion, mince garlic",
+      "cook": "Cook",
+      "ingredients": [
+        { "item": "onion", "amount": "2 (300 g)" },
+        { "item": "garlic", "amount": "3 cloves" }
+      ],
+      "chips": [ { "icon": "cut", "text": "sliced / minced" } ],
+      "do": "Slice the onions thinly and mince the garlic; keep them separate since the garlic goes in later. Fine mincing on the garlic stops it burning once it hits the hot pan.",
+      "done": "Onion in thin half-moons, garlic finely minced"
+    },
+    {
+      "n": 4,
+      "icon": "pan",
+      "title": "Sear pork in batches",
+      "cook": "Cook",
+      "tool": "AEG induction hob",
+      "accessory": "Frying pan",
+      "ingredients": [
+        { "item": "pork loin", "amount": "1050 g" },
+        { "item": "vegetable oil", "amount": "1.5 tbsp" }
+      ],
+      "chips": [ { "icon": "temp", "text": "heat 8-9" }, { "icon": "clock", "text": "1-1.5 min/side" } ],
+      "do": "Heat the oil in the frying pan over high heat and sear the pork in 2-3 uncrowded batches, about 1-1.5 minutes per side until well browned. Crowding the pan steams the meat instead of browning it. Set seared pork aside.",
+      "done": "Pork deeply browned, not yet cooked through"
+    },
+    {
+      "n": 5,
+      "icon": "pan",
+      "title": "Cook onion and garlic",
+      "cook": "Cook",
+      "tool": "AEG induction hob",
+      "accessory": "Frying pan",
+      "ingredients": [
+        { "item": "onion", "amount": "2 (300 g)" },
+        { "item": "garlic", "amount": "3 cloves" }
+      ],
+      "chips": [ { "icon": "temp", "text": "heat 5-6" }, { "icon": "clock", "text": "3-4 min" } ],
+      "do": "In the same pan, lower the heat and cook the onion 3-4 minutes until soft, then add the garlic and cook 30 seconds more. Same pan keeps the browned pork bits for flavour; the garlic only needs seconds before it turns bitter.",
+      "done": "Onion translucent, garlic fragrant not browned"
+    },
+    {
+      "n": 6,
+      "icon": "pan",
+      "title": "Build mustard sauce",
+      "cook": "Cook",
+      "tool": "AEG induction hob",
+      "accessory": "Frying pan",
+      "ingredients": [
+        { "item": "heavy cream", "amount": "350 ml" },
+        { "item": "Dijon mustard", "amount": "1.5 tsp" },
+        { "item": "thyme", "amount": "pinch" }
+      ],
+      "chips": [ { "icon": "temp", "text": "heat 3-4" }, { "icon": "clock", "text": "1-2 min" } ],
+      "do": "Pour in the cream and stir in the mustard and thyme, simmering gently until combined. A light simmer stops the cream from splitting.",
+      "done": "Sauce lightly thickened, mustard fully blended"
+    },
+    {
+      "n": 7,
+      "icon": "pan",
+      "title": "Simmer pork in sauce",
+      "cook": "Cook",
+      "tool": "AEG induction hob",
+      "accessory": "Frying pan",
+      "ingredients": [ { "item": "pork loin", "amount": "1050 g" } ],
+      "chips": [ { "icon": "temp", "text": "heat 2-3" }, { "icon": "clock", "text": "3-5 min" } ],
+      "do": "Return the seared pork and its resting juices to the pan and simmer gently for 3-5 minutes, just until cooked through. Pork loin is lean, so pull it the moment it's no longer pink at the centre to keep it juicy.",
+      "done": "Pork no longer pink at centre, sauce coats a spoon"
+    },
+    {
+      "n": 8,
+      "icon": "check",
+      "title": "Taste, adjust, and serve",
+      "cook": "Cook",
+      "ingredients": [
+        { "item": "salt", "amount": "to taste" },
+        { "item": "black pepper", "amount": "to taste" }
+      ],
+      "chips": [ { "icon": "check", "text": "adjust seasoning" } ],
+      "do": "Taste the sauce and adjust salt and pepper as needed, then serve hot with your chosen sides. Salad, mash, rice, or crusty bread all pair well.",
+      "done": "Seasoning balanced, plated hot"
+    }
+  ],
+  "food_safety": [
+    "Wash hands and boards after handling raw pork",
+    "Pork must reach no visible pink at the centre before serving"
+  ]
+}
