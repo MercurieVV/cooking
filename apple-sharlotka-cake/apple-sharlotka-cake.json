@@ -1,0 +1,311 @@
+{
+  "title": "Apple Sharlotka Cake",
+  "output": "recipes/apple-sharlotka-cake.pdf",
+  "servings": "10-12 slices",
+  "difficulty": "Easy",
+  "cooks": "1 cook",
+  "summary": "Thin egg batter poured into a tin, thickly layered with raw apple slices, baked until set and golden.",
+  "assumptions": [
+    {
+      "icon": "pan",
+      "text": "Round cake tin, about 26-28 cm",
+      "note": "No tin size given. Assumed a standard 26-28 cm round tin; a smaller tin needs 5-10 extra minutes."
+    },
+    {
+      "icon": "oven",
+      "text": "\"Top+bottom\" is Conventional Cooking",
+      "note": "AEG BE3002420M's dial has no numbered programs. \"Top+bottom\" maps to its Conventional Cooking symbol, not True Fan Cooking."
+    },
+    {
+      "icon": "sugar",
+      "text": "Batter sugar set to 150 g",
+      "note": "User override below the 200-220 g range, for a less sweet cake. Prefer the original range: use 210 g."
+    },
+    {
+      "icon": "spice",
+      "text": "Nutmeg and extra cinnamon folded into apples",
+      "note": "Recipe text lists nutmeg but never places it in a step. Folded both into the apple layer before topping, per the user's own \"start at 1/4 tsp\" note."
+    },
+    {
+      "icon": "microwave",
+      "text": "Butter melted in the microwave",
+      "note": "Fastest unattended option and frees the mixer bowl. Prefer stovetop: melt in a small pot on low heat instead."
+    },
+    {
+      "icon": "whisk",
+      "text": "Kenwood mixer whisk, not hand whisk",
+      "note": "Recipe says heavy whisking isn't needed; the mixer at low speed does it hands-free while apples get sliced."
+    }
+  ],
+  "required": {
+    "time": {
+      "active": "0:40",
+      "passive": "0:55",
+      "total": "1 h 35 min"
+    },
+    "tools": [
+      {
+        "name": "AEG oven",
+        "role": "Bakes the cake with apples on top",
+        "image": "raw/kitchen-tools/images/aeg-be3002420m-product-representative.jpg",
+        "settings": "180 C, top+bottom heat",
+        "program": "Conventional Cooking symbol",
+        "parts": [
+          { "name": "Wire shelf, mid position", "icon": "tray" }
+        ]
+      },
+      {
+        "name": "Samsung microwave",
+        "role": "Melts the butter fast",
+        "image": "raw/kitchen-tools/images/samsung-smart-oven-generic.jpg",
+        "settings": "Microwave, 30 s bursts"
+      },
+      {
+        "name": "Kenwood mixer",
+        "role": "Whisks batter, weighs the flour",
+        "image": "raw/kitchen-tools/images/kenwood-titanium-chef-patissier-xl.jpg",
+        "settings": "Speed 1-2, just combined",
+        "parts": [
+          { "name": "5L bowl", "image": "raw/kitchen-tools/images/kenwood-kwl90-5l-stainless-bowl.jpg" },
+          { "name": "Whisk", "image": "raw/kitchen-tools/images/kenwood-kwl90-stainless-whisk.jpg" },
+          { "name": "Integrated scale", "icon": "scale" }
+        ]
+      },
+      {
+        "name": "Apple slicer",
+        "role": "Cores and wedges apples in one press",
+        "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-in-use.jpg",
+        "settings": "Press, then cut wedges to 3-5 mm",
+        "parts": [
+          { "name": "12-wedge press", "image": "raw/kitchen-tools/images/adam-b0d1v55nwq-apple-slicer-apple-pear.jpg" }
+        ]
+      },
+      {
+        "name": "Kitchen scale",
+        "role": "Weighs apples and the spice toss",
+        "image": "raw/kitchen-tools/images/kitchen-scale-generic.jpg",
+        "settings": "Grams, tare between items",
+        "parts": [
+          { "name": "Mixing bowl", "icon": "bowl" }
+        ]
+      },
+      {
+        "name": "Cake tin",
+        "role": "Holds batter and apples for baking",
+        "icon": "pan",
+        "settings": "26-28 cm, greased"
+      }
+    ],
+    "ingredients": [
+      { "amount": "440 g", "item": "plain flour", "notes": "batter", "photo": "raw/food/images/plain-flour-rimi.jpg" },
+      { "amount": "4", "item": "eggs", "notes": "batter", "photo": "raw/food/images/eggs-rimi.jpg" },
+      { "amount": "150 g", "item": "white sugar", "notes": "batter", "photo": "raw/food/images/white-sugar-rimi.jpg" },
+      { "amount": "10 g", "item": "white sugar", "notes": "topping", "photo": "raw/food/images/white-sugar-rimi.jpg" },
+      { "amount": "200 g", "item": "butter", "notes": "melted", "photo": "raw/food/images/butter-rimi.jpg" },
+      { "amount": "300 ml", "item": "milk", "notes": "batter", "photo": "raw/food/images/milk.jpg" },
+      { "amount": "20 g", "item": "baking powder", "notes": "Rimi brand", "photo": "raw/food/images/baking-powder-rimi.jpg" },
+      { "amount": "8 g", "item": "vanilla sugar", "notes": "1 Dr. Oetker packet", "photo": "raw/food/images/vanilla-sugar-rimi.jpg" },
+      { "amount": "1.65 kg", "item": "apples", "notes": "weighed before peeling", "photo": "raw/food/images/apples-rimi.jpg" },
+      { "amount": "5 g", "item": "ground cinnamon", "notes": "folded into apples", "photo": "raw/food/images/ground-cinnamon-rimi.jpg" },
+      { "amount": "3 g", "item": "ground cinnamon", "notes": "topping", "photo": "raw/food/images/ground-cinnamon-rimi.jpg" },
+      { "amount": "1 g", "item": "ground nutmeg", "notes": "1/4 tsp, folded in", "photo": "raw/food/images/ground-nutmeg-rimi.jpg" },
+      { "amount": "3 g", "item": "fine salt", "notes": "batter", "photo": "raw/food/images/fine-salt-rimi.jpg" }
+    ],
+    "timeline": [
+      { "time": "0:00", "end": "0:02", "lane": "Cook", "lane_type": "person", "task": "Set oven to preheat" },
+      { "time": "0:00", "end": "0:15", "lane": "AEG oven", "lane_type": "appliance", "task": "Preheat 180 C" },
+      { "time": "0:02", "end": "0:05", "lane": "Cook", "lane_type": "person", "task": "Melt the butter" },
+      { "time": "0:05", "end": "0:10", "lane": "Cook", "lane_type": "person", "task": "Whisk eggs, sugar, salt" },
+      { "time": "0:10", "end": "0:12", "lane": "Cook", "lane_type": "person", "task": "Add butter and milk" },
+      { "time": "0:12", "end": "0:18", "lane": "Cook", "lane_type": "person", "task": "Weigh, fold in flour" },
+      { "time": "0:18", "end": "0:21", "lane": "Cook", "lane_type": "person", "task": "Grease tin, pour batter" },
+      { "time": "0:21", "end": "0:33", "lane": "Cook", "lane_type": "person", "task": "Peel and slice apples" },
+      { "time": "0:33", "end": "0:38", "lane": "Cook", "lane_type": "person", "task": "Toss and layer apples" },
+      { "time": "0:38", "end": "0:40", "lane": "Cook", "lane_type": "person", "task": "Sprinkle sugar, cinnamon" },
+      { "time": "0:40", "end": "1:25", "lane": "AEG oven", "lane_type": "appliance", "task": "Bake 40-50 min" },
+      { "time": "1:25", "end": "1:35", "lane": "Cook", "lane_type": "person", "task": "Rest, then serve" }
+    ]
+  },
+  "steps": [
+    {
+      "n": 1,
+      "icon": "oven",
+      "title": "Preheat the oven",
+      "tool": "AEG oven",
+      "accessory": "Wire shelf, mid position",
+      "chips": [
+        { "icon": "temp", "text": "180 C" },
+        { "icon": "clock", "text": "15 min" }
+      ],
+      "do": "Turn the function dial to the Conventional Cooking symbol and set 180 C, with the wire shelf in the middle position. Let it heat while the batter and apples come together.",
+      "done": "Oven holding steady at 180 C."
+    },
+    {
+      "n": 2,
+      "icon": "microwave",
+      "title": "Melt the butter",
+      "tool": "Samsung microwave",
+      "ingredients": [
+        { "item": "butter", "amount": "200 g" }
+      ],
+      "chips": [
+        { "icon": "clock", "text": "2-3 min" },
+        { "icon": "wait", "text": "cool slightly" }
+      ],
+      "do": "Melt the butter in the microwave in 30-second bursts, stirring between each, until fully liquid. Set aside to cool slightly so it doesn't cook the eggs.",
+      "done": "Butter fully melted, no solid lumps left."
+    },
+    {
+      "n": 3,
+      "icon": "whisk",
+      "title": "Whisk eggs, sugar, salt",
+      "tool": "Kenwood mixer",
+      "accessory": "Whisk",
+      "ingredients": [
+        { "item": "eggs", "amount": "4" },
+        { "item": "white sugar", "amount": "150 g" },
+        { "item": "fine salt", "amount": "3 g" },
+        { "item": "vanilla sugar", "amount": "8 g" }
+      ],
+      "chips": [
+        { "icon": "speed", "text": "speed 1-2" },
+        { "icon": "clock", "text": "5 min" }
+      ],
+      "do": "Whisk the eggs with the sugar, salt and vanilla sugar in the 5L bowl until just combined and a little frothy. Heavy aeration isn't needed here.",
+      "done": "Mixture pale yellow, sugar no longer gritty."
+    },
+    {
+      "n": 4,
+      "icon": "mixer",
+      "title": "Add butter and milk",
+      "tool": "Kenwood mixer",
+      "accessory": "Whisk",
+      "ingredients": [
+        { "item": "butter", "amount": "200 g" },
+        { "item": "milk", "amount": "300 ml" }
+      ],
+      "chips": [
+        { "icon": "speed", "text": "speed 1" },
+        { "icon": "clock", "text": "2 min" }
+      ],
+      "do": "With the mixer running on low, pour in the melted butter and milk and mix until the batter is smooth. It stays thin at this stage.",
+      "done": "Batter smooth and pourable, no streaks of butter."
+    },
+    {
+      "n": 5,
+      "icon": "scale",
+      "title": "Weigh and fold in flour",
+      "tool": "Kenwood mixer",
+      "accessory": "Integrated scale",
+      "ingredients": [
+        { "item": "plain flour", "amount": "440 g" },
+        { "item": "baking powder", "amount": "20 g" }
+      ],
+      "chips": [
+        { "icon": "speed", "text": "speed 1" },
+        { "icon": "clock", "text": "6 min" }
+      ],
+      "do": "Weigh the flour and baking powder directly into the bowl on the mixer's integrated scale, then mix on low just until combined. The batter should be thick but still pour, like very dense sour cream.",
+      "done": "Batter thick, drips slowly off the whisk."
+    },
+    {
+      "n": 6,
+      "icon": "pan",
+      "title": "Grease tin, pour batter",
+      "tool": "Cake tin",
+      "chips": [
+        { "icon": "clock", "text": "3 min" }
+      ],
+      "do": "Grease the cake tin with butter and pour in all of the batter, spreading it level. This is the entire batter, none is held back.",
+      "done": "Batter fills the tin in an even layer."
+    },
+    {
+      "n": 7,
+      "icon": "apple",
+      "title": "Peel and slice apples",
+      "tool": "Apple slicer",
+      "accessory": "12-wedge press",
+      "ingredients": [
+        { "item": "apples", "amount": "1.65 kg" }
+      ],
+      "chips": [
+        { "icon": "cut", "text": "3-5 mm" },
+        { "icon": "clock", "text": "12 min" }
+      ],
+      "do": "Peel the apples if you like, press each through the slicer to core and wedge it, then cut the wedges across into thin 3-5 mm slices. Peeling is optional; thickness is not.",
+      "done": "All apples cored and sliced thin."
+    },
+    {
+      "n": 8,
+      "icon": "bowl",
+      "title": "Toss and layer apples",
+      "tool": "Kitchen scale",
+      "accessory": "Mixing bowl",
+      "ingredients": [
+        { "item": "apples", "amount": "1.65 kg" },
+        { "item": "ground cinnamon", "amount": "5 g" },
+        { "item": "ground nutmeg", "amount": "1 g" }
+      ],
+      "chips": [
+        { "icon": "layers", "text": "thick, dense" },
+        { "icon": "clock", "text": "5 min" }
+      ],
+      "do": "Toss the apple slices with the cinnamon and nutmeg, then spread them in a thick, dense layer over the batter without stirring the two together. Press lightly, but don't push the apples under.",
+      "done": "Apples cover the batter in a thick, even layer.",
+      "diagram": "recipes/apple-sharlotka-cake/assets/tin-layers.svg"
+    },
+    {
+      "n": 9,
+      "icon": "sugar",
+      "title": "Sprinkle sugar and cinnamon",
+      "tool": "Cake tin",
+      "ingredients": [
+        { "item": "white sugar", "amount": "10 g" },
+        { "item": "ground cinnamon", "amount": "3 g" }
+      ],
+      "chips": [
+        { "icon": "clock", "text": "1 min" }
+      ],
+      "do": "Scatter the sugar and cinnamon evenly over the top of the apples before baking.",
+      "done": "Apple layer lightly dusted, no bare patches."
+    },
+    {
+      "n": 10,
+      "icon": "oven",
+      "title": "Bake the cake",
+      "tool": "AEG oven",
+      "chips": [
+        { "icon": "temp", "text": "180 C" },
+        { "icon": "clock", "text": "40-50 min" }
+      ],
+      "do": "Bake at 180 C until the batter has set and the top of the apples is golden. Give it closer to 55 minutes if the apple layer is on the heavier side.",
+      "done": "Skewer through the batter comes out clean."
+    },
+    {
+      "n": 11,
+      "icon": "wait",
+      "title": "Rest, then serve",
+      "tool": "Rack",
+      "chips": [
+        { "icon": "clock", "text": "10 min" }
+      ],
+      "do": "Let the cake rest in the tin for 10 minutes before turning out or slicing. It firms up as it cools, and slices cleaner.",
+      "done": "Cake pulls cleanly from the sides of the tin."
+    }
+  ],
+  "sync_points": [
+    { "name": "Oven-ready", "when": "0:15", "criteria": "Oven holding at 180 C on Conventional Cooking" },
+    { "name": "Bake-ready", "when": "0:40", "criteria": "Batter poured, apples layered and topped, oven at temp" }
+  ],
+  "visuals": [
+    {
+      "title": "Tin cross-section",
+      "image": "recipes/apple-sharlotka-cake/assets/tin-layers.svg",
+      "caption": "Batter first, apple wedges pressed lightly on top, sugar and cinnamon last."
+    }
+  ],
+  "food_safety": [
+    "Wash hands and bowls after raw egg",
+    "Cool fully, then refrigerate leftovers same day"
+  ]
+}
