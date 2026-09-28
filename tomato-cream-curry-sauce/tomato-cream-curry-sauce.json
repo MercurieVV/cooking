@@ -1,0 +1,163 @@
+{
+  "title": "Tomato Cream Curry Sauce",
+  "output": "recipes/tomato-cream-curry-sauce/tomato-cream-curry-sauce.pdf",
+  "servings": "double batch, ~1.2 L sauce",
+  "summary": "Onion-tomato-cream curry base, spiced with garam masala, coriander, cumin, paprika, turmeric, cayenne.",
+  "difficulty": "Easy",
+  "cooks": "1 cook",
+  "assumptions": [
+    { "icon": "pot",
+      "text": "Large pot on AEG hob, no wok owned",
+      "note": "User's own tip calls for a wok-sized vessel; inventory has no wok, so widest owned pot on the AEG induction hob is used instead." },
+    { "icon": "oil",
+      "text": "Olive oil chosen over ghee",
+      "note": "Recipe allows either; olive oil already cached and stocked. Swap 1:1 for ghee if preferred." },
+    { "icon": "check",
+      "text": "Salt and sugar set to 1.5 tsp each",
+      "note": "Recipe gives a 1-2 tsp range 'to taste'; midpoint used as a starting point, adjust after tasting." }
+  ],
+  "required": {
+    "time": { "active": "25 min", "passive": "20 min", "total": "45 min" },
+    "tools": [
+      {
+        "name": "AEG induction hob",
+        "role": "Sautés onions and simmers sauce",
+        "image": "raw/kitchen-tools/images/aeg-ibx64200cb-product-representative.png",
+        "settings": "Heat 6-7, then heat 2-3 covered",
+        "program": "n/a",
+        "parts": []
+      }
+    ],
+    "ingredients": [
+      { "amount": "4 tbsp", "item": "olive oil", "notes": "or ghee", "photo": "raw/food/images/olive-oil.jpg" },
+      { "amount": "2 large", "item": "onion", "notes": "finely chopped", "photo": "raw/food/images/onion.jpg" },
+      { "amount": "8 cloves", "item": "garlic", "notes": "minced", "photo": "raw/food/images/garlic.jpg" },
+      { "amount": "3 tbsp", "item": "fresh ginger", "notes": "grated", "photo": "raw/food/images/fresh-ginger.jpg" },
+      { "amount": "4 tbsp", "item": "tomato paste", "notes": "", "photo": "raw/food/images/tomato-paste.jpg" },
+      { "amount": "800 g", "item": "chopped tomatoes", "notes": "in juice, 2 cans", "photo": "raw/food/images/chopped-tomatoes.jpg" },
+      { "amount": "300 ml", "item": "heavy cream", "notes": "30-35%", "photo": "raw/food/images/heavy-cream.jpg" },
+      { "amount": "1 tbsp", "item": "garam masala", "notes": "3 tsp", "photo": "raw/food/images/garam-masala.jpg" },
+      { "amount": "2 tsp", "item": "ground coriander", "notes": "", "photo": "raw/food/images/ground-coriander.jpg" },
+      { "amount": "2 tsp", "item": "cumin", "notes": "", "photo": "raw/food/images/cumin.jpg" },
+      { "amount": "2 tsp", "item": "paprika powder", "notes": "sweet", "photo": "raw/food/images/paprika-powder.jpg" },
+      { "amount": "1 tsp", "item": "turmeric", "notes": "", "photo": "raw/food/images/turmeric.jpg" },
+      { "amount": "0.5 tsp", "item": "cayenne pepper", "notes": "or to taste", "photo": "raw/food/images/cayenne-pepper.jpg" },
+      { "amount": "1.5 tsp", "item": "salt", "notes": "to taste", "photo": "raw/food/images/fine-salt-rimi.jpg" },
+      { "amount": "1.5 tsp", "item": "sugar", "notes": "to taste", "photo": "raw/food/images/white-sugar-rimi.jpg" }
+    ],
+    "timeline": [
+      { "time": "0:00", "end": "0:05", "lane": "Cook", "lane_type": "person", "task": "Chop onion, mince garlic, grate ginger" },
+      { "time": "0:05", "end": "0:06", "lane": "Cook", "lane_type": "person", "task": "Heat oil in pot" },
+      { "time": "0:06", "end": "0:16", "lane": "Cook", "lane_type": "person", "task": "Sauté onions golden" },
+      { "time": "0:16", "end": "0:17", "lane": "Cook", "lane_type": "person", "task": "Add garlic and ginger" },
+      { "time": "0:17", "end": "0:18", "lane": "Cook", "lane_type": "person", "task": "Stir in spices and tomato paste" },
+      { "time": "0:18", "end": "0:38", "lane": "AEG hob", "lane_type": "appliance", "task": "Simmer tomato base, covered" },
+      { "time": "0:38", "end": "0:43", "lane": "Cook", "lane_type": "person", "task": "Stir in cream, simmer" }
+    ]
+  },
+  "steps": [
+    {
+      "n": 1,
+      "icon": "knife",
+      "title": "Chop onions",
+      "tool": "Worktop",
+      "ingredients": [ { "item": "onion", "amount": "2 large" } ],
+      "chips": [ { "icon": "cut", "text": "fine chop" } ],
+      "do": "Peel both onions and chop them finely on a board with a knife.",
+      "done": "Onions in small, even pieces, no large chunks."
+    },
+    {
+      "n": 2,
+      "icon": "knife",
+      "title": "Mince garlic",
+      "tool": "Worktop",
+      "ingredients": [ { "item": "garlic", "amount": "8 cloves" } ],
+      "chips": [ { "icon": "cut", "text": "mince" } ],
+      "do": "Peel all 8 garlic cloves and mince them finely with a knife.",
+      "done": "Garlic reduced to a fine, even mince."
+    },
+    {
+      "n": 3,
+      "icon": "knife",
+      "title": "Grate ginger",
+      "tool": "Worktop",
+      "ingredients": [ { "item": "fresh ginger", "amount": "3 tbsp" } ],
+      "chips": [ { "icon": "cut", "text": "grate" } ],
+      "do": "Peel the ginger and grate it finely on a microplane or fine grater.",
+      "done": "3 tbsp loose, fine ginger gratings collected."
+    },
+    {
+      "n": 4,
+      "icon": "pot",
+      "title": "Heat oil",
+      "tool": "AEG induction hob",
+      "ingredients": [ { "item": "olive oil", "amount": "4 tbsp" } ],
+      "chips": [ { "icon": "temp", "text": "heat 6-7" } ],
+      "do": "Pour the olive oil into a large, deep pot and heat it on the hob.",
+      "done": "Oil shimmers, not smoking."
+    },
+    {
+      "n": 5,
+      "icon": "pot",
+      "title": "Sauté onions golden",
+      "tool": "AEG induction hob",
+      "ingredients": [ { "item": "onion", "amount": "2 large" } ],
+      "chips": [ { "icon": "clock", "text": "8-10 min" }, { "icon": "temp", "text": "heat 6-7" } ],
+      "do": "Add the chopped onions to the hot oil and sauté, stirring occasionally, until golden.",
+      "done": "Onions turned golden brown, softened."
+    },
+    {
+      "n": 6,
+      "icon": "pot",
+      "title": "Add garlic and ginger",
+      "tool": "AEG induction hob",
+      "ingredients": [ { "item": "garlic", "amount": "8 cloves" }, { "item": "fresh ginger", "amount": "3 tbsp" } ],
+      "chips": [ { "icon": "clock", "text": "~1 min" } ],
+      "do": "Stir the minced garlic and grated ginger into the onions and cook briefly.",
+      "done": "Garlic and ginger fragrant, not browned."
+    },
+    {
+      "n": 7,
+      "icon": "spice",
+      "title": "Stir in spices and paste",
+      "tool": "AEG induction hob",
+      "ingredients": [
+        { "item": "garam masala", "amount": "1 tbsp" },
+        { "item": "ground coriander", "amount": "2 tsp" },
+        { "item": "cumin", "amount": "2 tsp" },
+        { "item": "paprika powder", "amount": "2 tsp" },
+        { "item": "turmeric", "amount": "1 tsp" },
+        { "item": "cayenne pepper", "amount": "0.5 tsp" },
+        { "item": "tomato paste", "amount": "4 tbsp" }
+      ],
+      "chips": [ { "icon": "clock", "text": "45-60 sec" } ],
+      "do": "Tip in all the dry spices and the tomato paste, stirring constantly to toast them.",
+      "done": "Spices darken and smell toasted, no raw paste lumps."
+    },
+    {
+      "n": 8,
+      "icon": "pot",
+      "title": "Simmer tomato base",
+      "tool": "AEG induction hob",
+      "ingredients": [
+        { "item": "chopped tomatoes", "amount": "800 g" },
+        { "item": "salt", "amount": "1.5 tsp" },
+        { "item": "sugar", "amount": "1.5 tsp" }
+      ],
+      "chips": [ { "icon": "clock", "text": "15-20 min" }, { "icon": "temp", "text": "heat 2-3, covered" } ],
+      "do": "Add the chopped tomatoes, salt and sugar, cover, and simmer on low until thickened.",
+      "done": "Sauce visibly thickened, no longer watery."
+    },
+    {
+      "n": 9,
+      "icon": "pot",
+      "title": "Stir in cream",
+      "tool": "AEG induction hob",
+      "ingredients": [ { "item": "heavy cream", "amount": "300 ml" } ],
+      "chips": [ { "icon": "clock", "text": "3-5 min" }, { "icon": "temp", "text": "heat 2-3" } ],
+      "do": "Stir the cream into the sauce and simmer gently a few minutes more.",
+      "done": "Sauce turned rich orange-red, glossy and smooth."
+    }
+  ],
+  "food_safety": [ "Wash board and knife after handling raw garlic and ginger" ]
+}

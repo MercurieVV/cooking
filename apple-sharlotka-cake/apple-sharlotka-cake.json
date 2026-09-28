@@ -158,24 +158,54 @@
     {
       "n": 3,
       "icon": "whisk",
-      "title": "Whisk eggs, sugar, salt",
+      "title": "Whisk eggs and sugar",
       "tool": "Kenwood mixer",
       "accessory": "Whisk",
       "ingredients": [
         { "item": "eggs", "amount": "4" },
-        { "item": "white sugar", "amount": "150 g" },
-        { "item": "fine salt", "amount": "3 g" },
-        { "item": "vanilla sugar", "amount": "8 g" }
+        { "item": "white sugar", "amount": "150 g" }
       ],
       "chips": [
         { "icon": "speed", "text": "speed 1-2" },
-        { "icon": "clock", "text": "5 min" }
+        { "icon": "clock", "text": "3 min" }
       ],
-      "do": "Whisk the eggs with the sugar, salt and vanilla sugar in the 5L bowl until just combined and a little frothy. Heavy aeration isn't needed here.",
+      "do": "Whisk the 4 eggs with 150 g white sugar in the 5L bowl until just combined and a little frothy. Heavy aeration isn't needed here.",
       "done": "Mixture pale yellow, sugar no longer gritty."
     },
     {
       "n": 4,
+      "icon": "whisk",
+      "title": "Add salt",
+      "tool": "Kenwood mixer",
+      "accessory": "Whisk",
+      "ingredients": [
+        { "item": "fine salt", "amount": "3 g" }
+      ],
+      "chips": [
+        { "icon": "speed", "text": "speed 1-2" },
+        { "icon": "clock", "text": "30 sec" }
+      ],
+      "do": "Whisk in 3 g fine salt.",
+      "done": "Salt fully mixed in, no gritty patches."
+    },
+    {
+      "n": 5,
+      "icon": "whisk",
+      "title": "Add vanilla sugar",
+      "tool": "Kenwood mixer",
+      "accessory": "Whisk",
+      "ingredients": [
+        { "item": "vanilla sugar", "amount": "8 g" }
+      ],
+      "chips": [
+        { "icon": "speed", "text": "speed 1-2" },
+        { "icon": "clock", "text": "30 sec" }
+      ],
+      "do": "Whisk in 8 g vanilla sugar.",
+      "done": "Vanilla sugar fully mixed in."
+    },
+    {
+      "n": 6,
       "icon": "mixer",
       "title": "Add butter and milk",
       "tool": "Kenwood mixer",
@@ -188,11 +218,11 @@
         { "icon": "speed", "text": "speed 1" },
         { "icon": "clock", "text": "2 min" }
       ],
-      "do": "With the mixer running on low, pour in the melted butter and milk and mix until the batter is smooth. It stays thin at this stage.",
+      "do": "With the mixer running on low, pour in 200 g melted butter and 300 ml milk and mix until the batter is smooth. It stays thin at this stage.",
       "done": "Batter smooth and pourable, no streaks of butter."
     },
     {
-      "n": 5,
+      "n": 7,
       "icon": "scale",
       "title": "Weigh and fold in flour",
       "tool": "Kenwood mixer",
@@ -205,11 +235,11 @@
         { "icon": "speed", "text": "speed 1" },
         { "icon": "clock", "text": "6 min" }
       ],
-      "do": "Weigh the flour and baking powder directly into the bowl on the mixer's integrated scale, then mix on low just until combined. The batter should be thick but still pour, like very dense sour cream.",
+      "do": "Weigh 440 g plain flour and 20 g baking powder directly into the bowl on the mixer's integrated scale, then mix on low just until combined. The batter should be thick but still pour, like very dense sour cream.",
       "done": "Batter thick, drips slowly off the whisk."
     },
     {
-      "n": 6,
+      "n": 8,
       "icon": "pan",
       "title": "Grease tin, pour batter",
       "tool": "Cake tin",
@@ -220,7 +250,7 @@
       "done": "Batter fills the tin in an even layer."
     },
     {
-      "n": 7,
+      "n": 9,
       "icon": "apple",
       "title": "Peel and slice apples",
       "tool": "Apple slicer",
@@ -236,26 +266,39 @@
       "done": "All apples cored and sliced thin."
     },
     {
-      "n": 8,
+      "n": 10,
       "icon": "bowl",
-      "title": "Toss and layer apples",
-      "tool": "Kitchen scale",
-      "accessory": "Mixing bowl",
+      "title": "Layer apple slices",
+      "tool": "Cake tin",
       "ingredients": [
-        { "item": "apples", "amount": "1.65 kg" },
-        { "item": "ground cinnamon", "amount": "5 g" },
-        { "item": "ground nutmeg", "amount": "1 g" }
+        { "item": "apples", "amount": "1.65 kg" }
       ],
       "chips": [
         { "icon": "layers", "text": "thick, dense" },
-        { "icon": "clock", "text": "5 min" }
+        { "icon": "clock", "text": "3 min" }
       ],
-      "do": "Toss the apple slices with the cinnamon and nutmeg, then spread them in a thick, dense layer over the batter without stirring the two together. Press lightly, but don't push the apples under.",
+      "do": "Spread 1.65 kg sliced apples in a thick, dense layer over the batter without stirring the two together. Press lightly, but don't push the apples under.",
       "done": "Apples cover the batter in a thick, even layer.",
       "diagram": "recipes/apple-sharlotka-cake/assets/tin-layers.svg"
     },
     {
-      "n": 9,
+      "n": 11,
+      "icon": "spice",
+      "title": "Sprinkle cinnamon and nutmeg on apples",
+      "tool": "Kitchen scale",
+      "accessory": "Mixing bowl",
+      "ingredients": [
+        { "item": "ground cinnamon", "amount": "5 g" },
+        { "item": "ground nutmeg", "amount": "1 g" }
+      ],
+      "chips": [
+        { "icon": "clock", "text": "2 min" }
+      ],
+      "do": "Sprinkle 5 g ground cinnamon and 1 g ground nutmeg evenly over the apple layer.",
+      "done": "Cinnamon and nutmeg coat the apples evenly."
+    },
+    {
+      "n": 12,
       "icon": "sugar",
       "title": "Sprinkle sugar and cinnamon",
       "tool": "Cake tin",
@@ -266,11 +309,11 @@
       "chips": [
         { "icon": "clock", "text": "1 min" }
       ],
-      "do": "Scatter the sugar and cinnamon evenly over the top of the apples before baking.",
+      "do": "Scatter 10 g white sugar and 3 g ground cinnamon evenly over the top of the apples before baking.",
       "done": "Apple layer lightly dusted, no bare patches."
     },
     {
-      "n": 10,
+      "n": 13,
       "icon": "oven",
       "title": "Bake the cake",
       "tool": "AEG oven",
@@ -282,7 +325,7 @@
       "done": "Skewer through the batter comes out clean."
     },
     {
-      "n": 11,
+      "n": 14,
       "icon": "wait",
       "title": "Rest, then serve",
       "tool": "Rack",
