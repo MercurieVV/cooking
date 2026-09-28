@@ -1,0 +1,177 @@
+{
+  "title": "Oven-Roast Chicken Drumsticks",
+  "output": "recipes/kekava-roast-chicken-drumsticks/kekava-roast-chicken-drumsticks.pdf",
+  "servings": "2-3 people",
+  "difficulty": "Easy",
+  "cooks": "1 cook",
+  "summary": "Kekava Grade A drumsticks, oiled and seasoned, roasted with the oven's core probe to 75 C.",
+  "assumptions": [
+    {
+      "icon": "meat",
+      "text": "1 kg Kekava drumsticks, about 6-8 pieces",
+      "note": "Package states 1.00 kg, Grade A, use by 20.08.2026. Cook today; do not carry over."
+    },
+    {
+      "icon": "oven",
+      "text": "AEG Competence has no numbered programs",
+      "note": "Rotary-dial oven. Set left dial to True Fan Cooking symbol, not a program number."
+    },
+    {
+      "icon": "probe",
+      "text": "Use oven's built-in core sensor, not surface time",
+      "note": "AEG oven has a core temperature sensor to 99 C; drumsticks are done at 75 C internal regardless of size mix."
+    },
+    {
+      "icon": "spice",
+      "text": "Plain salt, pepper, olive oil rub",
+      "note": "No marinade specified. For more flavour add paprika/garlic; not included here to keep it simple."
+    }
+  ],
+  "required": {
+    "time": {
+      "active": "0:10",
+      "passive": "0:40",
+      "total": "50 min"
+    },
+    "tools": [
+      {
+        "name": "AEG Competence built-in oven",
+        "role": "Roasts drumsticks to safe core temp",
+        "image": "raw/kitchen-tools/images/aeg-be3002420m-product-representative.jpg",
+        "settings": "Fan 200 C, core probe 75 C",
+        "program": "True Fan Cooking symbol, left dial",
+        "parts": [
+          {
+            "name": "Core temperature sensor",
+            "icon": "probe"
+          },
+          {
+            "name": "Wire shelf + tray",
+            "icon": "tray"
+          }
+        ]
+      }
+    ],
+    "ingredients": [
+      {
+        "amount": "1.00 kg",
+        "item": "chicken drumsticks",
+        "notes": "Kekava, Grade A",
+        "photo": "raw/food/images/chicken-drumsticks.jpg"
+      },
+      {
+        "amount": "30 ml",
+        "item": "olive oil",
+        "notes": "rub",
+        "photo": "raw/food/images/olive-oil.jpg"
+      },
+      {
+        "amount": "8 g",
+        "item": "fine salt",
+        "photo": "raw/food/images/fine-salt.jpg"
+      },
+      {
+        "amount": "2 g",
+        "item": "black pepper",
+        "photo": "raw/food/images/black-pepper.jpg"
+      }
+    ],
+    "timeline": [
+      {
+        "time": "0:00",
+        "end": "0:07",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Pat dry, oil, season"
+      },
+      {
+        "time": "0:00",
+        "end": "0:12",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Preheat fan 200 C"
+      },
+      {
+        "time": "0:12",
+        "end": "0:45",
+        "lane": "AEG oven",
+        "lane_type": "appliance",
+        "task": "Roast to core 75 C"
+      },
+      {
+        "time": "0:45",
+        "end": "0:50",
+        "lane": "Cook",
+        "lane_type": "person",
+        "task": "Rest, plate"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "n": 1,
+      "icon": "meat",
+      "title": "Season drumsticks",
+      "tool": "Worktop",
+      "ingredients": [
+        { "item": "chicken drumsticks", "amount": "1.00 kg" },
+        { "item": "olive oil", "amount": "30 ml" },
+        { "item": "fine salt", "amount": "8 g" },
+        { "item": "black pepper", "amount": "2 g" }
+      ],
+      "chips": [
+        { "icon": "clock", "text": "7 min" },
+        { "icon": "spice", "text": "rub all sides" }
+      ],
+      "do": "Pat drumsticks dry with paper towel. Rub with olive oil, salt, and pepper on all sides.",
+      "done": "Skin dry, evenly coated."
+    },
+    {
+      "n": 2,
+      "icon": "oven",
+      "title": "Preheat oven",
+      "tool": "AEG Competence built-in oven",
+      "chips": [
+        { "icon": "temp", "text": "fan 200 C" },
+        { "icon": "clock", "text": "12 min" },
+        { "icon": "oven", "text": "fan symbol dial" }
+      ],
+      "do": "Set the left dial to True Fan Cooking at 200 C and let the oven reach temperature before loading the tray.",
+      "done": "Oven holds 200 C."
+    },
+    {
+      "n": 3,
+      "icon": "probe",
+      "title": "Roast drumsticks",
+      "tool": "AEG Competence built-in oven",
+      "accessory": "Core temperature sensor",
+      "ingredients": [
+        { "item": "chicken drumsticks", "amount": "1.00 kg" }
+      ],
+      "chips": [
+        { "icon": "temp", "text": "fan 200 C" },
+        { "icon": "probe", "text": "core 75 C" },
+        { "icon": "clock", "text": "30-35 min" }
+      ],
+      "do": "Place drumsticks on the wire shelf over the tray, skin side up. Insert the core sensor into the thickest drumstick, not touching bone, and set it to stop at 75 C.",
+      "done": "Sensor reads 75 C, juices run clear."
+    },
+    {
+      "n": 4,
+      "icon": "cut",
+      "title": "Rest and serve",
+      "tool": "Worktop",
+      "chips": [
+        { "icon": "clock", "text": "5 min" },
+        { "icon": "wait", "text": "rest before cutting" }
+      ],
+      "do": "Rest drumsticks on the tray for 5 minutes before serving so juices settle back in.",
+      "done": "Juices stay on plate, not pooled out."
+    }
+  ],
+  "food_safety": [
+    "Core temperature must reach 75 C before serving",
+    "Wash hands and boards after handling raw chicken",
+    "Refrigerate leftovers within 2 hours"
+  ]
+}

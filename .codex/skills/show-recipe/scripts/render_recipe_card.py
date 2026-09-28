@@ -1721,10 +1721,10 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   }
   
   .slide-3col .spa-col-left {
-    width: 45%;
+    width: 28%;
   }
   .slide-3col .spa-col-center {
-    width: 35%;
+    width: 52%;
   }
   .slide-3col .spa-col-right {
     width: 20%;
@@ -1976,7 +1976,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   /* Action Picture in Pane 3 */
   .spa-action-pic-card {
     width: 100%;
-    height: 280px;
+    height: 150px;
     background: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 12px;
@@ -2215,7 +2215,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   /* Process animation classes - input (left) -> tool (center) -> output (right) */
   .spa-process-anim-container {
     width: 100%;
-    height: 280px;
+    height: 150px;
     background: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 12px;
