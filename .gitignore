@@ -72,3 +72,4 @@ build/
 # Scala CLI and build state
 .scala-build/
 .bsp/
+_site/
