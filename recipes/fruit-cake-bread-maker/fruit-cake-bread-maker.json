@@ -1,0 +1,890 @@
+{
+ "title": "Fruit Cake (Kex)",
+ "output": "recipes/fruit-cake-bread-maker.pdf",
+ "servings": "1 cake, 1000 g",
+ "difficulty": "Easy",
+ "cooks": "1 cook",
+ "summary": "Egg-sugar batter with butter, flour and rum, baked on Moulinex programme 18 with raisins and candied fruit added at the beeps.",
+ "assumptions": [
+  {
+   "icon": "mixer",
+   "text": "Whisk eggs in Kenwood mixer",
+   "note": "Recipe says deep bowl; mixer whisk frees hands for fruit prep and weighs sugar. Hand-whisk 5 min as override."
+  },
+  {
+   "icon": "check",
+   "text": "Programme 18 is fixed 1000 g",
+   "note": "Manual: programme 18 offers only 1000 g, total 1:29, no delay start. Matches the recipe's 1000 g weight."
+  },
+  {
+   "icon": "speed",
+   "text": "Whisk speed set to high",
+   "note": "Recipe gives no speed. Aim for pale, thick mass after 5 minutes; lower the speed if batter splashes."
+  },
+  {
+   "icon": "flour",
+   "text": "Type 45 flour = plain flour",
+   "note": "Fine-milled wheat flour; Rimi plain flour photo used. Any fine plain wheat flour works."
+  },
+  {
+   "icon": "sugar",
+   "text": "Vanilla sugar packet = 8 g",
+   "note": "Dr. Oetker-size packet assumed; use your packet's label. A pinch of salt is about 1 g."
+  },
+  {
+   "icon": "butter",
+   "text": "Butter softened before starting",
+   "note": "Take 230 g butter out about 1 hour ahead; it should dent under a finger. Cold butter will not blend in."
+  },
+  {
+   "icon": "clock",
+   "text": "Fruit goes in at the beeps",
+   "note": "Manual: ingredient signal shows about 1:23 on a 1:29 cycle, so about 6 minutes after start, as in the recipe."
+  },
+  {
+   "icon": "wait",
+   "text": "10 min keep-warm and 60 min cool",
+   "note": "Programme 18 includes 1 h keep-warm. Extra 10 min is optional per the recipe; cooling time follows the manual's bread advice."
+  }
+ ],
+ "required": {
+  "time": {
+   "active": "0:30",
+   "passive": "2:44",
+   "total": "3 h 12 min"
+  },
+  "tools": [
+   {
+    "name": "Kenwood mixer",
+    "role": "Weighs sugar, whisks eggs 5 min",
+    "image": "raw/kitchen-tools/images/kenwood-titanium-chef-patissier-xl.jpg",
+    "settings": "High speed, 5 min",
+    "program": "n/a",
+    "parts": [
+     {
+      "name": "5L bowl",
+      "image": "raw/kitchen-tools/images/kenwood-kwl90-5l-stainless-bowl.jpg"
+     },
+     {
+      "name": "Whisk",
+      "image": "raw/kitchen-tools/images/kenwood-kwl90-stainless-whisk.jpg"
+     },
+     {
+      "name": "Integrated scale",
+      "icon": "scale"
+     },
+     {
+      "name": "Grey spatula",
+      "image": "raw/kitchen-tools/images/kenwood-kwl90-grey-spatula.jpg"
+     }
+    ]
+   },
+   {
+    "name": "Kitchen scale",
+    "role": "Weighs fruit, butter and flour",
+    "image": "raw/kitchen-tools/images/kitchen-scale-generic.jpg",
+    "settings": "Grams, tare between items",
+    "parts": [
+     {
+      "name": "Mixing bowl",
+      "icon": "bowl"
+     }
+    ]
+   },
+   {
+    "name": "Moulinex bread maker",
+    "role": "Mixes and bakes the cake",
+    "image": "raw/kitchen-tools/images/moulinex-ow6002-product.jpg",
+    "settings": "1000 g fixed, medium crust",
+    "program": "Program 18 (Cake)",
+    "parts": [
+     {
+      "name": "Bread pan",
+      "icon": "pan"
+     },
+     {
+      "name": "Tablespoon measure",
+      "icon": "spoon"
+     },
+     {
+      "name": "Teaspoon measure",
+      "icon": "spoon"
+     },
+     {
+      "name": "Paddle hook",
+      "icon": "spoon"
+     }
+    ]
+   },
+   {
+    "name": "Wire rack",
+    "role": "Cools the cake",
+    "icon": "tray",
+    "settings": "60 min, room temperature"
+   }
+  ],
+  "ingredients": [
+   {
+    "amount": "5",
+    "item": "eggs",
+    "notes": "batter",
+    "photo": "raw/food/images/eggs-rimi.jpg"
+   },
+   {
+    "amount": "165 g",
+    "item": "sugar",
+    "notes": "batter",
+    "photo": "raw/food/images/white-sugar-rimi.jpg"
+   },
+   {
+    "amount": "1 packet (8 g)",
+    "item": "vanilla sugar",
+    "notes": "batter",
+    "photo": "raw/food/images/vanilla-sugar-rimi.jpg"
+   },
+   {
+    "amount": "1 pinch",
+    "item": "fine salt",
+    "notes": "batter",
+    "photo": "raw/food/images/fine-salt-rimi.jpg"
+   },
+   {
+    "amount": "1½ tbsp",
+    "item": "dark rum",
+    "notes": "added to pan",
+    "photo": "raw/food/images/dark-rum-rimi.jpg"
+   },
+   {
+    "amount": "230 g",
+    "item": "soft butter",
+    "notes": "added to pan",
+    "photo": "raw/food/images/butter-rimi.jpg"
+   },
+   {
+    "amount": "330 g",
+    "item": "plain flour",
+    "notes": "type 45, fine",
+    "photo": "raw/food/images/plain-flour-rimi.jpg"
+   },
+   {
+    "amount": "2½ tsp",
+    "item": "baking powder",
+    "notes": "added to pan",
+    "photo": "raw/food/images/baking-powder-rimi.jpg"
+   },
+   {
+    "amount": "75 g",
+    "item": "raisins",
+    "notes": "at beep",
+    "photo": "raw/food/images/raisins-rimi.jpg"
+   },
+   {
+    "amount": "75 g",
+    "item": "candied fruit",
+    "notes": "at beep",
+    "photo": "raw/food/images/candied-fruit.jpg"
+   }
+  ],
+  "timeline": [
+   {
+    "time": "0:00",
+    "end": "0:02",
+    "lane": "Cook",
+    "lane_type": "person",
+    "task": "Crack eggs"
+   },
+   {
+    "time": "0:02",
+    "end": "0:05",
+    "lane": "Cook",
+    "lane_type": "person",
+    "task": "Weigh sugar, vanilla, salt"
+   },
+   {
+    "time": "0:05",
+    "end": "0:08",
+    "lane": "Cook",
+    "lane_type": "person",
+    "task": "Weigh raisins, candied fruit"
+   },
+   {
+    "time": "0:08",
+    "end": "0:09",
+    "lane": "Cook",
+    "lane_type": "person",
+    "task": "Fit whisk"
+   },
+   {
+    "time": "0:09",
+    "end": "0:14",
+    "lane": "Kenwood mixer",
+    "lane_type": "appliance",
+    "task": "Whisk 5 min"
+   },
+   {
+    "time": "0:14",
+    "end": "0:16",
+    "lane": "Cook",
+    "lane_type": "person",
+    "task": "Pour batter in pan"
+   },
+   {
+    "time": "0:16",
+    "end": "0:22",
+    "lane": "Cook",
+    "lane_type": "person",
+    "task": "Rum, butter, flour, powder"
+   },
+   {
+    "time": "0:22",
+    "end": "0:26",
+    "lane": "Cook",
+    "lane_type": "person",
+    "task": "Clip, set, start"
+   },
+   {
+    "time": "0:26",
+    "end": "1:55",
+    "lane": "Moulinex",
+    "lane_type": "appliance",
+    "task": "Programme 18 (1:29)"
+   },
+   {
+    "time": "0:32",
+    "end": "0:34",
+    "lane": "Cook",
+    "lane_type": "person",
+    "task": "Add raisins, fruit"
+   },
+   {
+    "time": "1:55",
+    "end": "2:05",
+    "lane": "Moulinex",
+    "lane_type": "appliance",
+    "task": "Keep warm (optional)"
+   },
+   {
+    "time": "2:05",
+    "end": "2:12",
+    "lane": "Cook",
+    "lane_type": "person",
+    "task": "Unplug, unmould"
+   },
+   {
+    "time": "2:12",
+    "end": "3:12",
+    "lane": "Wire rack",
+    "lane_type": "appliance",
+    "task": "Cool 60 min"
+   }
+  ]
+ },
+ "steps": [
+  {
+   "n": 1,
+   "icon": "egg",
+   "title": "Crack eggs",
+   "tool": "Kenwood mixer",
+   "accessory": "5L bowl",
+   "ingredients": [
+    {
+     "item": "eggs",
+     "amount": "5",
+     "photo": "raw/food/images/eggs-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "servings",
+     "text": "5 eggs"
+    }
+   ],
+   "do": "Crack 5 eggs into the 5L bowl, keeping shell out of the bowl.",
+   "done": "5 eggs in bowl, no shell.",
+   "cook": "Cook"
+  },
+  {
+   "n": 2,
+   "icon": "scale",
+   "title": "Weigh sugar",
+   "tool": "Kenwood mixer",
+   "accessory": "Integrated scale",
+   "ingredients": [
+    {
+     "item": "sugar",
+     "amount": "165 g",
+     "photo": "raw/food/images/white-sugar-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "weight",
+     "text": "165 g"
+    }
+   ],
+   "do": "Press tare on the integrated scale, then pour 165 g white sugar onto the eggs.",
+   "done": "Scale reads 165 g.",
+   "cook": "Cook"
+  },
+  {
+   "n": 3,
+   "icon": "sugar",
+   "title": "Add vanilla sugar",
+   "tool": "Kenwood mixer",
+   "accessory": "5L bowl",
+   "ingredients": [
+    {
+     "item": "vanilla sugar",
+     "amount": "1 packet (8 g)",
+     "photo": "raw/food/images/vanilla-sugar-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "weight",
+     "text": "8 g"
+    }
+   ],
+   "do": "Tip 1 packet (8 g) vanilla sugar into the bowl.",
+   "done": "Packet emptied into bowl.",
+   "cook": "Cook"
+  },
+  {
+   "n": 4,
+   "icon": "salt",
+   "title": "Add salt",
+   "tool": "Kenwood mixer",
+   "accessory": "5L bowl",
+   "ingredients": [
+    {
+     "item": "fine salt",
+     "amount": "1 pinch",
+     "photo": "raw/food/images/fine-salt-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "weight",
+     "text": "1 g"
+    }
+   ],
+   "do": "Add 1 pinch (about 1 g) fine salt to the bowl.",
+   "done": "Pinch of salt in bowl.",
+   "cook": "Cook"
+  },
+  {
+   "n": 5,
+   "icon": "scale",
+   "title": "Weigh raisins",
+   "tool": "Kitchen scale",
+   "accessory": "Mixing bowl",
+   "ingredients": [
+    {
+     "item": "raisins",
+     "amount": "75 g",
+     "photo": "raw/food/images/raisins-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "weight",
+     "text": "75 g"
+    }
+   ],
+   "do": "Place a small bowl on the scale, tare, then weigh 75 g raisins and set aside.",
+   "done": "Scale reads 75 g.",
+   "cook": "Cook"
+  },
+  {
+   "n": 6,
+   "icon": "scale",
+   "title": "Weigh candied fruit",
+   "tool": "Kitchen scale",
+   "accessory": "Mixing bowl",
+   "ingredients": [
+    {
+     "item": "candied fruit",
+     "amount": "75 g",
+     "photo": "raw/food/images/candied-fruit.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "weight",
+     "text": "75 g"
+    }
+   ],
+   "do": "Tare a second small bowl and weigh 75 g candied fruit, set aside next to the raisins.",
+   "done": "Scale reads 75 g.",
+   "cook": "Cook"
+  },
+  {
+   "n": 7,
+   "icon": "whisk",
+   "title": "Fit whisk",
+   "tool": "Kenwood mixer",
+   "accessory": "Whisk",
+   "chips": [
+    {
+     "icon": "speed",
+     "text": "off"
+    }
+   ],
+   "do": "Fit the whisk on the bowl-tool socket and lower the mixer head onto the 5L bowl.",
+   "done": "Whisk seated, head locked down.",
+   "cook": "Cook"
+  },
+  {
+   "n": 8,
+   "icon": "whisk",
+   "title": "Whisk eggs and sugar",
+   "tool": "Kenwood mixer",
+   "accessory": "Whisk",
+   "chips": [
+    {
+     "icon": "speed",
+     "text": "high speed"
+    },
+    {
+     "icon": "clock",
+     "text": "5 min"
+    }
+   ],
+   "do": "Whisk eggs, sugar, vanilla sugar and salt on high speed for 5 minutes.",
+   "done": "Mass pale, thick, sugar dissolved.",
+   "cook": "Cook"
+  },
+  {
+   "n": 9,
+   "icon": "pan",
+   "title": "Pour batter into pan",
+   "tool": "Moulinex bread maker",
+   "accessory": "Bread pan",
+   "chips": [
+    {
+     "icon": "check",
+     "text": "paddles in pan"
+    }
+   ],
+   "do": "Lift the whisk out, then scrape all the whisked batter into the bread pan with the grey spatula.",
+   "done": "Bowl empty, batter in pan.",
+   "photos": [
+    {
+     "image": "raw/kitchen-tools/images/kenwood-kwl90-grey-spatula.jpg",
+     "caption": "Grey spatula"
+    }
+   ],
+   "cook": "Cook"
+  },
+  {
+   "n": 10,
+   "icon": "spoon",
+   "title": "Add rum",
+   "tool": "Moulinex bread maker",
+   "accessory": "Tablespoon measure",
+   "ingredients": [
+    {
+     "item": "dark rum",
+     "amount": "1½ tbsp",
+     "photo": "raw/food/images/dark-rum-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "spoon",
+     "text": "1½ tbsp"
+    }
+   ],
+   "do": "Measure 1½ tbsp dark rum with the tablespoon measure and pour it over the batter.",
+   "done": "1½ level tablespoons in pan.",
+   "cook": "Cook"
+  },
+  {
+   "n": 11,
+   "icon": "scale",
+   "title": "Add softened butter",
+   "tool": "Kitchen scale",
+   "accessory": "Mixing bowl",
+   "ingredients": [
+    {
+     "item": "soft butter",
+     "amount": "230 g",
+     "photo": "raw/food/images/butter-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "weight",
+     "text": "230 g"
+    }
+   ],
+   "do": "Stand the pan on the scale, tare, then add 230 g soft butter in lumps.",
+   "done": "Scale reads 230 g.",
+   "cook": "Cook"
+  },
+  {
+   "n": 12,
+   "icon": "scale",
+   "title": "Add flour",
+   "tool": "Kitchen scale",
+   "accessory": "Mixing bowl",
+   "ingredients": [
+    {
+     "item": "plain flour",
+     "amount": "330 g",
+     "photo": "raw/food/images/plain-flour-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "weight",
+     "text": "330 g"
+    }
+   ],
+   "do": "Tare the scale again and spoon 330 g plain flour on top of the butter.",
+   "done": "Scale reads 330 g.",
+   "cook": "Cook"
+  },
+  {
+   "n": 13,
+   "icon": "spoon",
+   "title": "Add baking powder",
+   "tool": "Moulinex bread maker",
+   "accessory": "Teaspoon measure",
+   "ingredients": [
+    {
+     "item": "baking powder",
+     "amount": "2½ tsp",
+     "photo": "raw/food/images/baking-powder-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "spoon",
+     "text": "2½ tsp"
+    }
+   ],
+   "do": "Measure 2½ level teaspoons baking powder with the teaspoon measure and sprinkle over the flour.",
+   "done": "2½ level teaspoons in pan.",
+   "cook": "Cook"
+  },
+  {
+   "n": 14,
+   "icon": "pan",
+   "title": "Clip pan into machine",
+   "tool": "Moulinex bread maker",
+   "accessory": "Bread pan",
+   "chips": [
+    {
+     "icon": "check",
+     "text": "2 clicks"
+    }
+   ],
+   "do": "Lower the pan into the machine and press one side, then the other, until it clicks onto the drive.",
+   "done": "Pan clipped on both sides.",
+   "cook": "Cook"
+  },
+  {
+   "n": 15,
+   "icon": "check",
+   "title": "Plug in machine",
+   "tool": "Moulinex bread maker",
+   "chips": [
+    {
+     "icon": "check",
+     "text": "default 1"
+    }
+   ],
+   "do": "Close the lid and plug into an earthed socket; wait for the beep.",
+   "done": "Beep; programme 1 and medium crust shown.",
+   "photos": [
+    {
+     "image": "raw/kitchen-tools/images/moulinex-ow6002-controls.png",
+     "caption": "Control panel: menu, weight, crust, on/off"
+    }
+   ],
+   "cook": "Cook"
+  },
+  {
+   "n": 16,
+   "icon": "check",
+   "title": "Select programme 18",
+   "tool": "Moulinex bread maker",
+   "chips": [
+    {
+     "icon": "check",
+     "text": "Program 18"
+    },
+    {
+     "icon": "weight",
+     "text": "1000 g fixed"
+    }
+   ],
+   "do": "Press the menu button repeatedly until 18 shows; weight is fixed at 1000 g for this programme.",
+   "done": "Display shows 18 and 1:29.",
+   "photos": [
+    {
+     "image": "raw/kitchen-tools/images/moulinex-ow6002-controls.png",
+     "caption": "Control panel: menu, weight, crust, on/off"
+    }
+   ],
+   "cook": "Cook"
+  },
+  {
+   "n": 17,
+   "icon": "check",
+   "title": "Set medium crust",
+   "tool": "Moulinex bread maker",
+   "chips": [
+    {
+     "icon": "temp",
+     "text": "crust medium"
+    }
+   ],
+   "do": "Press the crust button until the medium indicator lights (default).",
+   "done": "Medium crust indicator lit.",
+   "photos": [
+    {
+     "image": "raw/kitchen-tools/images/moulinex-ow6002-controls.png",
+     "caption": "Control panel: menu, weight, crust, on/off"
+    }
+   ],
+   "cook": "Cook"
+  },
+  {
+   "n": 18,
+   "icon": "clock",
+   "title": "Start programme 18",
+   "tool": "Moulinex bread maker",
+   "chips": [
+    {
+     "icon": "check",
+     "text": "Program 18"
+    },
+    {
+     "icon": "clock",
+     "text": "1:29"
+    }
+   ],
+   "do": "Press the on/off button once; the run light comes on and timer dots blink.",
+   "done": "Run light on, 1:29 counting down.",
+   "photos": [
+    {
+     "image": "raw/kitchen-tools/images/moulinex-ow6002-controls.png",
+     "caption": "Control panel: menu, weight, crust, on/off"
+    }
+   ],
+   "cook": "Cook"
+  },
+  {
+   "n": 19,
+   "icon": "wait",
+   "title": "Wait for first beeps",
+   "tool": "Moulinex bread maker",
+   "chips": [
+    {
+     "icon": "clock",
+     "text": "6 min"
+    },
+    {
+     "icon": "wait",
+     "text": "ingredient beeps"
+    }
+   ],
+   "do": "Leave lid closed for about 6 minutes until the series of beeps sounds, display near 1:23.",
+   "done": "Beeps sound, timer about 1:23.",
+   "cook": "Cook"
+  },
+  {
+   "n": 20,
+   "icon": "grain",
+   "title": "Add raisins",
+   "tool": "Moulinex bread maker",
+   "accessory": "Bread pan",
+   "ingredients": [
+    {
+     "item": "raisins",
+     "amount": "75 g",
+     "photo": "raw/food/images/raisins-rimi.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "weight",
+     "text": "75 g"
+    }
+   ],
+   "do": "Open the lid and add the 75 g raisins into the pan without spilling outside it.",
+   "done": "All 75 g raisins in pan.",
+   "cook": "Cook"
+  },
+  {
+   "n": 21,
+   "icon": "nut",
+   "title": "Add candied fruit",
+   "tool": "Moulinex bread maker",
+   "accessory": "Bread pan",
+   "ingredients": [
+    {
+     "item": "candied fruit",
+     "amount": "75 g",
+     "photo": "raw/food/images/candied-fruit.jpg"
+    }
+   ],
+   "chips": [
+    {
+     "icon": "weight",
+     "text": "75 g"
+    }
+   ],
+   "do": "Add the 75 g candied fruit and close the lid at once.",
+   "done": "Candied fruit in, lid closed.",
+   "cook": "Cook"
+  },
+  {
+   "n": 22,
+   "icon": "wait",
+   "title": "Wait for programme end",
+   "tool": "Moulinex bread maker",
+   "chips": [
+    {
+     "icon": "check",
+     "text": "Program 18"
+    },
+    {
+     "icon": "clock",
+     "text": "1 h 23 min"
+    }
+   ],
+   "do": "Leave the machine alone until the display reaches 0:00 and several beeps sound, about 1 h 23 min later.",
+   "done": "0:00 shown, several beeps.",
+   "cook": "Cook"
+  },
+  {
+   "n": 23,
+   "icon": "wait",
+   "title": "Keep warm 10 minutes",
+   "tool": "Moulinex bread maker",
+   "chips": [
+    {
+     "icon": "clock",
+     "text": "10 min"
+    },
+    {
+     "icon": "wait",
+     "text": "optional"
+    }
+   ],
+   "do": "For a well-baked cake, leave it in the keep-warm cycle for 10 more minutes (optional).",
+   "done": "10 minutes elapsed.",
+   "cook": "Cook"
+  },
+  {
+   "n": 24,
+   "icon": "check",
+   "title": "Unplug machine",
+   "tool": "Moulinex bread maker",
+   "chips": [
+    {
+     "icon": "warning",
+     "text": "hot"
+    }
+   ],
+   "do": "Pull the plug from the socket.",
+   "done": "Plug out, display dark.",
+   "cook": "Cook"
+  },
+  {
+   "n": 25,
+   "icon": "pan",
+   "title": "Unclip hot pan",
+   "tool": "Moulinex bread maker",
+   "accessory": "Bread pan",
+   "chips": [
+    {
+     "icon": "warning",
+     "text": "oven gloves"
+    }
+   ],
+   "do": "With oven gloves, tilt the pan slightly to one side and unclip it; handle and lid inside are hot.",
+   "done": "Pan lifted out on the worktop.",
+   "cook": "Cook"
+  },
+  {
+   "n": 26,
+   "icon": "pan",
+   "title": "Turn cake out",
+   "tool": "Moulinex bread maker",
+   "accessory": "Bread pan",
+   "chips": [
+    {
+     "icon": "check",
+     "text": "1 cake"
+    }
+   ],
+   "do": "Tip the cake out of the pan onto a wire rack.",
+   "done": "Cake free of the pan.",
+   "cook": "Cook"
+  },
+  {
+   "n": 27,
+   "icon": "spoon",
+   "title": "Remove stuck paddles",
+   "tool": "Moulinex bread maker",
+   "accessory": "Paddle hook",
+   "chips": [
+    {
+     "icon": "check",
+     "text": "2 paddles"
+    }
+   ],
+   "do": "If a kneading paddle stays in the cake, lift it out with the hook, repeating for the second paddle.",
+   "done": "No paddle left in cake.",
+   "cook": "Cook"
+  },
+  {
+   "n": 28,
+   "icon": "chill",
+   "title": "Cool cake on rack",
+   "tool": "Wire rack",
+   "chips": [
+    {
+     "icon": "clock",
+     "text": "60 min"
+    }
+   ],
+   "do": "Leave the cake on the wire rack for 60 minutes before slicing.",
+   "done": "Cake cool to the touch.",
+   "cook": "Cook"
+  }
+ ],
+ "sync_points": [
+  {
+   "name": "Pan loaded",
+   "when": "0:22",
+   "criteria": "Batter, rum, butter, flour, baking powder in pan; fruit weighed aside"
+  },
+  {
+   "name": "Fruit-in",
+   "when": "0:34",
+   "criteria": "Beeps heard, raisins and candied fruit added, lid closed"
+  },
+  {
+   "name": "Cake-out",
+   "when": "2:12",
+   "criteria": "Cake on rack, both paddles removed"
+  }
+ ],
+ "visuals": [
+  {
+   "title": "Pan loading order",
+   "image": "recipes/fruit-cake-bread-maker/assets/pan-layers.svg",
+   "caption": "Add in numbered order; fruit joins at the beeps."
+  }
+ ],
+ "food_safety": [
+  "Wash hands and bowl after raw egg",
+  "Pan, handle and lid inside are hot: use oven gloves",
+  "Do not wash pan parts in a dishwasher"
+ ]
+}
