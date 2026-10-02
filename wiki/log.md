@@ -118,3 +118,17 @@
 - Raw: raw/kitchen-tools/ACQUISITION-LOG.md
 - Updated: wiki/kitchen-tools/kitchen-appliance-inventory.md
 - Notes: cleared "unreferenced raw file" backlog from 2026-08-17 lint. Merged Kenwood KWL90 instruction facts (6 named preset programmes, dough/egg-white capacity, product weight, heating-element wattage, spanner size, bowl/splashguard rules) into the Titanium Chef Patissier XL entry. Added Status: Outdated block on the AEG BE3002420M entry — the "controls-representative" photo was found to be a mislabeled full-cavity photo of a different sibling oven (BE3013421M), not a control-panel close-up; removed it as a cited photo, description kept in text only.
+
+## [2026-10-02] ingest | Moulinex OW6002 Baguettes and Co
+- Disposition: Update
+- Raw: raw/kitchen-tools/manuals/moulinex-ow6002-baguette-and-co-source-extract.md
+- Raw: raw/kitchen-tools/ACQUISITION-LOG.md
+- Updated: wiki/kitchen-tools/kitchen-appliance-inventory.md
+- Notes: added OW6002 bread maker via add-kitchen-appliance. Manual PDF NOT ACQUIRED (ManualsLib gate); programmes/settings from ManualsLib FR page text (NC00014565, covers OW6000/OW6002). Control-panel, function and accessory photos still missing.
+
+## [2026-10-02] update | Moulinex OW6002 manual added
+- Disposition: Update
+- Raw: raw/kitchen-tools/manuals/notice-MOULINEX-ow6002.pdf
+- Raw: raw/kitchen-tools/manuals/6002.pdf
+- Updated: wiki/kitchen-tools/kitchen-appliance-inventory.md
+- Notes: user supplied EN/TR manual NC00013526 (scanned, OCR + visual read) and Russian recipe book. Filled programme table with cycle times, limits, accessories; cropped control panel, parts, programme pages and cycle table. Recipe book not yet extracted.

@@ -86,3 +86,10 @@ Update these to exact-model photos if/when the owned model number is confirmed.
 - `simpletaste-b0djvhjcqr-detail-6-grinder.jpg` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR (exact-model); source: Amazon.de listing alt image, ceramic grinder mechanism/adjustment
 - `simpletaste-b0djvhjcqr-functions-p4.png` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR manual page 4 image, coarse/fine adjustment dial ("How to Use")
 - `simpletaste-b0djvhjcqr-fill-p3.png` — SIMPLETASTE Electric Salt and Pepper Mill Set B0DJVHJCQR manual page 3 image, charging and filling diagrams
+- `moulinex-ow6002-product.jpg` — Moulinex OW6002 Baguettes and Co (exact-model); source: KNS retailer OW6002 listing
+- `moulinex-baguette-and-co-manualslib-product.jpg` — Moulinex OW6002 Baguettes and Co (generic/representative); source: ManualsLib FR Baguette and Co (manual covers OW6000/OW6002)
+- `moulinex-ow6002-controls.png` — Moulinex OW6002 (exact-model); manual printed p. 22, control panel 4a-4g (display, menu, weight, delay -/+, on/off, crust)
+- `moulinex-ow6002-parts.png` — Moulinex OW6002 (exact-model); manual printed p. 22 parts/accessories line drawing
+- `moulinex-ow6002-functions-p27.png` — Moulinex OW6002 (exact-model); manual printed p. 27, programmes 1-14 descriptions
+- `moulinex-ow6002-functions-p28.png` — Moulinex OW6002 (exact-model); manual printed p. 28, programmes 15-19, weight and crust selection
+- `moulinex-ow6002-cycle-times-p32.png` — Moulinex OW6002 (exact-model); manual printed p. 32, cycle time table

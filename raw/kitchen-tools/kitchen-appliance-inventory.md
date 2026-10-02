@@ -204,6 +204,63 @@ Title: Kenwood Titanium Chef Patissier XL KWL90.244SI Food Processor, Silver
 - Controls/features from manual: display with programme number, weight indicator, crust colour, delayed start and timer; programme selector; loaf-weight selector; crust-colour selector; delayed-start/time buttons.
 - Noise level from manual: 69 dBA.
 
+### Moulinex bread maker - OW6002 "Baguettes and Co"
+
+Title: Moulinex Baguette and Co OW6002 (retailer SKU OW600230)
+- Status: User-stated model OW6002; user-supplied manual NC00013526 (EN/TR, 10/2009) matches. Rating plate not seen.
+- User input: `/add-kitchen-appliance moulinex OW6002`; user added manual PDFs.
+- Identity: Moulinex, OW6002 (OW600230), manual NC00013526 (EN/TR), FR sibling NC00014565 also covers OW6000; bread maker with baguette/individual-bread trays, discontinued.
+- Manual: manuals/notice-MOULINEX-ow6002.pdf (user-provided, 22 pp scan, EN+TR; printed pages 22-41, PDF p.3 = printed p.22)
+- Recipe book: manuals/6002.pdf (user-provided, 100 pp, Russian "С хлебом вокруг света", recipes; not yet extracted)
+- Source extracts: manuals/moulinex-ow6002-baguette-and-co-source-extract.md (earlier FR web text; superseded by EN manual)
+- Product photo: images/moulinex-ow6002-product.jpg (exact, retailer); images/moulinex-baguette-and-co-manualslib-product.jpg (representative)
+- Control-panel photo: images/moulinex-ow6002-controls.png (manual printed p. 22, diagram 4a-4g)
+- Function-symbol photo: images/moulinex-ow6002-functions-p27.png; images/moulinex-ow6002-functions-p28.png (manual printed pp. 27-28); cycle table images/moulinex-ow6002-cycle-times-p32.png (printed p. 32)
+- Accessory photos: images/moulinex-ow6002-parts.png (manual line drawing of tray, plates, slitter, spoons, hook, brush, beaker; printed p. 22). Individual photos NOT ACQUIRED (line drawings only).
+- Electrical: 1650 W (retailer, na-kuhne/kns.ru); not stated in the EN manual text read.
+- Capacity/dimensions: 750 / 1000 / 1500 g (manual p. 28); programme 18 and 13 fixed 1000 g. Dimensions not found.
+- Operating ranges: delay start up to 15 h in 10-min steps (p. 29); programme 7 bake 10-35 min in 5-min steps; programme 15 bake 10-70 min in 10-min steps; keep-warm 1 h on programmes 8-14, 18; crust light/medium/dark (default medium); weight default 1000 g.
+- Controls/connectivity: LCD (weight 750/1000/1500, programme, crust, delay, timer), menu button, weight button, crust button, delay -/+ buttons, on/off button, run light; no app.
+- Cleaning/safety/limits: slitter very sharp; no dishwasher; no household cleaners, scourers or alcohol; never immerse body or lid; do not store tray/plates inside machine (scratches coating); appliance and baguette tray very hot in use; programmes 7 and 15 not unattended; programme 11 ready mixes max 1000 g dough; programme 12 water max 35 C; avoid fresh milk/eggs/yoghurt/cheese/fruit with delay start.
+- Ingredient beep (add dried fruit etc.) on all programmes except 7, 13, 15, 16, 17, 19; add time = Total - "time displayed at ingredients signal" (p. 30).
+- Notes/uncertainty: wattage from retailer only; confirm rating plate. Cycle table rows 8-14 read from scan; verify against image if precision matters. Programme 15 contradiction: p. 28 text offers light/medium/dark but also lists 15 as no browning setting.
+
+| # | Function / program | Selector | Temp / setting | Use for | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Savoury baguettes & rolls | menu button, prog 1 | no temp control; crust L/M/D; weight n/a; total 2:39 (dough 1:10, bake 0:47 + 0:42) | crusty baguettes, small rolls (8 baguettes of 80 g); baguette trays | manual pp. 27, 32 |
+| 2 | Italian bread (ciabatta) | menu, prog 2 | crust L/M/D; total 2:30 (dough 1:20, bake 0:35 + 0:35) | soft airy bread, small sandwiches | manual pp. 27, 32 |
+| 3 | Bread sticks (grissini) | menu, prog 3 | crust L/M/D; total 2:24 (dough 1:20, bake 0:32 + 0:32) | thin dry breadsticks | manual pp. 27, 32 |
+| 4 | Flat bread (pide) | menu, prog 4 | crust L/M/D; total 1:25 (dough 0:35, bake 0:25 + 0:25) | chewy flat bread | manual pp. 27, 32 |
+| 5 | Burger buns | menu, prog 5 | crust L/M/D; total 2:30 (dough 1:20, bake 0:40 + 0:30) | 8 small round white buns | manual pp. 27, 32 |
+| 6 | Sweet baguettes & buns | menu, prog 6 | crust L/M/D; total 2:52 (dough 1:25, bake 0:47 + 0:40) | ensaimada-style sweet buns | manual pp. 27, 32 |
+| 7 | Small bread cooking | menu, prog 7; -/+ sets time | 10-35 min, 5-min steps; no crust choice | bake/reheat individual loaves from 1-6; unattended not allowed | manual pp. 27, 32 |
+| 8 | Basic white bread | menu, prog 8 | 750/1000/1500 g; total 3:12/3:17/3:22; dough 2:17; bake 0:55/1:00/1:05; warm 1 h | most wheat white bread | manual pp. 27, 32 |
+| 9 | French bread | menu, prog 9 | 750/1000/1500 g; total 3:19/3:24/3:29; dough 2:24; bake 0:55/1:00/1:05 | traditional airy French white | manual pp. 27, 32 |
+| 10 | Wholemeal bread | menu, prog 10 | 750/1000/1500 g; total 3:17/3:22/3:27; dough 2:12; bake 1:05/1:10/1:15 | wholemeal flour | manual pp. 27, 32 |
+| 11 | Sweet bread | menu, prog 11 | 750/1000/1500 g; total 3:15/3:20/3:25; dough 2:15; bake 1:00/1:05/1:10; ready mixes max 1000 g | brioche, milk loaves; light crust first time | manual pp. 27, 32 |
+| 12 | Super fast white bread | menu, prog 12 | 750/1000/1500 g; total 1:30/1:35/1:40; dough 0:35; bake 0:55/1:00/1:05; water max 35 C; no delay | quick bread from recipe book | manual pp. 27, 32 |
+| 13 | Gluten-free bread | menu, prog 13 | 1000 g fixed; total 1:42 (dough 0:47, bake 0:55); no delay | gluten-free; fold dough from edges with plastic spatula | manual pp. 27, 32 |
+| 14 | Salt-free bread | menu, prog 14 | 750/1000/1500 g; total 2:41/2:46/2:51; dough 1:41; bake 1:00/1:05/1:10 | low-salt bread | manual pp. 27, 32 |
+| 15 | Loaf cooking | menu, prog 15; -/+ sets time | 10-70 min, 10-min steps; crust per p. 28 text L/M/D | bake only: after dough programme, recrisp cooled bread, finish after power cut; not for individual loaves | manual pp. 28, 32 |
+| 16 | Bread dough (leavened) | menu, prog 16 | total 1:25, no bake | pizza dough, rolls, sweet buns | manual pp. 28, 32 |
+| 17 | Pasta dough | menu, prog 17 | total 0:15, knead only | noodles, unleavened | manual pp. 28, 32 |
+| 18 | Cake | menu, prog 18 | 1000 g only; total 1:29 (dough 0:09, bake 1:20); warm 1 h | baking-powder cakes | manual pp. 28, 32 |
+| 19 | Jam | menu, prog 19 | total 1:05 (dough 0:15, bake 0:50) | jam in pan; fruit chopped, pitted | manual pp. 28, 32 |
+
+Numbered programmes 1-19 selected with the menu button; there is no dial and no symbol-named selector, so recipes say "Programme N".
+
+| Accessory | Model/part no. | Photo | Used for |
+| --- | --- | --- | --- |
+| Bread pan with 2 kneading paddles | — | images/moulinex-ow6002-parts.png (internal view p. 22 not cropped) | all loaves, 750-1500 g |
+| Baking tray (5) | — | images/moulinex-ow6002-parts.png | holds baguette/individual trays |
+| 2 non-stick baguette trays (6) | — | images/moulinex-ow6002-parts.png | programme 1 |
+| 2 non-stick individual-loaf trays (7) | — | images/moulinex-ow6002-parts.png | programmes 2-6 |
+| Slitter (8) | — | images/moulinex-ow6002-parts.png | slashing dough; very sharp |
+| Tablespoon (9a) / teaspoon (9b) measure | — | images/moulinex-ow6002-parts.png | measuring |
+| Hook (10) | — | images/moulinex-ow6002-parts.png | lifting out stuck kneading paddles |
+| Brush (11) | — | images/moulinex-ow6002-parts.png | glazing |
+| Graduated beaker (12) | — | images/moulinex-ow6002-parts.png | liquids |
+
 ### Digital thermo probes — TempPro / ThermoPro TP25H2, Amazon ASIN B093PNMMJX
 
 - Status: User-provided Amazon link/title says TempPro Bluetooth thermometer with 2 probes; TempPro/ThermoPro TP25H2 is the matched two-probe product family.
